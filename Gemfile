@@ -1,10 +1,14 @@
 source 'https://rubygems.org'
 
+ruby '2.2.2'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
+# add 12 factor for heroku
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 #install bootstrap for css
