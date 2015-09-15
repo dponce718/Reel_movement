@@ -4,7 +4,7 @@ class CreatePlanService
 
   	p = Plan.create({
       name: 'unlimited program',
-      price: 1499,
+      price: 14.99,
       interval: 'month',
       stripe_id: 'unlimited',
       features: ['10 Projects', '10 Pages', '10 Users', '10 Organizations'].join("\n\n"),
