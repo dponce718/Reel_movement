@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # use devise as an authentication system
 gem 'devise'
+#use koudoku to create and manage subscriptions
+gem 'koudoku'
 
 #add activeadmin to generate admin interface
 gem 'activeadmin', github: 'activeadmin'
