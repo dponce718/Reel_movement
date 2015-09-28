@@ -2,13 +2,8 @@ Rails.application.routes.draw do
   
   
   
-  # Added by Koudoku.
-  mount Koudoku::Engine, at: 'koudoku'
-  scope module: 'koudoku' do
-    get 'pricing' => 'subscriptions#index', as: 'pricing'
-  end
-
-
+  
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
@@ -16,7 +11,11 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get    'login'             => 'devise/sessions#new'
 
+
+ 
+
   resources :users
+  resources :subscriptions 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
