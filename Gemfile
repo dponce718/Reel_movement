@@ -30,11 +30,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # use devise as an authentication system
 gem 'devise'
-#use koudoku to create and manage subscriptions
-gem 'koudoku'
 
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 #add activeadmin to generate admin interface
 gem 'activeadmin', github: 'activeadmin'
+
+gem 'vzaar'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,6 +52,10 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+   gem 'rspec-rails', '~> 3.0'
+
+   gem 'factory_girl_rails'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
