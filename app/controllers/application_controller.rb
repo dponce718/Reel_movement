@@ -7,11 +7,18 @@ class ApplicationController < ActionController::Base
    protected
 
  def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) << :name
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:name, :email, :password, :password_confirmation, :remember_me, :subscriptions) }
   end
+
 
   def after_sign_in_path_for(resource)
   "/subscriptions/new"
 end
-
+	
+	def suscribed_user!
+  		unless current_user = User.find_by_suscription("unlimited")
+        flash[:danger] = "Please suscribe"
+       	redirect_to "/subscriptions/new"
+    	end
+	end
 end

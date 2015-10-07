@@ -6,17 +6,17 @@ Rails.application.routes.draw do
   
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :users
+   devise_for :users
 
   root 'static_pages#home'
   get    'login'             => 'devise/sessions#new'
-  #get    'assessment'             => 'subscriptions#index'
-
+  
 
  
 
   resources :users
   resources :subscriptions 
+  resources :contents
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
