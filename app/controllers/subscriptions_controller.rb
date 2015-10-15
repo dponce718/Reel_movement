@@ -1,6 +1,6 @@
 class SubscriptionsController < ApplicationController
 	before_action :authenticate_user!
-	before_action :suscribed_user!, only: [:show]
+	before_action :suscribed_user!, only: [:show, :index]
 
 
 
@@ -9,10 +9,8 @@ class SubscriptionsController < ApplicationController
 	end	
 
 
-	def create
-		@user = current_user
-		@user.update(suscription: "unlimited")
-		@user.save
+	def new
+		current_user.update(suscription: true)
 	end	
 
 	def show

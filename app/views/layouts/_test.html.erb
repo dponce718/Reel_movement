@@ -1,0 +1,100 @@
+
+ 
+       <!--    
+        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange  
+        -->
+        <nav class="navbar navbar-ct-green navbar-fixed-top navbar-transparent" role="navigation">
+          
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand navbar-brand-logo" href="http://www.creative-tim.com">
+                    <div class="logo">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png">
+                    </div>
+                    <div class="brand"> Reel Movement </div>
+              </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+                        <%  if user_signed_in?  %>
+
+                            <li>
+                        <a class="page-scroll" > Blog</a> </li>
+
+                             <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Account <b class="caret"></b></a>
+            
+                    <ul class="dropdown-menu">
+
+                        <li><%= link_to "Profile",  subscriptions_path  %></li> 
+
+                        <%= link_to('Edit profile', edit_user_registration_path) %>
+
+
+                        <li class="divider"></li>
+                        <li> <%= link_to "Log out", destroy_user_session_path, method: "delete" %> </li>
+                       
+
+                    </ul> 
+
+                       </li> <% else %> 
+
+                        <li>
+                        <a href="#">
+                            <i class="icon-profile"></i>
+                            <p><%= link_to "Log in", new_user_session_path %></p>
+                        </a>
+
+                        <li>
+                        <a href="#">
+                            <i class="icon-pencil"></i>
+                            <p><%= link_to "Sign up", new_user_registration_path, class: "page-scroll" %></p>
+                        </a>
+                    </li> 
+
+                        <li>
+                        <a href="#">
+                            <i class="icon-library"></i>
+                            <p>Learn More</p>
+                        </a>
+                    </li> 
+                        <li>
+                        <a href="#">
+                            <i class="icon-money"></i>
+                            <p>Pricing</p>
+                        </a>
+                    </li> 
+
+                        <li>
+                        <a href="#">
+                            <i class="icon-article"></i>
+                            <p>Blog</p>
+                        </a>
+                    </li> 
+
+                        
+                    </ul>
+
+                <% end %> 
+               </ul>
+               
+              </form>
+              
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+     
+

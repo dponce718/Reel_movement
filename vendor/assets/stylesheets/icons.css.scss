@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'icomoon';
+	src:font-url('icomoon.eot?hriu5h');
+	src:font-url('icomoon.eot?hriu5h#iefix') format('embedded-opentype'),
+		font-url('icomoon.ttf?hriu5h') format('truetype'),
+		font-url('icomoon.woff?hriu5h') format('woff'),
+		font-url('icomoon.svg?hriu5h#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+	content: "\e800";
+}
+.icon-play:before {
+	content: "\e801";
+}
+.icon-library:before {
+	content: "\e80c";
+}
+.icon-article:before {
+	content: "\e80a";
+}
+.icon-profile:before {
+	content: "\e802";
+}
+.icon-credit-card:before {
+	content: "\e803";
+}
+.icon-happy:before {
+	content: "\e804";
+}
+.icon-sad:before {
+	content: "\e805";
+}
+.icon-mail:before {
+	content: "\e806";
+}
+.icon-facebook:before {
+	content: "\e807";
+}
+.icon-instagram:before {
+	content: "\e808";
+}
+.icon-youtube:before {
+	content: "\e809";
+}
+.icon-money:before {
+	content: "\e80b";
+}
+
