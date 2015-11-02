@@ -1,10 +1,11 @@
 class RegistrationsController < Devise::RegistrationsController
-  # def new
-  #   super
-  # end
+  def account_update_params
+    if params[@devise_mapping.name][:password_confirmation].blank?
+      params[@devise_mapping.name].delete(:password)
+      params[@devise_mapping.name].delete(:password_confirmation)
+    end
+ 
 
-   def create
-     super
-     current_user.update(suscription: false)
-   end
+    super
+ end
 end

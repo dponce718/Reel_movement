@@ -10,7 +10,8 @@ class SubscriptionsController < ApplicationController
 
 
 	def new
-		current_user.update(suscription: true)
+		current_user.toggle(:suscription)
+		current_user.save
 	end	
 
 	def show

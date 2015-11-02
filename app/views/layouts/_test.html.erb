@@ -16,9 +16,8 @@
               </button>
               <a class="navbar-brand navbar-brand-logo" href="http://www.creative-tim.com">
                     <div class="logo">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png">
+                    <%= image_tag "rm_green.png", size: "200x150" %>
                     </div>
-                    <div class="brand"> Reel Movement </div>
               </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,17 +52,19 @@
                        </li> <% else %> 
 
                         <li>
-                        <a href="#">
-                            <i class="icon-profile"></i>
-                            <p><%= link_to "Log in", new_user_session_path %></p>
-                        </a>
+                             <%= link_to new_user_session_path do %>
+                                    <i class="icon-profile"></i>
+                                    <p> Log in </p>
+                                     <% end %>
+                        </li>             
 
                         <li>
-                        <a href="#">
-                            <i class="icon-pencil"></i>
-                            <p><%= link_to "Sign up", new_user_registration_path, class: "page-scroll" %></p>
-                        </a>
-                    </li> 
+                  
+                         <%= link_to new_user_registration_path do %>
+                                    <i class="icon-pencil"></i>
+                                    <p> Sign up </p>
+                                     <% end %>
+                        </li> 
 
                         <li>
                         <a href="#">

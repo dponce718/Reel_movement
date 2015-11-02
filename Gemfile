@@ -64,7 +64,15 @@ group :development, :test do
 
    gem 'factory_girl_rails'
 
+   gem 'shoulda'
+
+   gem 'capybara'
+
+   gem 'selenium-webdriver'
+
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  
 end
 
