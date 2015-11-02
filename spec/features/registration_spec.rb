@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'factory_girl'
 
-	describe "signing up", js: true do 
+	describe "signing up" do 
 		it "allows user to sign up to reel movement and creates an object in the database" do
 			expect(User.count).to eq(0) 
 
