@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
 
 
-validates :suscription, inclusion: { in: [true, false] }                
+
 
 
 
