@@ -2,12 +2,47 @@
 
         <div class="container">
              <div class="row">
+
                 <div class="intro-text col-lg-8">
               <%= raw @program.code %>
                 </div>
-                <div class="intro-text col-lg-4">
-                    <script type='text/javascript'>var _fo=_fo||[];_fo.push({'d':'center','c':'f7c7e1','i':14792});if(typeof fce=='undefined'){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=('https:'==document.location.protocol?'https://':'http://')+'formcrafts.com/js/fc.js';var fi=document.getElementsByTagName('script')[0];fi.parentNode.insertBefore(s,fi);fce=1;}</script><div id='f7c7e1'><a href='http://formcrafts.com/a/14792'>Assessment Form</a></div>
-                </div>
+
+                    <div class="intro-text col-lg-4">
+
+                        <%= form_for(:assessment, :url => {:action => 'create'}) do |f| %>
+
+                            <div class="form-group"> 
+                                <%= f.text_field(:rhr) %>
+                            </div>
+
+                             <div class="form-group"> 
+                                <%= f.text_field(:push_ups) %>
+                             </div>
+                             
+                              <div class="form-group"> 
+                                <%= f.text_field(:planks) %>
+                              </div>
+                              
+                              <div class="form-group">   
+                                <%= f.text_field(:wall_sits) %>
+                              </div>
+                              
+                               <div class="form-group">   
+                                <%= f.text_field(:hamstring) %>
+                               </div> 
+
+                            <%= submit_tag("create assessment") %>
+
+
+
+
+                     <% end %>
+                   
+                    </div>    
+
+
+                    
+               
             </div>
         </div>
     </header>

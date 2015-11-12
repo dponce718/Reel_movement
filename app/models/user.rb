@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_one :subscription
   has_one :program
+  has_one :assessment
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
