@@ -5,25 +5,36 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-AdminUser.create!(email: 'reelmovement@gmail.com', password: 'rowland1', password_confirmation: 'rowland1')
+#AdminUser.create!(email: 'reelmovement@gmail.com', password: 'rowland1', password_confirmation: 'rowland1')
 
 CreatePlanService.new.call
 puts 'CREATED PLANS'
 
  Program.create(title: "group workout", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="324" id="vzvd-5248691" mozallowfullscreen name="vzvd-5248691" src="//view.vzaar.com/5248691/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="576"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="324" id="vzvd-5248691" mozallowfullscreen name="vzvd-5248691" src="//view.vzaar.com/5248691/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="576"></iframe>',
+code_two: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+code_three: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "core", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
 Program.create(title: "corrective", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277940" mozallowfullscreen name="vzvd-5277940" src="//view.vzaar.com/5277940/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277940" mozallowfullscreen name="vzvd-5277940" src="//view.vzaar.com/5277940/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "assessment", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5298522" mozallowfullscreen name="vzvd-5298522" src="//view.vzaar.com/5298522/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5298522" mozallowfullscreen name="vzvd-5298522" src="//view.vzaar.com/5298522/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "Cardio level 1", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5641580" mozallowfullscreen name="vzvd-5641580" src="//view.vzaar.com/5641580/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5641580" mozallowfullscreen name="vzvd-5641580" src="//view.vzaar.com/5641580/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
- Program.create(title: "Cardio level 1", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5641580" mozallowfullscreen name="vzvd-5641580" src="//view.vzaar.com/5641580/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+ Program.create(title: "Boiling rice", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5649198" mozallowfullscreen name="vzvd-5649198" src="//view.vzaar.com/5649198/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+
+ Program.create(title: "tomatoes", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5649202" mozallowfullscreen name="vzvd-5649202" src="//view.vzaar.com/5649202/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+
+
+Program.create(title: "general conditioning", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5640112" mozallowfullscreen name="vzvd-5640112" src="//view.vzaar.com/5640112/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+
+

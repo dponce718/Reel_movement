@@ -4,7 +4,7 @@
              <div class="row">
 
                 <div class="intro-text col-lg-8">
-              <%= raw @program.code %>
+              <%= raw @program.code_one %>
                 </div>
 
                     <div class="intro-text col-lg-4">
@@ -12,22 +12,27 @@
                         <%= form_for(:assessment, :url => {:action => 'create'}) do |f| %>
 
                             <div class="form-group"> 
+                                <%= f.label :rhr, "Resting Heart Rate" %>
                                 <%= f.text_field(:rhr) %>
                             </div>
 
                              <div class="form-group"> 
+                                <%= f.label :push_ups, "Push ups" %>
                                 <%= f.text_field(:push_ups) %>
                              </div>
                              
                               <div class="form-group"> 
+                                <%= f.label :planks, "planks" %>
                                 <%= f.text_field(:planks) %>
                               </div>
                               
-                              <div class="form-group">   
+                              <div class="form-group"> 
+                                <%= f.label :wall_sits, "Wall sits" %>  
                                 <%= f.text_field(:wall_sits) %>
                               </div>
                               
-                               <div class="form-group">   
+                               <div class="form-group"> 
+                                <%= f.label :hamstring, "Flexibility" %>  
                                 <%= f.text_field(:hamstring) %>
                                </div> 
 
