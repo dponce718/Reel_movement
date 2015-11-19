@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require getshitdone.js
 //= require lightbox-bootstrap
 //= require bootstrap-sprockets
 //= require turbolinks

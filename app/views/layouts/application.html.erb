@@ -7,9 +7,9 @@
   <%= csrf_meta_tags %>
 
 </head>
-<body>
+<body data-controller="<%= RegistrationsController %>" data-action="<%= User %>">
 
-	<%= render 'layouts/test' %>
+	<%= render 'layouts/header' %>
 
 	<% flash.each do |message_type, message| %>
 
