@@ -16,6 +16,8 @@ class SubscriptionsController < ApplicationController
 
 	def show
 		
+	
+		
 	end	
 
 	def create

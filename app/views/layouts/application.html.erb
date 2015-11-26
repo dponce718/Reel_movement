@@ -2,12 +2,13 @@
 <html>
 <head>
   <title>ReelMovement</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+   <%= csrf_meta_tags %>
 
 </head>
-<body data-controller="<%= RegistrationsController %>" data-action="<%= User %>">
+<body>
 
 	<%= render 'layouts/header' %>
 
@@ -17,6 +18,6 @@
 
 
 <%= yield %>
-
+	<%= render 'layouts/footer' %>
 </body>
 </html>

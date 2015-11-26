@@ -1,11 +1,15 @@
-<section>
 
-  <div class="authform container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Sign up</h2>
 
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+ <!-- Button trigger modal -->
+ 
+<!-- Modal -->
+    
+   
+    
+        <section>
+    
+           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>
 
 
@@ -36,8 +40,8 @@
 
         <%= render "devise/shared/links" %>
 
-        
-      </div>
-    </div>
-  </div>      
-</section>
+    </section>
+    
+          
+
+  

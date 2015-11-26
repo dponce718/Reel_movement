@@ -42,6 +42,7 @@ gem 'jquery-turbolinks'
 
 gem 'puma'
 
+gem 'font-awesome-sass'
 
 
 # Use ActiveModel has_secure_password
