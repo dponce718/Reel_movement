@@ -1,7 +1,7 @@
 <header>
 
 <section>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading"> <%= raw current_user.program.title %> </h2>
@@ -9,26 +9,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2">
-            
-                  <i class="fa fa-chevron-left fa-5x"></i> </i>      
-                  
-                </div>
-                <div class="col-md-8 user-program">
+               
+                <div class="col-md-6 col-md-offset-3 user-program video-container">
                     
                      
              <%= raw current_user.program.code_one %> 
-             
-              
-              </ul>
-
-              <button class="btn btn-success btn-round btn-fill .program-one"> Next Workout</button>     
-                                    
-                </div>
-                <div class="col-md-2">
-                   <i class="fa fa-chevron-right fa-5x"></i>
+                                            
                 </div>
             </div>
+        <div>
+          
+           <button class="btn btn-success btn-round btn-fill"> Next Workout</button> 
+
+    <button class="btn btn-success btn-round btn-fill program-two" data-toggle="modal" data-target="#myModal">Launch demo modal</button>    
+     
+    <button class="btn btn-success btn-round btn-fill program-three" data-toggle="modal" data-target="#myModal">
+    
+      Launch demo modal
+    
+    </button> 
         </div>
              
 
@@ -44,6 +43,7 @@
 
         $( ".program-three" ).click(function() { 
          $('#program-three').modal('show');
+
        });
         });//end script
       </script>
@@ -52,58 +52,28 @@
 
     </header>
 
-  </section>  
-
-  
-    
+   
     
     <!-- Modal -->
+    <div class="row" >
+    <div class="modal fade col-md-6 col-md-offset-3" id="program-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     
-    
-    <button class="btn btn-primary program-two" data-toggle="modal" data-target="#myModal">
-    
-      Launch demo modal
-    
-    </button>
-    
-    
-    
-    <!-- Modal -->
-    
-    <div class="modal fade" id="program-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    
-      <div class="modal-dialog">
-    
-        <div class="modal-content">
-    
-          <div class="modal-header">
+      
     
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     
             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
     
-          </div>
+        
     
           <div class="modal-body">
               
               <%= raw current_user.program.code_two %>
           </div>
-    
   
     
-        </div>
-    
-      </div>
-    
     </div>
-
-
-    <button class="btn btn-primary program-three" data-toggle="modal" data-target="#myModal">
-    
-      Launch demo modal
-    
-    </button>
-    
+    </div>
     
     
     <!-- Modal -->
@@ -136,4 +106,5 @@
     </div>
     
 
-
+</section>
+</div>
