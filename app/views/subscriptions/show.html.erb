@@ -1,7 +1,7 @@
-<header>
 
-<section>
-        <div class="container-fluid">
+
+<section id= "user-background">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading"> <%= raw current_user.program.title %> </h2>
@@ -17,13 +17,13 @@
                                             
                 </div>
             </div>
-        <div>
+        <div class=" col-md-6 col-md-offset-3">
           
-           <button class="btn btn-success btn-round btn-fill"> Next Workout</button> 
+           <button class="btn btn-success user-button"> Next Workout</button> 
 
-    <button class="btn btn-success btn-round btn-fill program-two" data-toggle="modal" data-target="#myModal">Launch demo modal</button>    
+    <button class="btn btn-success user-button program-two" data-toggle="modal" data-target="#myModal">Launch demo modal</button>    
      
-    <button class="btn btn-success btn-round btn-fill program-three" data-toggle="modal" data-target="#myModal">
+    <button class="btn btn-success user-button program-three" data-toggle="modal" data-target="#myModal">
     
       Launch demo modal
     
@@ -50,13 +50,68 @@
        
 
 
-    </header>
+  </section>
 
+  <section>
+
+
+    <div id="acordeon">
+    
+        <div class="panel-group" id="accordion">
+    
+         
+          
+          <div class="panel panel-default">
+    
+            <div class="panel-heading">
+    
+              <h4 class="panel-title text-center">
+    
+                <a data-toggle="collapse" href="#collapseThree">
+    
+                  Collapsible Group Item #3
+    
+                </a>
+    
+              </h4>
+    
+            </div>
+    
+            <div id="collapseThree" class="panel-collapse collapse">
+    
+              <div class="panel-body col-md-6 col-md-offset-3">
+    
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        
+    
+    </div><!--  end acordeon -->
+    
+
+
+
+<div class=" col-md-8 col-md-offset-2">
+<%= week_calendar(attribute: :starts_at) do |date| %>
+    <%= date %>
+    <%= raw current_user.program.title %> 
+<% end %>
+
+
+</div>
+   
    
     
     <!-- Modal -->
     <div class="row" >
-    <div class="modal fade col-md-6 col-md-offset-3" id="program-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade col-md-8 col-md-offset-2" id="program-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     
       
     
@@ -106,5 +161,6 @@
     </div>
     
 
-</section>
+
 </div>
+</section>

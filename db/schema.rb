@@ -89,6 +89,7 @@ ActiveRecord::Schema.define(version: 20151109185426) do
     t.text     "code_four"
     t.text     "code_five"
     t.string   "frame"
+    t.datetime "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

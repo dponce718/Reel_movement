@@ -131,6 +131,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.user-button{
+    background: $white-color;
+}
 .btn{
      &:disabled,
      &[disabled],
@@ -644,6 +647,11 @@ section {
 
 }
 
+#user-background{
+    background: image-url('black.jpg');
+    padding: 50px 0;
+ 
+}
 
 // Portfolio Section
 
@@ -1947,5 +1955,6 @@ section {
     height:89%;
 }
 }
+
 
 

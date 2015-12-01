@@ -9,7 +9,8 @@ class CreatePrograms < ActiveRecord::Migration
       t.text   :code_three
       t.text   :code_four
       t.text   :code_five
-	  t.string	 :frame			
+	  t.string	 :frame	
+    t.datetime   :start_time		
       t.timestamps null: false
     end
   end
