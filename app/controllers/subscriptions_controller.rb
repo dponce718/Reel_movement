@@ -15,7 +15,7 @@ class SubscriptionsController < ApplicationController
 	end	
 
 	def show
-		 @programs = Program.all
+		@meetings = Meeting.all
 	
 		
 	end	

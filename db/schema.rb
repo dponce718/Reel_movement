@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151109185426) do
+ActiveRecord::Schema.define(version: 20151207014147) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,37 @@ ActiveRecord::Schema.define(version: 20151109185426) do
     t.datetime "updated_at",        null: false
   end
 
+  create_table "extras", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "start_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "meetings", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "start_time"
+    t.datetime "workout_one"
+    t.datetime "workout_two"
+    t.datetime "workout_three"
+    t.datetime "workout_four"
+    t.datetime "workout_five"
+    t.datetime "workout_six"
+    t.datetime "workout_seven"
+    t.datetime "middle"
+    t.datetime "workout_eight"
+    t.datetime "workout_nine"
+    t.datetime "workout_ten"
+    t.datetime "workout_eleven"
+    t.datetime "workout_twelve"
+    t.datetime "workout_thirteen"
+    t.datetime "workout_fourteen"
+    t.datetime "workout_fifteen"
+    t.datetime "end_date"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "plans", force: :cascade do |t|
     t.string   "name"
     t.string   "stripe_id"
@@ -89,6 +120,7 @@ ActiveRecord::Schema.define(version: 20151109185426) do
     t.text     "code_four"
     t.text     "code_five"
     t.string   "frame"
+    t.text     "schedule"
     t.datetime "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

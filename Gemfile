@@ -46,6 +46,12 @@ gem 'font-awesome-sass'
 
 gem "simple_calendar", "~> 2.0"
 
+gem 'recurring_select'
+
+gem 'ice_cube'
+
+gem "recurrence"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

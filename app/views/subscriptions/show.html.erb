@@ -69,7 +69,7 @@
     
                 <a data-toggle="collapse" href="#collapseThree">
     
-                  Collapsible Group Item #3
+              <i class="fa fa-angle-double-down"></i>  Program Details <i class="fa fa-angle-double-down"></i>
     
                 </a>
     
@@ -99,12 +99,7 @@
 
 
 <div class=" col-md-8 col-md-offset-2">
-<%= week_calendar(attribute: :starts_at) do |date| %>
-    <%= date %>
-    <%= raw current_user.program.title %> 
-<% end %>
-
-
+       <%= raw current_user.program.schedule %> 
 </div>
    
    
