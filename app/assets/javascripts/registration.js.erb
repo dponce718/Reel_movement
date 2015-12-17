@@ -1,0 +1,12 @@
+
+    $('form').on('submit', function(event) {
+  $.ajax('/users', {
+type: 'POST',
+data: $('form').serialize(),
+    success: function(result) {
+     // $('form').remove();
+    //  $('#stripe').fadeIn(400);
+      
+    }
+}); 
+}); // end ready

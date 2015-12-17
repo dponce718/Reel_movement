@@ -44,14 +44,9 @@ gem 'puma'
 
 gem 'font-awesome-sass'
 
-gem "simple_calendar", "~> 2.0"
+gem 'magnific-popup-rails'
 
-gem 'recurring_select'
-
-gem 'ice_cube'
-
-gem "recurrence"
-
+gem 'jquery-validation-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

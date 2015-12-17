@@ -12,11 +12,11 @@
 
 
 <!-- Modal -->
-    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="mymodal">
+    <div class="modal fade register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="mymodal">
     
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-small container">
     
-        <div class="modal-content">
+        <div class="modal-content row">
     
           <div class="modal-header">
     
@@ -25,17 +25,18 @@
     
             <h4 class="modal-title text-center">Sign up now!</h4>
 
-            <span class="divider"> or </span>
-
+           
+            <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
+           
           </div>
     
           <div class="modal-body">
     
-           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+           <%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true) do |f| %>
           <%= devise_error_messages! %>
 
 
-          <div class="form loginBox">
+          <div class="form-group">
                     <%= f.text_field :name, class: 'form-control', placeholder: "Your Name" %>
           </div>
 
@@ -56,13 +57,73 @@
           </div>
         <% end %>
 
-        <%= render "devise/shared/links" %>
+          <div id="stripe">
+        <script type='text/javascript'>var _fo=_fo||[];_fo.push({'d':'center','c':'f37e68','i':14412});if(typeof fce=='undefined'){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='https://'+'formcrafts.com/js/fc.js';var fi=document.getElementsByTagName('script')[0];fi.parentNode.insertBefore(s,fi);fce=1;}</script><div id='f37e68'><a href='http://formcrafts.com/a/14412'>Monthly Membership</a></div>
+       </div>
 
+<div class="modal-footer">
+       <span class="text-muted">Looking to <%= link_to "Log in", new_session_path(resource_name) %>?</span>
+      </div>
 
-    
-    
+      
         </div>
     
       </div>
     
     </div>
+
+    <script type="text/javascript">
+
+   
+    $(document).on("ready page:load", function() {
+        $('#stripe').hide();// hide stripe form
+
+        $('form').validate({
+          debug: true,
+          rules : {
+             'user[name]' : { required : true,
+                           minlength : 2 
+                         }, //END OF USERNAME
+              'user[email]' : { required : true,
+                           email : true,
+                           remote:"/users/check_email"
+                         },  // end of email
+              'user[password]' : { required : true,
+                           minlength : 8
+                         },  // end of password 
+               'user[password_confirmation]' : { required : true,
+                           equalTo : "#user_password"
+                         },  // end of password 
+          },//end of rules
+          messages: {
+    'user[name]': "Please specify your name",
+    'user[email]': {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+      remote: "That email is already taken"
+    },// end of email
+     'user[password]': {
+      required: "Please enter a password",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+        }); // end validation
+
+ $('form').on('submit', function(event) {
+  $.ajax('/users', {
+type: 'POST',
+data: $('form').serialize(),
+    success: function(result) {
+     // $('form').remove();
+    //  $('#stripe').fadeIn(400);
+      
+    }
+}); 
+}); // end ready
+       }); // end ready
+
+      </script>
+    
+
+
+

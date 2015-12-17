@@ -15,6 +15,9 @@
 //= require jquery_ujs
 //= require getshitdone.js
 //= require lightbox-bootstrap
+//= require magnific-popup
+//= require jquery.validate
+//= require jquery.validate.additional-methods
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
