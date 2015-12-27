@@ -78,8 +78,13 @@
     $(document).on("ready page:load", function() {
         $('#stripe').hide();// hide stripe form
 
-        $('form').validate({
-          debug: true,
+         jQuery.validator.setDefaults({
+    debug: false,
+    success: "valid"
+});;
+
+
+        $('#new_user').validate({
           rules : {
              'user[name]' : { required : true,
                            minlength : 2 
@@ -100,29 +105,37 @@
     'user[email]': {
       required: "We need your email address to contact you",
       email: "Your email address must be in the format of name@domain.com",
-      remote: "That email is already taken"
+      remote: "This email is already taken"
     },// end of email
      'user[password]': {
-      required: "Please enter a password",
-      email: "Your email address must be in the format of name@domain.com"
+      required: "Please enter a password",  
+    },
+    'user[password_confirmation]': {
+      required: "Please Re-enter your password ",
+      equalTo: "Please make sure the passwords are equal"
     }
   }
         }); // end validation
 
- $('form').on('submit', function(event) {
-  $.ajax('/users', {
-type: 'POST',
-data: $('form').serialize(),
-    success: function(result) {
-     // $('form').remove();
-    //  $('#stripe').fadeIn(400);
-      
-    }
-}); 
+
+$('#new_user').on('submit', function(event) {
+  event.preventDefault();
+   $.ajax('/users', {
+    type: 'POST',
+    });   
+    if($(this).valid()) {
+            alert('the form is valid');
+            $('form').remove();
+            $('#stripe').fadeIn(400);
+        }
+ 
 }); // end ready
        }); // end ready
 
       </script>
+    
+
+ 
     
 
 

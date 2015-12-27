@@ -67,13 +67,6 @@ ActiveRecord::Schema.define(version: 20151207014147) do
     t.datetime "updated_at",        null: false
   end
 
-  create_table "extras", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "start_time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "meetings", force: :cascade do |t|
     t.string   "name"
     t.datetime "start_time"
@@ -140,7 +133,7 @@ ActiveRecord::Schema.define(version: 20151207014147) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
-    t.boolean  "suscription",            default: false, null: false
+    t.boolean  "subscriptions",          default: false, null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
