@@ -642,10 +642,27 @@ section {
 
 
 
-#user-background{
-    background: image-url('black.jpg');
-    padding: 50px 0;
- 
+.user-background{
+    padding-top: 150px;
+        padding-bottom: 50px; 
+}
+
+#assessment-img{
+
+    background: image-url('mountain_climbers.jpg'); 
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: 60% 40%;
+    @include background-cover;   
+}
+
+#program-img{
+
+    background: image-url('planks.jpg'); 
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: 60% 40%;
+    @include background-cover;   
 }
 
 // Portfolio Section

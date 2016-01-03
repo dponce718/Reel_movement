@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :extras
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :users, :controllers => { :registrations => 'registrations' }
+  devise_for :users
 
   root 'static_pages#home'
   get    'login'             => 'devise/sessions#new'
@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   
 
  
-  resources :subscriptions 
+  resources :subscriptions
+  resources :static_pages 
   resources :contents
 
   resources 'users' do

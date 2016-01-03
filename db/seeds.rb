@@ -145,7 +145,7 @@ code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-p
  Program.create(title: "assessment", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
 code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5298522" mozallowfullscreen name="vzvd-5298522" src="//view.vzaar.com/5298522/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
- Program.create(title: "General Conditioning", level: "Level 2", frame: "http://api.vzaar.com/videos/5248691.embed", 
+ Program.create(title: "General Conditioning 1", level: "Level 2", frame: "http://api.vzaar.com/videos/5248691.embed", 
 code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5641580" mozallowfullscreen name="vzvd-5641580" src="//view.vzaar.com/5641580/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "Resistance Training", level: "level 2", frame: "http://api.vzaar.com/videos/5248691.embed", 

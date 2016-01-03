@@ -1,0 +1,73 @@
+ <!-- Button trigger modal -->
+     
+
+      <a href="#" data-toggle="modal" data-target="#signin"> 
+       <i class="icon-profile"></i>
+     <p> Log in </p>
+      </a>                                
+                  
+      
+
+
+<!-- Modal -->
+    <div class="modal fade register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="signin">
+    
+      <div class="modal-dialog modal-small container">
+    
+        <div class="modal-content row">
+    
+          <div class="modal-header">
+    
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    
+    
+            <h4 class="modal-title text-center">Log In</h4>
+
+           
+            <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
+           
+          </div>
+    
+          <div class="modal-body">
+    
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), remote: true) do |f| %>
+  <div class="form-group">
+    <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: "Your Email" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "Your Password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="form-group">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in", class: 'btn btn-info btn-fill btn-block' %>
+  </div>
+<% end %>
+
+
+<div class="modal-footer">
+       <span class="text-muted">Looking to  <%= link_to "Sign up", new_registration_path(resource_name) %><br /> </span>
+       <span class="text-muted">or maybe you <%= link_to "Forgot your password?", new_password_path(resource_name) %><br /> </span>
+
+
+      </div>
+
+      
+        </div>
+    
+      </div>
+    
+    </div>
+
+   
+    
+
+
+

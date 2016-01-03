@@ -13,10 +13,10 @@ class ApplicationController < ActionController::Base
 end
 	
 	def suscribed_user!
-  		unless current_user.suscription == false
-        flash[:danger] = "Please suscribe!"
-       	redirect_to "/subscriptions/new"
-    	end
+  	#	unless current_user.suscription == false
+     #   flash[:danger] = "Please suscribe!"
+    #   	redirect_to "/subscriptions/new"
+   # 	end
 	end
 
 
@@ -26,7 +26,7 @@ protected
  # my custom fields are :name, :suscription
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) do |u|
-      u.permit(:name, :suscription,
+      u.permit(:name,
         :email, :password, :password_confirmation)
     end
     devise_parameter_sanitizer.for(:account_update) do |u|

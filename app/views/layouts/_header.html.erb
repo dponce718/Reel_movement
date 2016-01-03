@@ -31,38 +31,37 @@
                         <%  if user_signed_in?  %>
 
                             <li>
-                        <a class="page-scroll" > Blog</a> </li>
+                        <a href="#">
+                            <i class="fa fa-university"></i>
+                            <p>Blog</p>
+                        </a>
+                    </li> 
+
 
                              <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Account <b class="caret"></b></a>
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                            <i class="fa fa-cog"></i>
+                            <p> Account <b class="caret"></b> </p>
+                            </a>
+                  
             
                     <ul class="dropdown-menu">
 
-                        <li><%= link_to "Profile",  subscriptions_path  %></li> 
+                        <li><%= link_to " Profile",  subscriptions_path, class: "fa fa-home"  %></li> 
 
-                        <%= link_to('Edit profile', edit_user_registration_path) %>
+                        <li> <%= link_to ' Edit profile', edit_user_registration_path, class: "fa fa-user" %> </li>
 
 
                         <li class="divider"></li>
-                        <li> <%= link_to "Log out", destroy_user_session_path, method: "delete" %> </li>
+                        <li> <%= link_to " Log out", destroy_user_session_path, method: "delete", class: "fa fa-bed" %> </li>
                        
 
                     </ul> 
 
                        </li> <% else %> 
 
-                        <li>
-                             <%= link_to new_user_session_path do %>
-                                    <i class="icon-profile"></i>
-                                    <p> Log in </p>
-                                     <% end %>
-                        </li>             
-
-                        <li>
-                  
-                         <%= render 'layouts/modal' %>
-                                
-                        </li> 
+                        
 
                         <li>
                         <a href="#">
@@ -82,7 +81,22 @@
                             <i class="icon-article"></i>
                             <p>Blog</p>
                         </a>
-                    </li> 
+                    </li>     
+
+                    <li>
+                             <%= link_to new_user_session_path do %>
+                                    <i class="icon-profile"></i>
+                                    <p> Log in </p>
+                                     <% end %>
+                        </li>         
+
+                        <li>
+                  
+                         <%= render 'layouts/modal' %>
+                                
+                        </li> 
+
+                        
 
                         
                     </ul>
@@ -90,7 +104,6 @@
                 <% end %> 
                </ul>
                
-              </form>
               
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

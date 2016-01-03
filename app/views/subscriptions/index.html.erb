@@ -1,4 +1,4 @@
-    <header>
+    <section class="user-background" id= "assessment-img">
 
         <div class="container">
              <div class="row">
@@ -7,54 +7,56 @@
               <%= raw @program.code_one %>
                 </div>
 
-                    <div class="intro-text col-lg-4">
+                    <div class="intro-text col-lg-4 col-xs-4  col-sm-4">
+                    <div class="card card-user">
+                    <div class="content">
+
+                  <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
+    
+              
 
                         <%= form_for(:assessment, :url => {:action => 'create'}) do |f| %>
 
                             <div class="form-group"> 
-                                <%= f.label :rhr, "Resting Heart Rate" %>
-                                <%= f.text_field(:rhr) %>
+                               
+                                <%= f.text_field :rhr, autofocus: true, class: 'form-control', placeholder: "Resting Heart Rate"  %>
                             </div>
 
                              <div class="form-group"> 
-                                <%= f.label :push_ups, "Push ups" %>
-                                <%= f.text_field(:push_ups) %>
+                                 <%= f.text_field :push_ups, autofocus: true, class: 'form-control', placeholder: "Push ups"  %>
                              </div>
                              
                               <div class="form-group"> 
-                                <%= f.label :planks, "planks" %>
-                                <%= f.text_field(:planks) %>
+                              
+                                <%= f.text_field :planks, autofocus: true, class: 'form-control', placeholder: "Planks" %>
                               </div>
                               
                               <div class="form-group"> 
-                                <%= f.label :wall_sits, "Wall sits" %>  
-                                <%= f.text_field(:wall_sits) %>
+                               
+                                <%= f.text_field :wall_sits, autofocus: true, class: 'form-control', placeholder: "Wall sits" %>
                               </div>
                               
                                <div class="form-group"> 
-                                <%= f.label :hamstring, "Flexibility" %>  
-                                <%= f.text_field(:hamstring) %>
+                                
+                                <%= f.text_field :hamstring, autofocus: true, class: 'form-control', placeholder: "Flexibility" %>
                                </div> 
 
-                            <%= submit_tag("create assessment") %>
+                            <div class="actions">
+                            <%= f.submit "Finish assessment", class: 'btn btn-info btn-fill btn-block' %>
+                            </div>
 
-
+                          </div>
 
 
                      <% end %>
                    
                     </div>    
 
-
+                    </div>
                     
                
             </div>
         </div>
-    </header>
-
-                   
     </section>
 
-
- 
-
+                   

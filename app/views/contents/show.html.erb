@@ -1,15 +1,21 @@
 <section>
-	<div class="container">
-	             <div class="row">
-	                <div class="intro-text col-lg-3">
-	               
+<div id="subscribe_user">
 
-	             <%  @program.each do |p| %> 
-	             <%=  p.frame %>
-	             <% end %>
-	                </div>
-	                
-	            </div>
-	</div>
+ <%= form_for(:subscription, :url => {:action => 'create'}) do |f| %>
 
-</section>	
+                            <div class="form-group"> 
+                               
+                               
+                              <%= f.check_box :subscribed, {}, "true", "false" %>
+                            </div>
+
+                            
+                            <div class="actions">
+                            <%= f.submit "Start your free 2 weeks now!", class: 'btn btn-info btn-fill btn-block' %>
+                            </div>
+
+                          </div>
+                          <% end %>
+
+        </div>
+</section>

@@ -30,7 +30,7 @@
            
           </div>
     
-          <div class="modal-body">
+          <div class="modal-body sign_up">
     
            <%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true) do |f| %>
           <%= devise_error_messages! %>
@@ -54,13 +54,35 @@
 
   
             <%= f.submit "Sign up", class: 'btn btn-info btn-fill btn-block'  %>
-          </div>
-        <% end %>
+
+            <% end %>
 
           <div id="stripe">
         <script type='text/javascript'>var _fo=_fo||[];_fo.push({'d':'center','c':'f37e68','i':14412});if(typeof fce=='undefined'){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='https://'+'formcrafts.com/js/fc.js';var fi=document.getElementsByTagName('script')[0];fi.parentNode.insertBefore(s,fi);fce=1;}</script><div id='f37e68'><a href='http://formcrafts.com/a/14412'>Monthly Membership</a></div>
        </div>
 
+<div id="subscribe_user">
+
+ <%= form_for(:subscription, :url => {:action => 'create'}) do |f| %>
+
+                            <div class="form-group"> 
+                               
+                               
+                              <%= f.check_box :subscribed, {}, "true", "false" %>
+                            </div>
+
+                            
+                            <div class="actions">
+                            <%= f.submit "Start your free 2 weeks now!", class: 'btn btn-info btn-fill btn-block' %>
+                            </div>
+
+                          </div>
+                          <% end %>
+
+        </div>
+
+</div
+      
 <div class="modal-footer">
        <span class="text-muted">Looking to <%= link_to "Log in", new_session_path(resource_name) %>?</span>
       </div>
@@ -73,17 +95,14 @@
     </div>
 
     <script type="text/javascript">
-
    
     $(document).on("ready page:load", function() {
-        $('#stripe').hide();// hide stripe form
-
+        $('#f37e68').hide();// hide stripe form
+        $('#subscrbe_user').hide();
          jQuery.validator.setDefaults({
     debug: false,
     success: "valid"
 });;
-
-
         $('#new_user').validate({
           rules : {
              'user[name]' : { required : true,
@@ -116,8 +135,6 @@
     }
   }
         }); // end validation
-
-
 $('#new_user').on('submit', function(event) {
   event.preventDefault();
    $.ajax('/users', {
@@ -125,18 +142,13 @@ $('#new_user').on('submit', function(event) {
     });   
     if($(this).valid()) {
             alert('the form is valid');
-            $('form').remove();
-            $('#stripe').fadeIn(400);
+            $('#new_user').remove();
+            $('#f37e68').fadeIn(400);
         }
  
 }); // end ready
+$( "#f37e68" ).submit(function(event) {
+  alert( "you did it" );
+});
        }); // end ready
-
       </script>
-    
-
- 
-    
-
-
-

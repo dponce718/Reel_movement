@@ -10,17 +10,16 @@ class SubscriptionsController < ApplicationController
 
 
 	def new
-		current_user.toggle(:suscription)
-		current_user.save
+	
 	end	
 
 	def show
-		@meetings = Meeting.all
-	
+		
 		
 	end	
 
 	def create
+
 		 	
 		 	current_user.create_assessment(assessment_params)
 
@@ -31,7 +30,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.hamstring <= 2 
 			   
 				
-			current_user.program = Program.find_by_title("general conditioning")
+			current_user.program = Program.find_by_title("General Conditioning")
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
 
@@ -41,7 +40,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits.between?(0,50)
 			   current_user.assessment.hamstring <= 2 
 
-			   current_user.program = Program.find_by_title("core")
+			   current_user.program = Program.find_by_title("Core Conditioning")
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
 				
@@ -52,7 +51,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits.between?(60,89) 
 			   current_user.assessment.hamstring <= 2
 
-			 current_user.program = Program.find_by_title("Cardio level 1")
+			 current_user.program = Program.find_by_title("Cardiovascular Training")
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
 
@@ -84,7 +83,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits >= 100 
 			   current_user.assessment.hamstring >= 2
 
-			 current_user.program = Program.find_by_title("group workout")
+			 current_user.program = Program.find_by_title("Resistance Training")
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
 			
@@ -104,4 +103,10 @@ class SubscriptionsController < ApplicationController
 		def assessment_params
     		params.require(:assessment).permit(:rhr, :push_ups, :wall_sits, :planks, :hamstring)
 		end	
+
+		def subscription_params
+    		params.require(:subscription).permit(:subscribed)
+		end	
+
+		
 end
