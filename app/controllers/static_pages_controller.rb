@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-	 include SubscriptionsHelper
+	
 
   def home
 
@@ -11,20 +11,18 @@ class StaticPagesController < ApplicationController
 
 
   def create
-	current_user.build_subscription(subscription_params)
 
-	respond_to do |format|
-    format.js
-    format.json { render json: current_user.to_json }
-end
+	current_user.create_subscription(subscription_params)
 
+	redirect_to "/subscriptions"
   end
+
 	
 	protected
 
 	
 		def subscription_params
-    		params.require(:subscriptions).permit(:subscribed)
+    		params.require(:subscription).permit(:subscribed)
 		end	
 	
 

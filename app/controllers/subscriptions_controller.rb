@@ -104,9 +104,7 @@ class SubscriptionsController < ApplicationController
     		params.require(:assessment).permit(:rhr, :push_ups, :wall_sits, :planks, :hamstring)
 		end	
 
-		def subscription_params
-    		params.require(:subscription).permit(:subscribed)
-		end	
+		
 
 		
 end

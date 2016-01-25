@@ -46,7 +46,11 @@ gem 'font-awesome-sass'
 
 gem 'magnific-popup-rails'
 
+gem 'jquery-waypoints-rails', '~> 2.0', '>= 2.0.5'
+
 gem 'jquery-validation-rails'
+
+gem 'figaro'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

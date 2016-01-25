@@ -32,10 +32,23 @@
 
                             <li>
                         <a href="#">
-                            <i class="fa fa-university"></i>
+                            <i class="fa fa-university"></i> 
                             <p>Blog</p>
                         </a>
                     </li> 
+
+
+                               
+                    <li>
+                   
+                     <%= link_to  user_programs_path(current_user) do %>
+                     <i class="fa fa-book"></i> 
+                    <p>Programs</p>
+                    <% end %>
+
+                    </li> 
+
+                   
 
 
                              <li class="dropdown">
@@ -64,7 +77,7 @@
                         
 
                         <li>
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#lightbox">
                             <i class="icon-library"></i>
                             <p>Learn More</p>
                         </a>

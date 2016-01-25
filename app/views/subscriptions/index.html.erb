@@ -3,11 +3,11 @@
         <div class="container">
              <div class="row">
 
-                <div class="intro-text col-lg-8">
+                <div class="intro-text col-lg-8 video-container">
               <%= raw @program.code_one %>
                 </div>
 
-                    <div class="intro-text col-lg-4 col-xs-4  col-sm-4">
+                    <div class="intro-text col-lg-4  center-block">
                     <div class="card card-user">
                     <div class="content">
 
@@ -58,5 +58,33 @@
             </div>
         </div>
     </section>
+
+    <script type="text/javascript">
+
+    $( document ).ready(function() {
+    console.log( "ready!" );
+    $('.content form').validate({
+  rules : {
+          'assessment[rhr]' : { required : true
+                         }, //END OF USERNAME
+              'assessment[push_ups]' : { required : true
+                         },  // end of email
+              'assessment[hamstring]' : { required : true
+                         },  // end of password 
+               'assessment[planks]' : { required : true
+                         },  // end of password 
+               'assessment[wall_sits]' : { required : true
+                         },  // end of password           
+          },//end of rules
+    
+});// end of validation
+
+     var one = parseInt($("assessment_rhr").text());
+     $("assessment_rhr").text(one * 2);
+
+});
+
+
+    </script>
 
                    

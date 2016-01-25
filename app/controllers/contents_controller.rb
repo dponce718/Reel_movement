@@ -9,13 +9,8 @@ class ContentsController < ApplicationController
 
 
 def create
-	@user = current_user
 	current_user.create_subscription(subscription_params)
 
-	respond_to do |format|
-    format.js
-    format.json { render json: current_user.to_json }
-end
 
   end
 	
@@ -23,6 +18,6 @@ end
 
 	
 		def subscription_params
-    		params.require(:subscriptions).permit(:subscribed)
+    		params.require(:subscription).permit(:subscribed)
 		end	
 end

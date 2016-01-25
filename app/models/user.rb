@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_one :subscription
   has_one :program
   has_one :assessment
+   accepts_nested_attributes_for :program
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

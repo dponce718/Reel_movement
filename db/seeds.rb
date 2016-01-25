@@ -11,9 +11,9 @@ CreatePlanService.new.call
 puts 'CREATED PLANS'
 
  Program.create(title: "General Conditioning", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="324" id="vzvd-5248691" mozallowfullscreen name="vzvd-5248691" src="//view.vzaar.com/5248691/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="576"></iframe>',
-code_two: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
-code_three: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277940" mozallowfullscreen name="vzvd-5277940" src="//view.vzaar.com/5277940/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="324" id="vzvd-5248691" mozallowfullscreen name="vzvd-5248691" src="//view.vzaar.com/5248691/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="576"></iframe>',
+code_two: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+code_three: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5277940" mozallowfullscreen name="vzvd-5277940" src="//view.vzaar.com/5277940/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
 schedule: '<div class="table-responsive">
     
     <table class="table">
@@ -137,25 +137,25 @@ schedule: '<div class="table-responsive">
 ')
 
  Program.create(title: "Core Conditioning", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
 Program.create(title: "Cardiovascular Training", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
 code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5277940" mozallowfullscreen name="vzvd-5277940" src="//view.vzaar.com/5277940/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "assessment", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5298522" mozallowfullscreen name="vzvd-5298522" src="//view.vzaar.com/5298522/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5298522" mozallowfullscreen name="vzvd-5298522" src="//view.vzaar.com/5298522/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "General Conditioning 1", level: "Level 2", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5641580" mozallowfullscreen name="vzvd-5641580" src="//view.vzaar.com/5641580/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5641580" mozallowfullscreen name="vzvd-5641580" src="//view.vzaar.com/5641580/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "Resistance Training", level: "level 2", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5649198" mozallowfullscreen name="vzvd-5649198" src="//view.vzaar.com/5649198/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5649198" mozallowfullscreen name="vzvd-5649198" src="//view.vzaar.com/5649198/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
  Program.create(title: "tomatoes", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5649202" mozallowfullscreen name="vzvd-5649202" src="//view.vzaar.com/5649202/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5649202" mozallowfullscreen name="vzvd-5649202" src="//view.vzaar.com/5649202/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
 
-Program.create(title: "General Conditioning", level: "level 3", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-5640112" mozallowfullscreen name="vzvd-5640112" src="//view.vzaar.com/5640112/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
+Program.create(title: "General Conditioning 3", level: "level 3", frame: "http://api.vzaar.com/videos/5248691.embed", 
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5640112" mozallowfullscreen name="vzvd-5640112" src="//view.vzaar.com/5640112/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>')
 
 

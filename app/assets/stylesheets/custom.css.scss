@@ -665,6 +665,16 @@ section {
     @include background-cover;   
 }
 
+#allprogram{
+
+    background: image-url('home-workout.jpg'); 
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: 60% 40%;
+    @include background-cover; 
+    height:500px;  
+}
+
 // Portfolio Section
 
 #portfolio {
@@ -2071,6 +2081,8 @@ section {
     border-color: $medium-gray;
 }
 
+
+
 .input-group-btn:last-child > .btn{
     margin-left: 0;
 }
@@ -2196,7 +2208,35 @@ section {
     background:black;
 }
 
-#foo{
-    z-index:    15;
+#terms{
+    height: 200px;
+    overflow:scroll;
+    padding: 15px;
+    margin: 20px 0px 20px 0px;
+    p{
+        padding: 10px;
+    }
 }
 
+#terms-button{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+    .user-program{
+    top: 0; right: 0; 
+    bottom: 0; left: 0;
+    margin: auto; 
+}
+
+#user-cards{
+    
+    margin-top: -50px;
+    margin-bottom:-75px;
+}
+
+.content-title{
+    color:white;
+}

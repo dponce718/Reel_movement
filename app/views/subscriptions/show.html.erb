@@ -10,7 +10,7 @@
             </div>
             <div class="row">
                
-                <div class="col-md-6 col-md-offset-3 user-program video-container">
+                <div class="user-program video-container ">
                     
                      
              <%= raw current_user.program.code_one %> 
@@ -52,6 +52,136 @@
 
   </section>
 
+
+
+
+  <section class="container user-background" id='user-cards'>
+    <div class="row">
+      
+      <div class="col-md-4">  
+       <div class="card card-background">
+    
+        <div class="image">
+    
+           <%= image_tag "articles.jpg"  %> 
+    
+            <div class="filter"></div>
+    
+        </div>
+    
+         <div class="content">
+    
+            <h5 class="price">&euro; 129,00
+    
+                 <a href="#" class="pull-right">
+    
+                    <i class="icon-happy"></i>
+    
+                 </a>
+    
+             </h5>                           
+    
+            <a href="#"><br>
+    
+                <h4 class="title text-center">Reel Movement Blog</h4>
+                <p class="text-center"> Learn more about health and fitness </p>
+    
+                
+    
+            </a>
+    
+        </div>
+    
+       
+    </div> 
+</div> <!-- end card -->
+
+  <div class="col-md-4">  
+     <div class="card card-background">
+    
+        <div class="image">
+    
+            <%= image_tag "cleaneating.jpg"  %> 
+    
+            <div class="filter"></div>
+    
+        </div>
+    
+         <div class="content">
+    
+            <h5 class="price">&euro; 129,00
+    
+                 <a href="#" class="pull-right">
+    
+                    <i class="icon-happy"></i>
+    
+                 </a>
+    
+             </h5>                           
+    
+            <a href="#"><br>
+    
+                <h4 class="title text-center">Find your perfect meal</h4>
+                <p class=" text-center"> Healthy recipes made easy</p>
+    
+                
+    
+            </a>
+    
+        </div>
+    
+      
+    
+    </div> 
+    </div> <!-- end card -->
+
+    <div class="col-md-4">  
+     <div class="card card-background">
+    
+        <div class="image">
+    
+            
+            <%= image_tag "planks1.jpg"  %> 
+    
+            <div class="filter"></div>
+    
+        </div>
+    
+         <div class="content">
+    
+            <h5 class="price">&euro; 129,00
+    
+                 <a href="#" class="pull-right">
+    
+                    <i class="icon-happy"></i>
+    
+                 </a>
+    
+             </h5>                           
+    
+            <a href="#"><br>
+    
+                <h4 class="title text-center">Corrective Exercise</h4>
+                <p class="text-center"> Lets fix some muscle imbalances</p>
+    
+                
+    
+            </a>
+    
+        </div>
+    
+        
+    
+    </div> 
+    </div> <!-- end card -->
+
+    </div>
+
+
+
+  </div>
+  </section>
+
   <section>
 
 
@@ -69,7 +199,7 @@
     
                 <a data-toggle="collapse" href="#collapseThree">
     
-              <i class="fa fa-angle-double-down"></i>  Program Details <i class="fa fa-angle-double-down"></i>
+              <i class="fa fa-angle-double-down"></i>  Click here for program Details <i class="fa fa-angle-double-down"></i>
     
                 </a>
     
@@ -96,12 +226,49 @@
     </div><!--  end acordeon -->
     
 
+<div class="row">
 
-
-<div class=" col-md-8 col-md-offset-2">
+  <div class=" col-md-8">
        <%= raw current_user.program.schedule %> 
-</div>
-   
+  </div>
+
+ <div class="intro-text col-md-4  center-block">
+
+                     <div class="card card-background">
+    
+        <div class="image">
+    
+           <%= image_tag "board.jpg"  %> 
+    
+            <div class="filter"></div>
+    
+        </div>
+    
+         <div class="content">
+    
+            <h4 class="title text-center">Your assessment results</h4>
+    
+    
+                
+                   <ul>
+                      
+                      <li> <span class="badge pull-right"> <%=current_user.assessment.rhr %></span>  Resting Heart Rate </li>
+                      <li > <span class="badge pull-right"><%=current_user.assessment.push_ups%></span> Push Ups</li>
+                      <li > <span class="badge pull-right"><%=current_user.assessment.planks %></span> Planks</li>
+                      <li> <span class="badge pull-right"><%=current_user.assessment.wall_sits%></span> Wall Sits</li>
+                    </ul>
+                
+    
+            
+    
+        </div>
+    
+       
+    </div> 
+</div> <!-- end card -->
+                    
+
+</div>   
    
     
     <!-- Modal -->
@@ -128,31 +295,24 @@
     
     <!-- Modal -->
     
-    <div class="modal fade" id="program-three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="row" >
+    <div class="modal fade col-md-8 col-md-offset-2" id="program-three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     
-      <div class="modal-dialog">
-    
-        <div class="modal-content">
-    
-          <div class="modal-header">
+      
     
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     
             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
     
-          </div>
+        
     
           <div class="modal-body">
               
               <%= raw current_user.program.code_three %>
           </div>
-    
   
     
-        </div>
-    
-      </div>
-    
+    </div>
     </div>
     
 
