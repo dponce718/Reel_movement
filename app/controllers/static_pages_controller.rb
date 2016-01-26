@@ -13,7 +13,6 @@ class StaticPagesController < ApplicationController
   def create
 
 	current_user.create_subscription(subscription_params)
-
 	redirect_to "/subscriptions"
   end
 

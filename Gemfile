@@ -51,6 +51,8 @@ gem 'jquery-waypoints-rails', '~> 2.0', '>= 2.0.5'
 gem 'jquery-validation-rails'
 
 gem 'figaro'
+
+gem 'gibbon'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

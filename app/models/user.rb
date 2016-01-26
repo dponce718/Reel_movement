@@ -24,24 +24,18 @@ class User < ActiveRecord::Base
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
 
-             
+
+after_create :subscribe_user_to_mailing_list
 
 
-
-
-
-
-
-  def subscribe
-    mailchimp = Gibbon::Request.new(api_key: Rails.application.secrets.mailchimp_api_key)
-    list_id = Rails.application.secrets.mailchimp_list_id
-    result = mailchimp.lists(list_id).members.create(
-      body: {
-        email_address: self.email,
-        status: 'subscribed'
-    })
-    Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
+ 
+  private
+ 
+  def subscribe_user_to_mailing_list
+    SubscribeUserToMailingListJob.perform_later(self)
   end
+
+
 
 
 
