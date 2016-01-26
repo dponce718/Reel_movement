@@ -84,7 +84,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.hamstring >= 2
 
 			 current_user.program = Program.find_by_title("Resistance Training")
-			flash[:success] = "yay!"
+			flash[:success] = "yay!" 
 			redirect_to "/subscriptions/show"
 			
 

@@ -14,10 +14,17 @@
 
 	<% flash.each do |message_type, message| %>
 
-<div class="alert  text-center alert- <%= message_type %>"><%= message %></div> <% end %>
+<div class="alert  text-center alert" <%= message_type %>><%= message %></div> <% end %>
 
 
 <%= yield %>
 	<%= render 'layouts/footer' %>
 </body>
+
+<script type="text/javascript">
+	
+	$(document).ready(function () {
+  $(".alert").delay(1000).fadeOut(3000); 
+});
+</script>
 </html>
