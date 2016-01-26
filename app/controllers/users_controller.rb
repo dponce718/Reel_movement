@@ -13,22 +13,18 @@ class UsersController < ApplicationController
   end
 end
 
+
 def update
 
-#current_user.program = Program.where(title: params[:title])
-	
- 
 
 
- #@user = current_user
-#@program = @user.program.find_by_id(params[:id])
+ current_user.program = Program.find_by_title(params[:user][:programs][:title])
 
-current_user.program = Program.find(params[:id])
-
- current_user.program = Program.find_by_title(params[:title])
-    
-
-  redirect_to "/subscriptions/show"
+ 	if current_user.save
+  		redirect_to "/subscriptions/show"
+  	else
+  		render :show
+	end
 end
 
 

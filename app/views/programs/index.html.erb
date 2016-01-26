@@ -11,70 +11,79 @@
 
 
   <section class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <%= raw @program.first.code_one %>
-      </div>
+    <div class="card card-horizontal">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                          <%= image_tag "workout.jpg", class: "img-responsive" %>                               
+                                        <div class="filter filter-azure">
 
-      <div class="col-md-6">
-         <%=  raw @program.last.code_one %>
-      </div>
+                                          <%= form_for current_user do |f| %>
+                                           <%= f.fields_for :programs do |ff| %>
+                          <%= ff.text_field :title, :value => "General Conditioning", class: "hidden" %>
 
-
-         
-
-
-         
-                   
-        
-        <%= form_for current_user,  html: { method: :put } do |f| %>
-  Addresses:
-  <ul>
-    <%= f.fields_for :programs do |ff| %>
-      <li>
+    
        
-          <%= ff.text_field  :title %>
-
-      </li>
-       
+    
  
     <% end %>
-     <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-
-  </ul>
+  <%= f.submit "Change Program", class: "btn btn-neutral btn-round", id:'card-button' %>
 
 
 <% end %>
 
- 
-        <%= form_for current_user do |f| %>
-  Addresses:
-  <ul>
-    <%= f.fields_for :programs do |ff| %>
-      <li>
-       
-          <%= ff.text_field  :program_title %>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
+    
+                                        <a class="card-link" href="#">
+                                            <h4 class="title text-center"> <%= Program.first.title %></h4>
+                                        </a>
+                                        <a class="card-link" href="#">
+                                            <p class="description">Edgerank completely fails to have the effect it was originally designed for nice product. This will be a really interesting post about Facebook's biggest mistake yet...</p>
+                                        </a>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-      </li>
-       <div class="actions">
-    <%= ff.submit "Update" %>
-  </div>
-    <% end %>
-  </ul>
 
-
-<% end %>
-
-
-     
 
       
-    </div>
   </section>
 
-  
 
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
