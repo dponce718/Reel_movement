@@ -10,7 +10,8 @@ class CreatePrograms < ActiveRecord::Migration
       t.text   :code_four
       t.text   :code_five
 	  t.string	 :frame
-    t.text   :schedule	
+    t.text   :schedule
+    t.text    :style	
     t.datetime   :start_time		
       t.timestamps null: false
     end

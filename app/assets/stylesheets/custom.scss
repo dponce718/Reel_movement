@@ -667,10 +667,11 @@ section {
 
 #allprogram{
 
-    background: image-url('home-workout.jpg'); 
+  
+     background-image: url("https://s3.amazonaws.com/reelmovement/FemaleJogging.jpg"); 
     background-repeat: none;
     background-attachment: scroll;
-    background-position: 60% 40%;
+    background-position: 75% 35%;
     @include background-cover; 
     height:500px;  
 }
@@ -852,7 +853,7 @@ section {
     border-radius: $border-radius-large;
     box-shadow: 0 1px 4px rgba(0,0,0,.23);
     background-color: #FFFFFF;
-    margin-bottom: 20px;
+    
     
     .image{
         width: 100%;
@@ -2194,6 +2195,14 @@ section {
 }
 }
 
+.video-container iframe:hover,
+.video-container iframe:focus,
+.video-container iframe:active{
+opacity: 1;
+    
+}
+
+
 
 
 #middle {
@@ -2241,6 +2250,58 @@ section {
     color:white;
 }
 
-#card-button{
+.card-button{
    margin-top: 125px;
 }
+
+.program-cards{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+// program images
+
+#general-conditioning {
+    background-image: url("https://s3.amazonaws.com/reelmovement/lunges.jpg" ); 
+     background-position: 30% 50%;
+
+}
+
+#resistance-training{
+     background-image: url("https://s3.amazonaws.com/reelmovement/clappushups.jpg");
+    
+}
+
+#core-conditioning {
+    background-image: url("https://s3.amazonaws.com/reelmovement/planks.jpg" ); 
+     background-position: 40% 35%; 
+
+
+}
+
+#cardiovascular-training  {
+    background-image: url("https://s3.amazonaws.com/reelmovement/jumprope.jpg" );
+     background-position: 20% 35%; 
+
+}
+
+#general-conditioning-3 {
+    background-image: url("https://s3.amazonaws.com/reelmovement/General.jpg" );
+     background-position: 60% 50%; 
+
+}
+
+#general-conditioning-2 {
+    background-image: url("https://s3.amazonaws.com/reelmovement/sideLunge.jpg" );
+     background-position: 50% 35%; 
+ 
+
+}
+
+
+iframe{
+    opacity: 0.8;
+}
+
+

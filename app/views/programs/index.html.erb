@@ -1,6 +1,6 @@
 
 
-<section class= "user-background" id="allprogram">
+<section class= "user-background," id="allprogram">
 
 <h1 class="content-title text-center"> Find The Perfect Program for You</h1>
        
@@ -10,24 +10,26 @@
 
 
 
-  <section class="container">
-    <div class="card card-horizontal">
+  <section class="container-fluid bg-light-gray">
+
+  <h2 class="title text-center">  Level 1 Programs</h2>
+    <div class="card card-horizontal program-cards">
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="image" >
-                                          <%= image_tag "workout.jpg", class: "img-responsive" %>                               
+                                          <%= image_tag "https://s3.amazonaws.com/reelmovement/lunges.jpg" %>                               
                                         <div class="filter filter-azure">
 
                                           <%= form_for current_user do |f| %>
                                            <%= f.fields_for :programs do |ff| %>
-                          <%= ff.text_field :title, :value => "General Conditioning", class: "hidden" %>
+                          <%= ff.text_field :title, :value => Program.first.title, class: "hidden" %>
 
     
        
     
  
     <% end %>
-  <%= f.submit "Change Program", class: "btn btn-neutral btn-round", id:'card-button' %>
+  <%= f.submit "Change Program", class: "btn btn-neutral btn-round card-button" %>
 
 
 <% end %>
@@ -40,19 +42,311 @@
                                      <div class="content">
                                        
     
-                                        <a class="card-link" href="#">
-                                            <h4 class="title text-center"> <%= Program.first.title %></h4>
-                                        </a>
-                                        <a class="card-link" href="#">
-                                            <p class="description">Edgerank completely fails to have the effect it was originally designed for nice product. This will be a really interesting post about Facebook's biggest mistake yet...</p>
-                                        </a>
+                                        
+                                         <h4 class="title text-center"> <%= Program.first.title %></h4>
+                                        
+                                           <p><%= Program.first.description %></p>
+
+
+                        <div class="col-md-6">
+                          <ul class="list-group">
+                        <li class="list-group-item">Intensity: Beginner to moderate</li>
+                        <li class="list-group-item">Frequency: 4 times a week</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Workouts: 20 - 30 minutes</li>
+                        <li class="list-group-item">Duration: 4 weeks</li>
+                       </ul>
+                    </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- end of card-->
+
+
+                        <div class="card card-horizontal program-cards">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                          <%= image_tag "https://s3.amazonaws.com/reelmovement/planks.jpg" %>                               
+                                        <div class="filter filter-azure">
+
+                                          <%= form_for current_user do |f| %>
+                                           <%= f.fields_for :programs do |ff| %>
+                          <%= ff.text_field :title, :value => Program.find(2).title, class: "hidden" %>
+
+    
+       
+    
+ 
+    <% end %>
+  <%= f.submit "Change Program", class: "btn btn-neutral btn-round card-button" %>
+
+
+<% end %>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
+    
+                                        <h4 class="title text-center"> <%= Program.find(2).title %></h4>
+                                        <p><%= Program.find(2).description %></p>
+                                       
+                                        <div class="col-md-6">
+                          <ul class="list-group">
+                        <li class="list-group-item">Intensity: Beginner to moderate</li>
+                        <li class="list-group-item">Frequency: 4 times a week</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Workouts: 20 - 30 minutes</li>
+                        <li class="list-group-item">Duration: 4 weeks</li>
+                       </ul>
+                    </div>
+                                      
                                        
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  <!-- end of card-->
+
+<div class="card card-horizontal program-cards">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                          <%= image_tag "https://s3.amazonaws.com/reelmovement/jumprope.jpg" %>                               
+                                        <div class="filter filter-azure">
+
+                                          <%= form_for current_user do |f| %>
+                                           <%= f.fields_for :programs do |ff| %>
+                          <%= ff.text_field :title, :value => Program.find(3).title, class: "hidden" %>
+
+    
+       
+    
+ 
+    <% end %>
+  <%= f.submit "Change Program", class: "btn btn-neutral btn-round card-button"%>
 
 
+<% end %>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
+    
+                                        
+                                            <h4 class="title text-center"> <%= Program.find(3).title %></h4>
+                                        <p ><%= Program.find(3).description %></p>
+
+                     <div class="col-md-6">
+                          <ul class="list-group pull-left">
+                        <li class="list-group-item">Intensity: Beginner to moderate</li>
+                        <li class="list-group-item">Frequency: 2 core and 1 flexibility and recovery session</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+                         <ul class="list-group pull-right">
+                        <li class="list-group-item">Intensity: Beginner to moderate</li>
+                        <li class="list-group-item">Frequency: 2 core and 1 flexibility and recovery session</li>
+                       </ul>
+                    </div>
+                                       
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- end of card-->
+
+
+
+
+<h2 class="title text-center">  Level 2 Programs</h2>
+    
+                        <div class="card card-horizontal program-cards">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                          <%= image_tag "https://s3.amazonaws.com/reelmovement/sideLunge.jpg" %>                               
+                                        <div class="filter filter-azure">
+
+                                          <%= form_for current_user do |f| %>
+                                           <%= f.fields_for :programs do |ff| %>
+                          <%= ff.text_field :title, :value => Program.find(5).title , class: "hidden" %>
+
+    
+       
+    
+ 
+    <% end %>
+  <%= f.submit "Change Program", class: "btn btn-neutral btn-round card-button" %>
+
+
+<% end %>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
+    
+                                       
+                                            <h4 class="title text-center"> <%= Program.find(5).title %></h4>
+                                          <p ><%= Program.find(5).description %></p>
+
+                         <div class="col-md-6">
+                          <ul class="list-group">
+                        <li class="list-group-item">Intensity: Beginner to moderate</li>
+                        <li class="list-group-item">Frequency: 4 times a week</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Workouts: 20 - 30 minutes</li>
+                        <li class="list-group-item">Duration: 4 weeks</li>
+                       </ul>
+                    </div>
+                                      
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- end of card-->
+
+<div class="card card-horizontal program-cards">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                          <%= image_tag "https://s3.amazonaws.com/reelmovement/clappushups.jpg" %>                               
+                                        <div class="filter filter-azure">
+
+                                          <%= form_for current_user do |f| %>
+                                           <%= f.fields_for :programs do |ff| %>
+                          <%= ff.text_field :title, :value => Program.find(6).title, class: "hidden" %>
+
+    
+       
+    
+ 
+    <% end %>
+  <%= f.submit "Change Program", class: "btn btn-neutral btn-round card-button"%>
+
+
+<% end %>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
+    
+                                    
+                                            <h4 class="title text-center"> <%= Program.find(6).title %></h4>
+                                          <p ><%= Program.find(3).description %></p>
+                                     <div class="col-md-6">
+                          <ul class="list-group">
+                        <li class="list-group-item">Intensity: Beginner to moderate</li>
+                        <li class="list-group-item">Frequency: 4 times a week</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Workouts: 20 - 30 minutes</li>
+                        <li class="list-group-item">Duration: 4 weeks</li>
+                       </ul>
+                    </div>
+                                      
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- end of card-->
+
+
+
+      <h2 class="text-center">  Level 3 Programs</h2>
+    <div class="card card-horizontal program-cards">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                          <%= image_tag "https://s3.amazonaws.com/reelmovement/General.jpg" %>                               
+                                        <div class="filter filter-azure">
+
+                                          <%= form_for current_user do |f| %>
+                                           <%= f.fields_for :programs do |ff| %>
+                          <%= ff.text_field :title, :value => Program.find(8).title, class: "hidden" %>
+
+    
+       
+    
+ 
+    <% end %>
+  <%= f.submit "Change Program", class: "btn btn-neutral btn-round card-button" %>
+
+
+<% end %>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
+    
+                                            <h4 class="title text-center"> <%= Program.find(8).title %></h4>
+                                       
+                                        <p ><%= Program.find(8).description %></p>
+
+                           <div class="col-md-6">
+                          <ul class="list-group">
+                        <li class="list-group-item">Intensity: Beginner to moderate</li>
+                        <li class="list-group-item">Frequency: 4 times a week</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Workouts: 20 - 30 minutes</li>
+                        <li class="list-group-item">Duration: 4 weeks</li>
+                       </ul>
+                    </div>
+                                      
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- end of card-->
+
+
+                       
 
       
   </section>
