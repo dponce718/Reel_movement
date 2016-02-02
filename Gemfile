@@ -59,6 +59,8 @@ gem 'jekyll', '~> 3.1'
 
 gem 'jekyll-paginate'
 
+gem 'rack-jekyll'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

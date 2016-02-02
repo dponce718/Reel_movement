@@ -210,6 +210,10 @@ GEM
     puma (2.11.1)
       rack (>= 1.1, < 2.0)
     rack (1.6.4)
+    rack-jekyll (0.4.5)
+      jekyll (>= 1.3)
+      listen (>= 1.3)
+      rack (~> 1.5)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -361,6 +365,7 @@ DEPENDENCIES
   pg
   pry
   puma
+  rack-jekyll
   rails (= 4.2.1)
   rails_12factor
   rspec-rails (~> 3.0)
