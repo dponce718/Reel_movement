@@ -234,3 +234,12 @@
         }
     }
 }
+
+
+#background-image {
+  height: 335px;
+  background: url("https://s3.amazonaws.com/reelmovement/articles.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3.125em; }

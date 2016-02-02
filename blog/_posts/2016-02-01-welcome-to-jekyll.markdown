@@ -1,12 +1,9 @@
 ---
-layout: post
 title:  "What is The Core and Why is it Important?"
 date:   2016-02-01 12:25:09
-categories: Article
-author: Daniel Ponce
 excerpt: "Core training has become extremely popular over the past several years, but why is it so..."
 permalink: core-training
-image: https://s3.amazonaws.com/reelmovement/Photo+Aug+05%2C+12+27+41+PM.jpg
+image: https://s3.amazonaws.com/reelmovement/planks.jpg
 ---
 
 What is The Core and Why is it Important?

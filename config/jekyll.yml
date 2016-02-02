@@ -9,21 +9,29 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: reelmovement
 baseurl: "/blog"
+paginate: 3
 
-plugins_dir:
-  - jekyll-assets
+
 
 
 # Build settings
 markdown: kramdown
 permalink: /:title
-assets:
-    dirname: assets # _assets
-    baseurl: /blog/assets/
-    sources: # asset subdirectories
-        - _assets/stylesheets
-        - _assets/javascripts
-        - _assets/images
-    cachebust: hard
-    js_compressor: uglifier # included by rails
-    css_compressor: sass # included by rails
+
+
+#default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Daniel Ponce
+      layout: "post"
+      category: articles
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"

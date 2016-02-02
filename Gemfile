@@ -57,7 +57,7 @@ gem 'gibbon'
 # for rails blog
 gem 'jekyll', '~> 3.1'
 
-gem 'jekyll-assets'
+gem 'jekyll-paginate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
