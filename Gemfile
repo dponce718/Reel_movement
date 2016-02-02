@@ -53,6 +53,12 @@ gem 'jquery-validation-rails'
 gem 'figaro'
 
 gem 'gibbon'
+
+# for rails blog
+gem 'jekyll', '~> 3.1'
+
+gem 'jekyll-assets'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
