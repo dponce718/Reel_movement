@@ -10,6 +10,8 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: reelmovement
 baseurl: "/blog"
 paginate: 3
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+
 
 
 
@@ -35,5 +37,3 @@ defaults:
       type: "pages" # previously `post` in Jekyll 2.2.
     values:
       layout: "page"
-
-exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
