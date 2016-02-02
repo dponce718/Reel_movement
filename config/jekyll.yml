@@ -36,4 +36,4 @@ defaults:
     values:
       layout: "page"
 
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
