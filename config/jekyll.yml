@@ -10,7 +10,12 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: reelmovement
 baseurl: "/blog"
 paginate: 3
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+exclude:
+  - 'config.ru'
+  - 'gemfile'
+  - 'gemfile.lock'
+  - 'vendor'
+
 
 
 
