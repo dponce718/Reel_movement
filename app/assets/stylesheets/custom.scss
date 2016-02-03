@@ -2350,9 +2350,12 @@ footer {
     background-position: 50% 10%;
     }
 
-    .user-background{
-     background-position: 50% 10%;
-     background: cover;
-    }
+#general-conditioning,#resistance-training,#core-conditioning,
+#cardiovascular-training,#general-conditioning-3,#general-conditioning-2{
+     background-repeat: no-repeat;
+    background-position: 10% 10%;
+     background-size: cover;
+}
+
 
 }
