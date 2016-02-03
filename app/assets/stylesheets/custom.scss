@@ -552,6 +552,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+
+
 header {
 	background: image-url('header-bg.jpg');
 	background-repeat: none;
@@ -2335,3 +2337,22 @@ footer {
 }
 
 // end of footer
+
+
+// big screens images
+
+@media (min-width: 1500px){
+    header {
+    background-position: 50% 20%;
+    }
+
+    #allprogram{
+    background-position: 50% 10%;
+    }
+
+    .user-background{
+     background-position: 50% 10%;
+     background: cover;
+    }
+
+}
