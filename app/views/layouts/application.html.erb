@@ -13,6 +13,7 @@
 <div id="wrapper">
 
 	<%= render 'layouts/header' %>
+	<div id="content">
 
 	<% flash.each do |message_type, message| %>
 
@@ -21,6 +22,7 @@
 
 <%= yield %>
 	<%= render 'layouts/footer' %>
+	</div>
 	</div>
 </body>
 
