@@ -12,12 +12,15 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get    'login'             => 'devise/sessions#new'
   get    'profile'             => 'subscriptions#show'
+  get     'recipes'           => 'recipes#index'
  
   
 
  
   resources :subscriptions
   resources :static_pages 
+  resources :recipes, only: [:index]
+
 
 
   resources 'users' do
