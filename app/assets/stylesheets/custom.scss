@@ -2357,10 +2357,25 @@ height:600px;
     
 }
 
+.recipe-card{
+    margin: 0 15px 10px 15px;
+     width:350px;
+}
 
 
+.recipe-card ul{
+    padding-left: 0;
+    list-style:none;
+    margin-bottom: 30px;
+}
+.recipe-card li:first-child {
+   
+    padding-right:25px;
+}
 
-
+.cta-button{
+    margin-left: 450px;
+}
 
 // big screens images
 

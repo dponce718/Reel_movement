@@ -1,6 +1,168 @@
 <section class= "user-background," id="recipe-background">
 
-<h1 class="content-title text-center"> Find The Perfect Program for You</h1>
+<h1 class="content-title text-center"> Healthy recipes right at your fingertips</h1>
        
 
 </section>
+
+
+<div class="user-background container">
+<div class="row">
+    
+    
+    <div class="card col-md-4 recipe-card"> <!-- card starts -->
+    
+        <div class="image">
+    
+             <%= image_tag "https://s3.amazonaws.com/reelmovement/salmon.png" %>               
+    
+            <div class="filter filter-white">
+     
+    
+                <button type="button" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal"  >
+    
+                    <i class="fa fa-check"></i> Learn how to make it
+    
+                </button>
+    
+               
+    
+            </div>
+    
+        </div>
+    
+        <div class="content">
+        <h4 class="text-center"> <%= Recipe.first.title %></h4>
+        <ul>
+          <li class="pull-left category">Preparation time <br> <span class="badge"><%= Recipe.first.preparation %></span></li>
+          <li class="pull-right category"> Cooking time <br> <span class="badge"><%= Recipe.first.total_time %></span></li>
+          <li class="center-text category"> Servings <br> <span class="badge"> <%= Recipe.first.servings %></span></li>
+        </ul>
+
+        <h6 class="text-center"> Ingredients </h6>
+          
+        <p> <%= Recipe.first.ingredients %></p>    
+        </div>
+    
+    </div> <!-- end card -->
+
+    <div class="card col-md-4 recipe-card"> <!-- card starts -->
+    
+        <div class="image">
+    
+             <%= image_tag "https://s3.amazonaws.com/reelmovement/Screen+Shot+2016-02-07+at+5.50.34+PM.png" %>               
+    
+            <div class="filter filter-white">
+     
+    
+                <button type="button" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal"  >
+    
+                    <i class="fa fa-check"></i> Learn how to make it
+    
+                </button>
+    
+               
+    
+            </div>
+    
+        </div>
+    
+        <div class="content">
+        <h4 class="text-center"> <%= Recipe.first.title %> </h4>
+        <ul>
+          <li class="pull-left category">Preparation time <br> <span class="badge"><%= Recipe.first.preparation %></span></li>
+          <li class="pull-right category"> Cooking time <br> <span class="badge"><%= Recipe.first.total_time %></span></li>
+          <li class="center-text category"> Servings <br> <span class="badge"> <%= Recipe.first.servings %></span></li>
+        </ul>
+
+        <h6 class="text-center"> Ingredients </h6>
+          
+        <p> <%= Recipe.first.ingredients %></p>    
+        </div>
+    
+    </div> <!-- end card -->
+    
+  <div class="card col-md-4 recipe-card"> <!-- card starts -->
+    
+        <div class="image">
+    
+             <%= image_tag "https://s3.amazonaws.com/reelmovement/lunges.jpg" %>               
+    
+            <div class="filter filter-white">
+     
+    
+                <button type="button" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal"  >
+    
+                    <i class="fa fa-check"></i> Learn how to make it
+    
+                </button>
+    
+               
+    
+            </div>
+    
+        </div>
+    
+        <div class="content">
+        <h4 class="text-center"> <%= Recipe.first.title %> </h4>
+        <ul>
+          <li class="pull-left category">Preparation time <br> <span class="badge"><%= Recipe.first.preparation %></span></li>
+          <li class="pull-right category"> Cooking time <br> <span class="badge"><%= Recipe.first.total_time %></span></li>
+          <li class="center-text category"> Servings <br> <span class="badge"> <%= Recipe.first.servings %></span></li>
+        </ul>
+
+        <h6 class="text-center"> Ingredients </h6>
+          
+        <p> <%= Recipe.first.ingredients %></p>    
+        </div>
+    
+    </div> <!-- end card -->
+    
+  
+    
+  
+
+
+  </div>
+
+</div>
+
+
+
+<!-- Modal -->
+    <div class="row" >
+    <div class="modal fade col-md-8 col-md-offset-2" id="recipe-card" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+      
+    
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    
+        
+    
+          <div class="modal-body">
+              
+              <%= raw Recipe.first.code %>
+          </div>
+  
+    
+    </div>
+    </div>
+
+    <script type="text/javascript">          
+        jQuery(document).ready(function(){
+        $( ".recipe-card" ).click(function() { 
+         $('#recipe-card').modal('show');
+       });
+
+        $( ".program-two" ).click(function() { 
+         $('#program-two').modal('show');
+       });
+
+        $( ".program-three" ).click(function() { 
+         $('#program-three').modal('show');
+
+       });
+        });//end script
+      </script>

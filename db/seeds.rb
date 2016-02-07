@@ -10,6 +10,8 @@
 CreatePlanService.new.call
 puts 'CREATED PLANS'
 
+
+#programs
  Program.create(title: "General Conditioning", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
 code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="324" id="vzvd-5248691" mozallowfullscreen name="vzvd-5248691" src="//view.vzaar.com/5248691/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="576"></iframe>',
 code_two: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5277901" mozallowfullscreen name="vzvd-5277901" src="//view.vzaar.com/5277901/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
@@ -1020,5 +1022,13 @@ schedule: '<div class="table-responsive">
     </div>
     
 ')
+
+
+
+#recipes
+
+Recipe.create(preparation: '30 minutes', total_time:'40 minutes', servings: '4', ingredients: 'tomatoes, shoes, eyeballs, monster blood',title:'Pan seared salmon with a vegetable medley and brown rice',
+    code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5649202" mozallowfullscreen name="vzvd-5649202" src="//view.vzaar.com/5649202/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+    image:"nope")
 
 

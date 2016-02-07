@@ -7,6 +7,7 @@ class CreateRecipes < ActiveRecord::Migration
       t.text :ingredients
       t.text :code
       t.string :image
+      t.string :title
 
       t.timestamps null: false
     end
