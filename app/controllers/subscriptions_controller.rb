@@ -22,6 +22,8 @@ class SubscriptionsController < ApplicationController
 
 		 	
 		 	current_user.create_assessment(assessment_params)
+		 	
+		
 
 			if current_user.assessment.rhr.between?(80, 89)
 			   current_user.assessment.push_ups <= 20  
@@ -105,6 +107,5 @@ class SubscriptionsController < ApplicationController
 		end	
 
 		
-
 		
 end

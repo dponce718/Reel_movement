@@ -556,10 +556,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 header {
-	background: image-url('header-bg.jpg');
+background-image: url('https://s3.amazonaws.com/reelmovement/planks1.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
-	background-position: center center;
+	 background-position: 50% 70%;
 	@include background-cover;
 	text-align: center;
 	color: white;
@@ -2375,6 +2375,19 @@ height:600px;
 
 .cta-button{
     margin-left: 450px;
+}
+
+
+// background for corrective exercise page
+
+#corrective-background{
+
+  
+     background-image: url("https://s3.amazonaws.com/reelmovement/corrective.jpg");
+    background-attachment: scroll;
+    background-position: 75% 80%;
+    @include background-cover; 
+    height:600px;  
 }
 
 // big screens images

@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get    'login'             => 'devise/sessions#new'
   get    'profile'             => 'subscriptions#show'
   get     'recipes'           => 'recipes#index'
- 
+  get     'corrective_exercise' => 'programs#show'
   
 
  

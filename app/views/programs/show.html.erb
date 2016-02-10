@@ -1,0 +1,139 @@
+
+
+
+<section class= "user-background" id="corrective-background">
+<div class="container">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+  <div class="card card-user corrective-form">
+    <div class="content">
+
+     <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
+
+    <%= form_for(:corrective_assessment, :url => {:action => 'create'}) do |f| %>
+
+                         <div class="form-group"> 
+                          <%= f.label :occupation, 'What is your current occupation?' %>
+                          <%= f.text_field :occupation, class: 'form-control' %>
+                         </div>
+                         
+                          <div class="form-group">  
+                          <%= f.label :sitting, 'Does your occupation require long periods of sitting?' %>
+                          <%= f.text_field :sitting, class: 'form-control' %>
+                          </div>
+
+                           <div class="form-group"> 
+                          <%= f.label :dress_shoes, 'Do you wear dress shoes or heels for your occupation?' %>
+                          <%= f.text_field :dress_shoes, class: 'form-control' %>
+                          </div>
+
+                          <div class="form-group"> 
+                          <%= f.label :repetition, 'Does your occupation require you to work on a computer for long periods of time?' %>
+                          <%= f.text_field :repetition, class: 'form-control' %>
+                          </div>
+
+                          <div class="form-group"> 
+                          <%= f.label :recreation, 'Do you participate in any sports or recreational activity (baseball, football, martial arts, golf, tennis, etc.)?' %>
+                          <%= f.text_field :recreation, class: 'form-control' %>
+                          </div>
+
+                           <div class="actions">
+                            <%= f.submit "Finish assessment", class: 'btn btn-info btn-fill btn-block' %>
+                            </div>
+
+                           <% end %>
+    
+    </div>
+  </div>
+</div>
+</div>
+</div>
+       
+
+</section>
+
+
+
+
+  <section class="bg-light-gray">
+  <div class="container">
+  <div class="row">
+
+  <h2 class="title text-center col-md-12">  Level 1 Programs</h2>
+    
+    <div class="card col-md-6 recipe-card"> <!-- card starts -->
+    
+        <div class="image">
+    
+             <%= image_tag "https://s3.amazonaws.com/reelmovement/salmon.png" %>               
+    
+            <div class="filter filter-white">
+     
+    
+                <button type="button" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal"  >
+    
+                    <i class="fa fa-check"></i> Learn how to make it
+    
+                </button>
+    
+               
+    
+            </div>
+    
+        </div>
+    
+        <div class="content">
+        <h4 class="text-center"> <%= Recipe.first.title %></h4>
+        <ul>
+          <li class="pull-left category">Preparation time <br> <span class="badge"><%= Recipe.first.preparation %></span></li>
+          <li class="pull-right category"> Cooking time <br> <span class="badge"><%= Recipe.first.total_time %></span></li>
+          <li class="center-text category"> Servings <br> <span class="badge"> <%= Recipe.first.servings %></span></li>
+        </ul>
+
+        <h6 class="text-center"> Ingredients </h6>
+          
+        <p> <%= Recipe.first.ingredients %></p>    
+        </div>
+    
+    </div> <!-- end card -->
+
+    <div class="card col-md-6 recipe-card"> <!-- card starts -->
+    
+        <div class="image">
+    
+             <%= image_tag "https://s3.amazonaws.com/reelmovement/Screen+Shot+2016-02-07+at+5.50.34+PM.png" %>               
+    
+            <div class="filter filter-white">
+     
+    
+                <button type="button" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal"  >
+    
+                    <i class="fa fa-check"></i> Learn how to make it
+    
+                </button>
+    
+               
+    
+            </div>
+    
+        </div>
+    
+        <div class="content">
+        <h4 class="text-center"> <%= Recipe.first.title %> </h4>
+        <ul>
+          <li class="pull-left category">Preparation time <br> <span class="badge"><%= Recipe.first.preparation %></span></li>
+          <li class="pull-right category"> Cooking time <br> <span class="badge"><%= Recipe.first.total_time %></span></li>
+          <li class="center-text category"> Servings <br> <span class="badge"> <%= Recipe.first.servings %></span></li>
+        </ul>
+
+        <h6 class="text-center"> Ingredients </h6>
+          
+        <p> <%= Recipe.first.ingredients %></p>    
+        </div>
+    
+    </div> <!-- end card -->
+ </div> 
+ </div>                     
+
+      
+  </section>

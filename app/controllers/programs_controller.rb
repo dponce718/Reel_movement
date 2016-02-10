@@ -4,15 +4,22 @@ class ProgramsController < ApplicationController
 		@program = Program.all
 	end	
 
+	def show
+
+	end	
+
 	def create
-		@program = Program.find_by(id: params[:id])
-		@program.save!
-		current_user.program = @program
-		current_user.program.save!
-		redirect_to "/subscriptions/show"
+	
+	current_user.create_corrective_assessment(corrective_assessment_params)
+			redirect_to "/subscriptions/show"
 
 	end	
 
 
+	protected
+
+def corrective_assessment_params
+    		params.require(:corrective_assessment).permit(:sitting, :dress_shoes, :repetition, :recreation, :occupation)
+		end	
 
 end
