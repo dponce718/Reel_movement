@@ -1,0 +1,25 @@
+ <div id="program-one" class="white-popup video-container mfp-hide">
+  <%= raw current_user.program.code_one %> 
+</div>
+
+
+  <div id="program-two" class="white-popup video-container mfp-hide">
+  <%= raw current_user.program.code_two %> 
+</div>
+
+
+
+  <div id="program-three" class="white-popup video-container mfp-hide">
+  <%= raw current_user.program.code_three %> 
+</div>
+
+
+
+
+
+<script>
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+</script>

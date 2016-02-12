@@ -2196,14 +2196,10 @@ section {
     width:100%;
     height:89%;
 }
+
+
 }
 
-.video-container iframe:hover,
-.video-container iframe:focus,
-.video-container iframe:active{
-opacity: 1;
-    
-}
 
 
 
@@ -2303,8 +2299,17 @@ opacity: 1;
 }
 
 
-iframe{
+.program-video iframe{
     opacity: 0.8;
+}
+
+
+
+.program-video iframe:hover,
+.program-video iframe:focus,
+.program-video iframe:active{
+opacity: 1;
+    
 }
 
 
@@ -2377,12 +2382,23 @@ height:600px;
     margin-left: 450px;
 }
 
+#program-list li{
+display:inline;
+ margin-right: 15px;
+    
+}
+
+#program-list{
+    margin-top: 50px;
+    width:500px;
+    border: solid 1px black;
+}
+
 
 // background for corrective exercise page
 
 #corrective-background{
 
-  
      background-image: url("https://s3.amazonaws.com/reelmovement/corrective.jpg");
     background-attachment: scroll;
     background-position: 75% 80%;
