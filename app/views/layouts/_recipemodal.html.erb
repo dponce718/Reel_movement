@@ -1,0 +1,16 @@
+<div id="recipe-one" class="white-popup video-container mfp-hide">
+  <%= raw Recipe.first.code %> 
+</div>
+
+
+  <div id="recipe-two" class="white-popup video-container mfp-hide">
+  <%= raw Recipe.find(2).code %> 
+</div>
+
+
+<script>
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+</script>

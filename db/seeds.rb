@@ -1031,4 +1031,8 @@ Recipe.create(preparation: '30 minutes', total_time:'40 minutes', servings: '4',
     code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5649202" mozallowfullscreen name="vzvd-5649202" src="//view.vzaar.com/5649202/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
     image:"nope")
 
+Recipe.create(preparation: '30 minutes', total_time:'40 minutes', servings: '4', ingredients: 'Steak 12 ozs, 12-15 Brussels sprouts,8ozs of mushrooms, 2 shallots, Balsamic vinegar, Brown rice(half a cup)',title:'Seared steak with roasted Brussels sprouts and a mushroom alMond rice',
+    code: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5640112" mozallowfullscreen name="vzvd-5640112" src="//view.vzaar.com/5640112/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+    image:"nope")
+
 

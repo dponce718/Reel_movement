@@ -62,10 +62,10 @@ ActiveRecord::Schema.define(version: 20160208203102) do
 
   create_table "corrective_assessments", force: :cascade do |t|
     t.integer  "user_id"
-    t.string   "sitting"
-    t.string   "repetition"
+    t.boolean  "sitting"
+    t.boolean  "repetition"
     t.string   "recreation"
-    t.string   "dress_shoes"
+    t.boolean  "dress_shoes"
     t.string   "occupation"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

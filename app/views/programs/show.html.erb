@@ -19,17 +19,26 @@
                          
                           <div class="form-group">  
                           <%= f.label :sitting, 'Does your occupation require long periods of sitting?' %>
-                          <%= f.text_field :sitting, class: 'form-control' %>
+                          <%= f.label :sitting, 'Yes'%>
+                          <%= f.radio_button :sitting, true %>
+                           <%= f.label :sitting, 'No' %>
+                          <%= f.radio_button(:sitting, false) %>
                           </div>
 
                            <div class="form-group"> 
                           <%= f.label :dress_shoes, 'Do you wear dress shoes or heels for your occupation?' %>
-                          <%= f.text_field :dress_shoes, class: 'form-control' %>
+                           <%= f.label :dress_shoes, 'Yes' %>
+                          <%= f.radio_button(:dress_shoes, true) %>
+                           <%= f.label :dress_shoes, 'No' %>
+                          <%= f.radio_button(:dress_shoes, false) %>
                           </div>
 
                           <div class="form-group"> 
                           <%= f.label :repetition, 'Does your occupation require you to work on a computer for long periods of time?' %>
-                          <%= f.text_field :repetition, class: 'form-control' %>
+                           <%= f.label :repetition, 'Yes' %>
+                          <%= f.radio_button(:repetition, true) %>
+                           <%= f.label :repetition, 'No' %>
+                          <%= f.radio_button(:repetition, false) %>
                           </div>
 
                           <div class="form-group"> 
@@ -53,88 +62,100 @@
 </section>
 
 
-
-
-  <section class="bg-light-gray">
+<section class="bg-light-gray">
   <div class="container">
-  <div class="row">
+     <h2 class="title text-center">  Level 1 Programs</h2>
+    <div class="card card-horizontal program-cards">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                           <%= image_tag "https://s3.amazonaws.com/reelmovement/Salmon.jpg" %>                   
+                                        <div class="filter filter-azure">
 
-  <h2 class="title text-center col-md-12">  Level 1 Programs</h2>
-    <div class="col-md-6">
-    <div class="card recipe-card"> <!-- card starts -->
-    
-        <div class="image">
-    
-             <%= image_tag "https://s3.amazonaws.com/reelmovement/salmon.png" %>               
-    
-            <div class="filter filter-white">
-     
-    
-                <button type="button" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal"  >
-    
-                    <i class="fa fa-check"></i> Learn how to make it
-    
-                </button>
-    
-               
-    
-            </div>
-    
-        </div>
-    
-        <div class="content">
-        <h4 class="text-center"> <%= Recipe.first.title %></h4>
-        <ul>
-          <li class="pull-left category">Preparation time <br> <span class="badge"><%= Recipe.first.preparation %></span></li>
-          <li class="pull-right category"> Cooking time <br> <span class="badge"><%= Recipe.first.total_time %></span></li>
-          <li class="center-text category"> Servings <br> <span class="badge"> <%= Recipe.first.servings %></span></li>
-        </ul>
+                                      <a href="#recipe-one" class="open-popup-link btn btn-neutral btn-round"> Learn how to make it </a> 
 
-        <h6 class="text-center"> Ingredients </h6>
-          
-        <p> <%= Recipe.first.ingredients %></p>    
-        </div>
-    
-    </div> <!-- end card -->
-    </div>
 
-    <div class="card col-md-6 recipe-card"> <!-- card starts -->
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
     
-        <div class="image">
-    
-             <%= image_tag "https://s3.amazonaws.com/reelmovement/Screen+Shot+2016-02-07+at+5.50.34+PM.png" %>               
-    
-            <div class="filter filter-white">
-     
-    
-                <button type="button" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal"  >
-    
-                    <i class="fa fa-check"></i> Learn how to make it
-    
-                </button>
-    
-               
-    
-            </div>
-    
-        </div>
-    
-        <div class="content">
-        <h4 class="text-center"> <%= Recipe.first.title %> </h4>
-        <ul>
-          <li class="pull-left category">Preparation time <br> <span class="badge"><%= Recipe.first.preparation %></span></li>
-          <li class="pull-right category"> Cooking time <br> <span class="badge"><%= Recipe.first.total_time %></span></li>
-          <li class="center-text category"> Servings <br> <span class="badge"> <%= Recipe.first.servings %></span></li>
-        </ul>
+                                        
+                                         <h4 class="title text-center"> <%= Recipe.first.title %> </h4>
+                                        
+                                           <p> Ingredients: <%=Recipe.first.ingredients %></p>
 
-        <h6 class="text-center"> Ingredients </h6>
-          
-        <p> <%= Recipe.first.ingredients %></p>    
-        </div>
-    
-    </div> <!-- end card -->
- </div> 
- </div>                     
 
-      
-  </section>
+                       
+
+                    <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Preparation time: <%= Recipe.first.preparation %></li>
+                        <li class="list-group-item">Total cooking time: <%= Recipe.first.total_time %></li>
+                       </ul>
+                    </div>
+
+                     <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Amount of servings: <%= Recipe.first.servings %></li>
+                        <li class="list-group-item">Duration: 4 weeks</li>
+                       </ul>
+                    </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- end of card-->
+
+         <div class="card card-horizontal program-cards">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image" >
+                                           <%= image_tag "https://s3.amazonaws.com/reelmovement/steak.jpg" %>                   
+                                        <div class="filter filter-azure">
+
+                                           <a href="#recipe-two" class="open-popup-link btn btn-neutral btn-round"> Learn how to make it </a>  
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                     <div class="content">
+                                       
+    
+                                        
+                                         <h4 class="title text-center"> <%= Recipe.find(2).title %> </h4>
+                                        
+                                           <p> Ingredients: <%=Recipe.find(2).ingredients %></p>
+
+
+                       
+
+                    <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Preparation time: <%= Recipe.find(2).preparation %></li>
+                        <li class="list-group-item">Total cooking time: <%= Recipe.find(2).total_time %></li>
+                       </ul>
+                    </div>
+
+                     <div class="col-md-6">
+                         <ul class="list-group">
+                        <li class="list-group-item">Amount of servings: <%= Recipe.find(2).servings %></li>
+                        <li class="list-group-item">Duration: 4 weeks</li>
+                       </ul>
+                    </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <!-- end of card-->
+
+                
+
+
+  </div>
+</section>
+<%= render 'layouts/recipemodal' %>
