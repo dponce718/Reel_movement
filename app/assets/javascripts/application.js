@@ -16,6 +16,7 @@
 //= require getshitdone.js
 //= require waypoint.js
 //= require lightbox-bootstrap
+//= require typekit
 //= require magnific-popup
 //= require jquery.validate
 //= require jquery.validate.additional-methods

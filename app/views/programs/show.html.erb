@@ -47,7 +47,7 @@
                           </div>
 
                            <div class="actions">
-                            <%= f.submit "Finish assessment", class: 'btn btn-info btn-fill btn-block' %>
+                            <%= f.submit "Finish assessment", class: 'btn btn-success btn-fill btn-block' %>
                             </div>
 
                            <% end %>
@@ -61,18 +61,27 @@
 
 </section>
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <p> The goal of corrective exercise is to identify any neuromusculoskeletal dysfunctions you may have. Once thats done you can attempt a program that may improve any muscles imbalances you may have. This is done using a corrective exercise continuum of inhibition, lengthing, activation, and integration techniques. Check out <a href="http://www.nasm.org/"> NASM</a> for more information on corrective exercise.</p> 
+      </div>      
+    </div>
+  </div>
+</section>
+
 
 <section class="bg-light-gray">
   <div class="container">
-     <h2 class="title text-center">  Level 1 Programs</h2>
     <div class="card card-horizontal program-cards">
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="image" >
-                                           <%= image_tag "https://s3.amazonaws.com/reelmovement/Salmon.jpg" %>                   
-                                        <div class="filter filter-azure">
+                                           <%= image_tag "https://s3.amazonaws.com/reelmovement/hipflexor.jpg" %>                   
+                                        <div class="filter filter-green">
 
-                                      <a href="#recipe-one" class="open-popup-link btn btn-neutral btn-round"> Learn how to make it </a> 
+                                      <a href="#recipe-one" class="open-popup-link btn btn-neutral btn-round"> Lets get started </a> 
 
 
                                           
@@ -84,9 +93,9 @@
                                        
     
                                         
-                                         <h4 class="title text-center"> <%= Recipe.first.title %> </h4>
+                                         <h4 class="title text-center"> Excessive squat with a forward lean </h4>
                                         
-                                           <p> Ingredients: <%=Recipe.first.ingredients %></p>
+                                           <p> Proper mechanics are extremely important. Improper mechanics can lead to potential injuries. An execssive forward lean during squats may lead to lower back pain or  quadricep and groin strains. Lets working on fixing some muscle imbalnces you may have.  </p>
 
 
                        
@@ -114,10 +123,10 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="image" >
-                                           <%= image_tag "https://s3.amazonaws.com/reelmovement/steak.jpg" %>                   
-                                        <div class="filter filter-azure">
+                                           <%= image_tag "https://s3.amazonaws.com/reelmovement/badsquats.jpg" %>                   
+                                        <div class="filter filter-green">
 
-                                           <a href="#recipe-two" class="open-popup-link btn btn-neutral btn-round"> Learn how to make it </a>  
+                                           <a href="#recipe-two" class="open-popup-link btn btn-neutral btn-round"> Lets start training</a>  
                                           
                                         </div>
                                     </div>
@@ -127,9 +136,10 @@
                                        
     
                                         
-                                         <h4 class="title text-center"> <%= Recipe.find(2).title %> </h4>
+                                         <h4 class="title text-center"> Squats with knees moving inward </h4>
                                         
-                                           <p> Ingredients: <%=Recipe.find(2).ingredients %></p>
+                                           <p> Your Knee moving inward during squats may mean that your calf, TFL/IT-band, and adductors may be tight and this is indicative of weakness in the anterior tibialis, posterior tibilais, and gluteus medius and maximus. Wow, thats sounds like a bit much <i class="icon-sad"></i>. 
+                                           Don't worry, we will take you everystep of the way </p>
 
 
                        
