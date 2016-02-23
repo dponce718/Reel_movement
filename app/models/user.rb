@@ -31,12 +31,18 @@ class User < ActiveRecord::Base
 after_create :subscribe_user_to_mailing_list
 
 
- 
+ def self.without_assessment
+    includes(:assessment).where(assessments: {user_id: nil})
+  end
+  
   private
  
   def subscribe_user_to_mailing_list
     SubscribeUserToMailingListJob.perform_later(self)
   end
+
+
+  
 
 
 

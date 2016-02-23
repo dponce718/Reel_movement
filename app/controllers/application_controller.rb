@@ -12,12 +12,16 @@ class ApplicationController < ActionController::Base
   "/subscriptions/new"
 end
 	
-	def suscribed_user!
-  	#	unless current_user.suscription == false
-     #   flash[:danger] = "Please suscribe!"
-    #   	redirect_to "/subscriptions/new"
-   # 	end
-	end
+	
+
+
+def  no_assessment!
+  if current_user != Assessment.find_by_user_id(params[:user_id])
+    flash[:danger] = "Please finish your assessment"
+        redirect_to "/subscriptions"
+      end
+      
+end
 
 
 

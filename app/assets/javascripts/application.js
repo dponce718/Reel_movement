@@ -17,6 +17,7 @@
 //= require waypoint.js
 //= require lightbox-bootstrap
 //= require typekit
+//= require fittext
 //= require magnific-popup
 //= require jquery.validate
 //= require jquery.validate.additional-methods

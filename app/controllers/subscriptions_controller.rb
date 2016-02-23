@@ -1,6 +1,6 @@
 class SubscriptionsController < ApplicationController
 	before_action :authenticate_user!
-	before_action :suscribed_user!, only: [:show, :index]
+	
 
 
 
