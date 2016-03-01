@@ -1,6 +1,6 @@
 class ProgramsController < ApplicationController
 	before_action :authenticate_user!
-	before_action :no_assessment!
+	
 
 	def index
 		@program = Program.all

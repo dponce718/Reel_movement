@@ -20,6 +20,9 @@ Rails.application.routes.draw do
   resources :subscriptions
   resources :static_pages 
   resources :recipes, only: [:index]
+  resources :charges
+  resources :subscribe
+
 
 
 
