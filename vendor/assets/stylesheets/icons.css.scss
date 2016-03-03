@@ -43,9 +43,15 @@
 }
 .icon-happy:before {
 	content: "\e804";
+	color: black;
+	border-radius: 15px;
+	background:yellow;
 }
 .icon-sad:before {
 	content: "\e805";
+	color: black;
+	border-radius: 15px;
+	background:yellow;
 }
 .icon-mail:before {
 	content: "\e806";
