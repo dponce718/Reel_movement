@@ -3,12 +3,12 @@
         <div class="container">
              <div class="row">
 
-                <div class="intro-text col-lg-8 video-container">
+                <div  id= "pop-1" class="intro-text col-lg-8 video-container" data-toggle="popover" data-placement="top" title="Take your assessment" data-content="Lets get started. Follow along with us in the video. Check out the useful tips below before you get started. ">
               <%= raw @program.code_one %>
                 </div>
 
                     <div class="intro-text col-lg-4  center-block">
-                    <div class="card card-user">
+                    <div class="card card-user" data-toggle="popover" data-placement="top" title="Assessment Form" data-content=" Grab a pen and paper and once your done with your assessment fill out the form below. Be honest with your answers">
                     <div class="content">
 
                   <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
@@ -56,8 +56,19 @@
                     
                
             </div>
-        </div>
-    </section>
+            </div>
+</section>
+
+  <div class="container">
+     <div class="row">
+             
+              <div class="col-md-6 col-md-offset-3">
+                <h2 class="text-center"> Here are some helpful tips to guide you <h5>
+              </div>
+            
+            </div>
+   </div> <!-- end of container -->  
+    
 
     <script type="text/javascript">
 
@@ -79,8 +90,12 @@
     
 });// end of validation
 
-     var one = parseInt($("assessment_rhr").text());
-     $("assessment_rhr").text(one * 2);
+       // popovers
+     $(function () 
+      { $('#pop-1').popover('show');
+     });
+
+
 
 });
 

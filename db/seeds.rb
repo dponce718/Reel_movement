@@ -396,7 +396,7 @@ schedule: '<div class="table-responsive">
 ')
 
  Program.create(title: "assessment", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5298522" mozallowfullscreen name="vzvd-5298522" src="//view.vzaar.com/5298522/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+code_one:'<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-6517771" mozallowfullscreen name="vzvd-6517771" src="//view.vzaar.com/6517771/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
 schedule: '<div class="table-responsive">
     
     <table class="table">
@@ -772,129 +772,9 @@ schedule: '<div class="table-responsive">
 ')
 
  Program.create(title: "tomatoes", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5649202" mozallowfullscreen name="vzvd-5649202" src="//view.vzaar.com/5649202/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
-style:'background-image: url("https://s3.amazonaws.com/reelmovement/General.jpg")',
-schedule: '<div class="table-responsive">
-    
-    <table class="table">
-    
-        <thead>
-    
-            <tr>
-    
-                <th class="text-center">#</th>
-    
-                <th>Sunday</th>
-    
-                <th>Monday</th>
-    
-                <th>Tuesday</th>
-    
-                <th >Wednesday</th>
-    
-                <th >Thursday</th>
-
-                <th >Friday</th>
-
-                <th>Saturday</th>
-    
-            </tr>
-    
-        </thead>
-    
-        <tbody>
-    
-            <tr>
-    
-                <td class="text-center">1</td>                            
-    
-                <td>Flexibility and Mobility</td>
-    
-                <td>Total Body 1</td>
-    
-                <td>Rest Day</td>
-    
-                <td> Core and stability</td>
-
-                <td>Rest Day</td>
-    
-                <td>Total Body 2</td>
-    
-                <td>Rest Day</td>
-    
-    
-                
-    
-            </tr>
-    
-            <tr>
-    
-                
-    
-                <td class="text-center">2</td>
-    
-                <td>Flexibility and Mobility</td>
-    
-                <td>Total Body 1</td>
-    
-                <td>Rest Day</td>
-    
-                <td> Core and stability</td>
-
-                <td>Rest Day</td>
-    
-                <td>Total Body 2</td>
-    
-                <td>Rest Day</td>
-    
-            </tr>
-    
-            <tr>
-    
-                <td class="text-center">3</td>
-    
-                <td>Flexibility and Mobility</td>
-    
-                <td>Total Body 1</td>
-    
-                <td>Rest Day</td>
-    
-                <td> Core and stability</td>
-
-                <td>Rest Day</td>
-    
-                <td>Total Body 2</td>
-    
-                <td>Rest Day</td>
-    
-            </tr>
-    
-            <tr>
-    
-                <td class="text-center">4</td>
-    
-                 <td>Flexibility and Mobility</td>
-    
-                <td>Total Body 1</td>
-    
-                <td>Rest Day</td>
-    
-                <td> Core and stability</td>
-
-                <td>Rest Day</td>
-    
-                <td>Total Body 2</td>
-    
-                <td>Rest Day</td>
-            </tr>
-    
-        </tbody>
-    
-    </table>
-    
-    </div>
-    
-')
+code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="432" id="vzvd-6517771" mozallowfullscreen name="vzvd-6517771" src="//view.vzaar.com/6517771/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+style:'background-image: url("https://s3.amazonaws.com/reelmovement/General.jpg")'
+)
 
 
 Program.create(title: "General Conditioning 3", level: "level 3", frame: "http://api.vzaar.com/videos/5248691.embed", 

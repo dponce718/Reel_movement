@@ -139,6 +139,9 @@
         $(function () {
   $('.popup-modal').magnificPopup({
     
+    type: 'inline',
+    preloader: false,
+    focus: '#user_name',
     modal: true
   });
   $(document).on('click', '.popup-modal-dismiss', function (e) {
@@ -205,7 +208,7 @@ $('.subscription form').validate({
                          
           }, //end of rules
     messages : {  
-      'subscription[subscribed]'  : 'please accept'
+      'subscription[subscribed]'  : ' please click here to '
       }  
 });
 

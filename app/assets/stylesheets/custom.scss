@@ -2398,6 +2398,34 @@ body{
 
 }
 
+@media (max-width: 768px){ 
+     .navbar-transparent{
+         padding-top: 15px;
+         background-color: rgba(0, 0, 0, 0.45);
+     }
+     .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-transparent .dropdown-menu > li > a:hover, .navbar-transparent .dropdown-menu > li > a:focus, [class*="navbar-ct"] .dropdown-menu > li > a:hover, [class*="navbar-ct"] .dropdown-menu > li > a:focus{
+         color: #FFFFFF;
+         background-color: rgba(0,0,0,0);
+         opacity: 1;
+     }
+     .navbar-transparent .navbar-nav .open .dropdown-menu > li > a, [class*="navbar-ct"] .dropdown-menu > li > a {
+         color: #FFFFFF;
+         opacity: 0.8;
+     }
+     .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+         background-color: rgba(0,0,0,0);
+         border-color: #428BCA;
+     }
+     .navbar-collapse{
+         text-align: center;
+     }
+     .navbar-collapse .navbar-form {
+         width: 170px;
+         margin: 0 auto;
+     }
+     
+ }
+
 // big screens images
 
 @media (min-width: 1500px){
@@ -2428,4 +2456,60 @@ body{
 .fa-check{
     color: $brand-primary;
 
+}
+
+
+
+.bootstro-next-btn{
+    background: black;
+}
+.popover {
+  padding: 0;
+  border-radius: 10px;
+  z-index: 1031;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.popover-title {
+  font-size: 16px;
+  background-color: rgba(91, 202, 255, 0.98);
+  font-weight: normal;
+  line-height: 22px;
+  padding: 8px 15px;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+.popover-content {
+  padding: 9px 15px;
+}
+.popover .arrow {
+  border: 0;
+}
+.popover.top .arrow {
+  margin-left: 0;
+}
+.popover.bottom .arrow:after {
+  border-bottom-color: rgba(91, 202, 255, 0.98);
+}
+.popover-filter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #000000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+.popover-filter.in {
+  visibility: visible;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  transition-delay: 0s;
 }

@@ -7,6 +7,14 @@ class StaticPagesController < ApplicationController
 
   def show
 
+  end
+
+  def privacy_policy
+  		
+  end	
+
+  def terms
+
   end	
 
 
