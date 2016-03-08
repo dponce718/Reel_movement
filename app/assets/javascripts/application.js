@@ -22,7 +22,6 @@
 //= require jquery.validate
 //= require jquery.validate.additional-methods
 //= require bootstrap-sprockets
-//= require bootstro
 //= require turbolinks
 //= require_tree .
 

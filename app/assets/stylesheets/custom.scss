@@ -43,6 +43,20 @@ p {
     
 }
 
+.tips-header{
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+#tips li{
+    font-size:1em;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: 200;
+    @include sofia-font;
+    margin: 0 0 1.6em 0;
+}
+
 a,
 a:hover,
 a:focus,
@@ -2459,10 +2473,6 @@ body{
 }
 
 
-
-.bootstro-next-btn{
-    background: black;
-}
 .popover {
   padding: 0;
   border-radius: 10px;

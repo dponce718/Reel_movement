@@ -3,12 +3,24 @@
         <div class="container">
              <div class="row">
 
-                <div  id= "pop-1" class="intro-text col-lg-8 video-container" data-toggle="popover" data-placement="top" title="Take your assessment" data-content="Lets get started. Follow along with us in the video. Check out the useful tips below before you get started. ">
+             
+
+                <div  id= "pop-1" class="intro-text col-lg-8 video-container" 
+                data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Take your assessment" 
+                data-content="<div> Lets get started. Follow along with us in the video.Check out the useful tips below before you get started.">
               <%= raw @program.code_one %>
                 </div>
 
                     <div class="intro-text col-lg-4  center-block">
-                    <div class="card card-user" data-toggle="popover" data-placement="top" title="Assessment Form" data-content=" Grab a pen and paper and once your done with your assessment fill out the form below. Be honest with your answers">
+                    <div id="pop-2" class="card card-user"
+                    data-html="true"
+                    data-placement="auto left"  
+                    data-toggle="popover"  
+                    title="Assessment Form" 
+                    data-content=" <div> Grab a pen and paper and once your done with your assessment fill out the form to the right. Be honest with your answers</br> </div>">
                     <div class="content">
 
                   <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
@@ -59,15 +71,47 @@
             </div>
 </section>
 
+<section class="bg-light-gray">
   <div class="container">
      <div class="row">
              
               <div class="col-md-6 col-md-offset-3">
-                <h2 class="text-center"> Here are some helpful tips to guide you <h5>
+                <h2 id="pop-3" class="text-center tips-header"
+                data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title=" Helpful Tips" 
+                data-content="<div> Go through these tips before you take your fitness assessment. Lets get started  </br> </div> <div class='pull-right close-btn btn btn-primary btn-xs'> Close Tips</div> </br>"> 
+                Here are some helpful tips to guide you </h2>
+
+                <p> 
+                 Great, lets find the perfect program for you <i class="icon-happy"></i>. First off make sure you are well rested and have a bottle of water handy. This assessment is designed to find a program for your current fitness level so make sure to be <b> Honest </b> with your results. Now, grab a pen and paper to record your results and lets do this!!
+                </p>
+
+                <ul class="list-unstyled" id="tips">
+                          <li>
+                             <i class="fa fa-check"></i> Keep track of your numbers
+                            </li>
+                             <li>
+                              <i class="fa fa-check"></i> Focus on mechanics. Good form is a must.
+                               </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Dont be afraid to pause the video and go longer. We might only do a minute of planks or wall sits but if you can go longer go for it and record your results
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> </i> Do not drink any coffee or any stimulant before hand as that will increase&nbsp;your&nbsp;heart&nbsp;rate 
+                                    </li>
+                                     <li>
+                                        <i class="fa fa-check"></i> </i> Grab a timer or use your phone and time yourself 
+                                    </li>
+                                </ul>
+
+
               </div>
             
             </div>
    </div> <!-- end of container -->  
+   </section>
     
 
     <script type="text/javascript">
@@ -90,16 +134,16 @@
     
 });// end of validation
 
+  
        // popovers
-     $(function () 
-      { $('#pop-1').popover('show');
-     });
+     $(function () {
+      $("[data-toggle = 'popover']").popover('show');
 
-
-
+      $('.close-btn').on('click', function () {
+            $("[data-toggle = 'popover']").popover('destroy') 
+      });
+    });
 });
-
-
     </script>
 
                    
