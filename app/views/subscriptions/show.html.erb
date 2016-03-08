@@ -11,7 +11,12 @@
             </div>
             
                
-                <div class="user-program video-container program-video">
+                <div id="welcome-pop" class="user-program video-container program-video"
+                data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Welcome" 
+                data-content="<div> <p>Allright, if its your first time here go ahead and take a tour. If not, skip the tour and lets get started </br> </p><div class='pull-right tour btn btn-primary btn-xs'> Take a tour</div>  <div class='pull-left close-btn btn btn-primary btn-xs'> Skip tour</div> </br> ">
                     
                      
              <%= raw current_user.program.code_one %> 
@@ -24,7 +29,12 @@
           
           <li> <a href="#program-one" class="open-popup-link btn btn-success btn-fill"> Core training </a> </li>
 
-          <li> <a href="#program-two" class="open-popup-link btn btn-success btn-fill"> cardio training</a> </li>
+          <li  class="tour-pop"
+                data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Workouts" 
+                data-content="<div> <p> Every video attached to your program is here. Just click the button and your next workout will pop right up </p> </div> "> <a href="#program-two" class="open-popup-link btn btn-success btn-fill"> cardio training</a> </li>
 
           <li> <a href="#program-three" class="open-popup-link btn btn-success btn-fill">flexibility and mobility</a> </li>
          </ul>  
@@ -39,7 +49,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4"> 
-          <div class="card card-background"> <!-- start of card -->
+          <div class="card card-background tour-pop"
+           data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Reel Movement Blog" 
+                data-content="<div> <p> All right the Reel Movement Blog. Time to start learning about fitness and your body. Click here and find plenty of article to educate yourself about your health </p>  </div> "> <!-- start of card -->
             <div class="image">
     
            <%= image_tag "https://s3.amazonaws.com/reelmovement/articles.jpg"  %> 
@@ -73,7 +88,12 @@
         </div>
 
         <div class="col-md-4"> 
-          <div class="card card-background"> <!-- start of card -->
+          <div class="card card-background tour-pop"
+           data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Recipes" 
+                data-content="<div> <p> Time to to watch and learn how to cook some healthy nutrious meals from professional chefs </p> </div> "> <!-- start of card -->
             <div class="image">
     
             <%= image_tag "cleaneating.jpg"  %> 
@@ -99,10 +119,15 @@
         </div>
 
           <div class="col-md-4"> 
-            <div class="card card-background"> <!-- start of card -->
+            <div class="card card-background tour-pop"
+             data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Corrective Exercise" 
+                data-content="<div> <p> Here we have access to our corrective exercise program. Go ahead take a quick corretive questionare and find a program to help you get rid of some muscle imbalances </p> </div> "> <!-- start of card -->
               <div class="image">
     
-                <%= image_tag "planks1.jpg"  %> 
+                <%= image_tag "https://s3.amazonaws.com/reelmovement/home-workout.jpg"  %> 
 
                 <div class="filter"></div>
               </div>
@@ -130,10 +155,20 @@
     <div class="row">
       <div class="col-md-8">
 
+          <h2 class="text-center">Your workout schedule</h2>
+
+          <p id= "schedule-p"> Below is your program schedule. Now, its up to you to keep track and make sure you put in the work. You won't regret is. just remember consistency is the key</p>
+
+
         <%= raw current_user.program.schedule %> 
       
       </div>
       <div class="col-md-4"> 
+
+        <h2 class="text-center"> Assessment results</h2>
+
+            <p id= "assessment-p"> Unhappy with your results or maybe you think you didn't perform at your best. Then why not retake your assessment again and see if all of this hard work your doing is paying off.  </p>
+
             <div class="card card-background"> <!-- start of card -->
               <div class="image">
     
@@ -164,4 +199,30 @@
 
 
  <%= render 'layouts/programmodal' %>
+
+   <script type="text/javascript">
+
+    $( document ).ready(function() {
+    
+       // popovers
+     $(function () {
+      $("#welcome-pop").popover('show');
+
+       $('.tour').on('click', function () {
+            $(".tour-pop").popover('show')
+            $("#welcome-pop").popover('hide')  
+      });
+
+        $('body').on('click','#close-tour',function () {
+            $(".tour-pop").popover('hide')
+            $("#welcome-pop").popover('hide')  
+      });
+
+      $('.close-btn').on('click', function () {
+            $("[data-toggle = 'popover']").popover('destroy') 
+      });
+    });
+});
+    </script>
+
 

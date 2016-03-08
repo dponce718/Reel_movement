@@ -5,22 +5,22 @@
 
              
 
-                <div  id= "pop-1" class="intro-text col-lg-8 video-container" 
+                <div  id= "pop-1" class="intro-text col-lg-8 video-container assessment-pops" 
                 data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Take your assessment" 
-                data-content="<div> Lets get started. Follow along with us in the video.Check out the useful tips below before you get started.">
+                data-content="<div> <p> Lets get started. Follow along with us in the video.Check out the useful tips below before you get started. </p>">
               <%= raw @program.code_one %>
                 </div>
 
                     <div class="intro-text col-lg-4  center-block">
-                    <div id="pop-2" class="card card-user"
+                    <div id="pop-2" class="card card-user assessment-pops"
                     data-html="true"
                     data-placement="auto left"  
                     data-toggle="popover"  
                     title="Assessment Form" 
-                    data-content=" <div> Grab a pen and paper and once your done with your assessment fill out the form to the right. Be honest with your answers</br> </div>">
+                    data-content=" <div> <p> Grab a pen and paper and once your done with your assessment fill out the form to the right. Be honest with your answers </p></br> </div>">
                     <div class="content">
 
                   <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
@@ -39,18 +39,23 @@
                              </div>
                              
                               <div class="form-group"> 
-                              
-                                <%= f.text_field :planks, autofocus: true, class: 'form-control', placeholder: "Planks" %>
+                              <%= f.label "How long did you plank?" %> </br>
+                              <%= f.select :planks, options_for_select([['Less than 50 seconds', 49], ['60 to 85 seconds', 70], ['one minute and thirty seconds', 90], ['one minute and forty seconds or more', 90]]), {}, { autofocus: 'true', class: 'form-control'} %>
+
+                             
                               </div>
                               
                               <div class="form-group"> 
                                
-                                <%= f.text_field :wall_sits, autofocus: true, class: 'form-control', placeholder: "Wall sits" %>
+                               
+                                <%= f.label "what was you time for wall sits?" %> </br>
+                              <%= f.select :wall_sits, options_for_select([['Less than 50 seconds', 49], ['60 to 85 seconds', 70], ['one minute and thirty seconds', 90], ['one minute and forty seconds or more', 90]]), {}, { autofocus: 'true', class: 'form-control'} %>
                               </div>
                               
                                <div class="form-group"> 
-                                
-                                <%= f.text_field :hamstring, autofocus: true, class: 'form-control', placeholder: "Flexibility" %>
+
+                                <%= f.label "what was your flexibility score?" %> </br>
+                              <%= f.select :hamstring, options_for_select([['One', 1], ['Two', 2], ['Three', 3]]), {}, { autofocus: 'true', class: 'form-control'} %>
                                </div> 
 
                             <div class="actions">
@@ -76,12 +81,12 @@
      <div class="row">
              
               <div class="col-md-6 col-md-offset-3">
-                <h2 id="pop-3" class="text-center tips-header"
+                <h2 id="pop-3" class="text-center tips-header assessment-pops"
                 data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title=" Helpful Tips" 
-                data-content="<div> Go through these tips before you take your fitness assessment. Lets get started  </br> </div> <div class='pull-right close-btn btn btn-primary btn-xs'> Close Tips</div> </br>"> 
+                data-content="<div> <p> Go through these tips before you take your fitness assessment. Lets get started </p> </br> </div> <div class='pull-right close-btn btn btn-primary btn-xs'> Close Tips</div> </br>"> 
                 Here are some helpful tips to guide you </h2>
 
                 <p> 
@@ -120,24 +125,46 @@
     console.log( "ready!" );
     $('.content form').validate({
   rules : {
-          'assessment[rhr]' : { required : true
+          'assessment[rhr]' : { required : true,
+                                number: true 
                          }, //END OF USERNAME
-              'assessment[push_ups]' : { required : true
+              'assessment[push_ups]' : { required : true,
+                                         number: true 
                          },  // end of email
-              'assessment[hamstring]' : { required : true
+              'assessment[hamstring]' : { required : true,
+                                          number: true 
                          },  // end of password 
-               'assessment[planks]' : { required : true
+               'assessment[planks]' : { required : true,
+                                      number: true
                          },  // end of password 
-               'assessment[wall_sits]' : { required : true
+               'assessment[wall_sits]' : { required : true,
+                                            number: true 
                          },  // end of password           
           },//end of rules
+          messages: {
+    'assessment[rhr]': "Don't forget your resting heart rate",
+                        number: "You need to use a numerical value",
+    'assessment[push_ups]': {
+      required: "Dont forget to your push ups",
+      number: "You need to use a numerical value"
+    },// end of email
+     'assessment[hamstring]': {
+      required: "Please select an option",  
+    },
+    'assessment[planks]': {
+      required: "Please select an option"
+    },
+      'assessment[wall_sits]': {
+         required: "Please select an option"
+      }
+  } //end of messages
     
 });// end of validation
 
   
        // popovers
      $(function () {
-      $("[data-toggle = 'popover']").popover('show');
+      $(".assessment-pops").popover('show');
 
       $('.close-btn').on('click', function () {
             $("[data-toggle = 'popover']").popover('destroy') 

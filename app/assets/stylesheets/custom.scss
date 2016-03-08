@@ -9,12 +9,14 @@
 @import "mixins.scss";
 
 
+
+
 // Global Components
 
-html{
+section{
    
-  //  z-index: 3;
-   // background-image: url('http://basehold.it/i/32');
+   // z-index: 3;
+ //   background-image: url('http://basehold.it/i/44');
 }
 
 body {
@@ -2239,9 +2241,20 @@ display:inline;
 #program-list{
     margin-top: 50px;
     width:500px;
-    border: solid 1px black;
+   
 }
 
+#schedule-p{
+    max-width: 500px;
+    margin-left: 5em;
+    
+   
+}
+
+#assessment-p{
+    max-width: 500px;
+   
+}
 
 // background for corrective exercise page
 
@@ -2346,9 +2359,12 @@ display:inline;
 }
 
 @media(min-width:768px) {
+//font-size for bigger screens
+
 body{
-    font-size: 1.5em;
+    font-size: 1.625em;
 }
+
     header {
         .intro-text {
             padding-top: 300px;
@@ -2494,6 +2510,7 @@ body{
 }
 .popover-content {
   padding: 9px 15px;
+  margin-bottom: 5px;
 }
 .popover .arrow {
   border: 0;
