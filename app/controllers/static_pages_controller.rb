@@ -26,7 +26,7 @@ class StaticPagesController < ApplicationController
       format.html 
       format.json { render json: @current_user }
   end
-	redirect_to "/subscriptions"
+	
   end
 
 	

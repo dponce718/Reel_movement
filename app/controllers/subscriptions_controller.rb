@@ -33,7 +33,7 @@ class SubscriptionsController < ApplicationController
 			   
 				
 			current_user.program = Program.find_by_title("General Conditioning")
-			flash[:success] = "yay!"
+			flash[:success] = "Welcome to the program that best suits your needs"
 			redirect_to "/subscriptions/show"
 
 		elsif current_user.assessment.rhr.between?(75,79)
@@ -43,7 +43,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.hamstring <= 2 
 
 			   current_user.program = Program.find_by_title("Core Conditioning")
-			flash[:success] = "yay!"
+			flash[:success] = "Welcome to the program that best suits your needs"
 			redirect_to "/subscriptions/show"
 				
 
