@@ -8,9 +8,9 @@
                 <div  id= "pop-1" class="intro-text col-lg-8 video-container assessment-pops" 
                 data-html="true" 
                 data-toggle="popover"
-                data-placement="top" 
+                data-placement="right" 
                 title="Take your assessment" 
-                data-content="<div> <p> Lets get started. Follow along with us in the video.Check out the useful tips below before you get started. </p>">
+                data-content="<div> <p> Lets get started. Follow along with us in the video. Check out the useful tips below before you get started. </br> </p><div class='pull-right tour btn btn-primary btn-xs'> Take a tour</div>  <div class='pull-left close-btn btn btn-primary btn-xs'> Skip tour</div> </br>  </p>">
               <%= raw @program.code_one %>
                 </div>
 
@@ -20,7 +20,7 @@
                     data-placement="auto left"  
                     data-toggle="popover"  
                     title="Assessment Form" 
-                    data-content=" <div> <p> Grab a pen and paper and once your done with your assessment fill out the form to the right. Be honest with your answers </p></br> </div>">
+                    data-content=" <div> <p> Grab a pen and paper and once your done with your assessment fill out the form to the right. Be honest with your answers </p></br> <div id = 'next' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div>">
                     <div class="content">
 
                   <%= image_tag "logo.png", class: "plain-logo center-block"   %> 
@@ -86,7 +86,7 @@
                 data-toggle="popover"
                 data-placement="top" 
                 title=" Helpful Tips" 
-                data-content="<div> <p> Go through these tips before you take your fitness assessment. Lets get started </p> </br> </div> <div class='pull-right close-btn btn btn-primary btn-xs'> Close Tips</div> </br>"> 
+                data-content="<div> <p> Go through these tips before you take your fitness assessment. Lets get started </p> </br> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> </br>"> 
                 Here are some helpful tips to guide you </h2>
 
                 <p> 
@@ -164,10 +164,25 @@
   
        // popovers
      $(function () {
-      $(".assessment-pops").popover('show');
+      $("#pop-1").popover('show');
+      
 
       $('.close-btn').on('click', function () {
-            $("[data-toggle = 'popover']").popover('destroy') 
+            $("[data-toggle = 'popover']").popover('destroy'); 
+      });
+
+       $('.tour').on('click', function () {
+             $("#pop-1").popover('hide');
+              $("#pop-2").popover('show');
+      });
+
+        $('body').on('click','#next',function () {
+            $("#pop-2").popover('hide');
+               $("#pop-3").popover('show'); 
+      });
+
+      $('body').on('click','#close-tour',function () {
+            $("[data-toggle = 'popover']").popover('destroy');  
       });
     });
 });

@@ -5,7 +5,7 @@
 
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"> <%= raw current_user.program.title %> </h2>
+                    <h1 class="program-title"> <%= raw current_user.program.title %> </h1>
                    
                 </div>
             </div>
@@ -23,21 +23,22 @@
                                             
                 </div>
             <div class="row">
-        <div class=" col-md-6 col-md-offset-3">
+        <div class=" col-md-12">
 
         <ul id="program-list">
           
-          <li> <a href="#program-one" class="open-popup-link btn btn-success btn-fill"> Core training </a> </li>
+          <li> <a href="#program-one" class="open-popup-link btn btn-lg btn-success btn-fill"> Core training </a> </li>
 
-          <li  class="tour-pop"
+          <li  id="pop-1"
                 data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Workouts" 
-                data-content="<div> <p> Every video attached to your program is here. Just click the button and your next workout will pop right up </p> </div> "> <a href="#program-two" class="open-popup-link btn btn-success btn-fill"> cardio training</a> </li>
+                data-content="<div> <p> Every video attached to your program is here. Just click the button and your next workout will pop right up </p> </div> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-1' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div>"> <a href="#program-two" class="open-popup-link btn btn-lg btn-success btn-fill"> cardio training</a> </li>
 
-          <li> <a href="#program-three" class="open-popup-link btn btn-success btn-fill">flexibility and mobility</a> </li>
+          <li> <a href="#program-three" class="open-popup-link btn btn-success btn-lg btn-fill">flexibility and mobility</a> </li>
          </ul>  
+        </div>
         </div>
         </div>
   </section>
@@ -49,12 +50,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4"> 
-          <div class="card card-background tour-pop"
+          <div  id="pop-2" class="card card-background tour-pop"
            data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Reel Movement Blog" 
-                data-content="<div> <p> All right the Reel Movement Blog. Time to start learning about fitness and your body. Click here and find plenty of article to educate yourself about your health </p>  </div> "> <!-- start of card -->
+                data-content="<div> <p> All right the Reel Movement Blog. Time to start learning about fitness and your body. Click here and find plenty of article to educate yourself about your health </p> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div><div id = 'next-2' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div> </div> "> <!-- start of card -->
             <div class="image">
     
            <%= image_tag "https://s3.amazonaws.com/reelmovement/articles.jpg"  %> 
@@ -88,12 +89,12 @@
         </div>
 
         <div class="col-md-4"> 
-          <div class="card card-background tour-pop"
+          <div id = "pop-3" class="card card-background tour-pop"
            data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Recipes" 
-                data-content="<div> <p> Time to to watch and learn how to cook some healthy nutrious meals from professional chefs </p> </div> "> <!-- start of card -->
+                data-content="<div> <p> Time to to watch and learn how to cook some healthy nutrious meals from professional chefs </p> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-3' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div></div> "> <!-- start of card -->
             <div class="image">
     
             <%= image_tag "cleaneating.jpg"  %> 
@@ -119,12 +120,12 @@
         </div>
 
           <div class="col-md-4"> 
-            <div class="card card-background tour-pop"
+            <div id= "pop-4" class="card card-background tour-pop"
              data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Corrective Exercise" 
-                data-content="<div> <p> Here we have access to our corrective exercise program. Go ahead take a quick corretive questionare and find a program to help you get rid of some muscle imbalances </p> </div> "> <!-- start of card -->
+                data-content="<div> <p> Here we have access to our corrective exercise program. Go ahead take a quick corretive questionare and find a program to help you get rid of some muscle imbalances </p> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> </br></div> "> <!-- start of card -->
               <div class="image">
     
                 <%= image_tag "https://s3.amazonaws.com/reelmovement/home-workout.jpg"  %> 
@@ -157,8 +158,9 @@
 
           <h2 class="text-center">Your workout schedule</h2>
 
-          <p id= "schedule-p"> Below is your program schedule. Now, its up to you to keep track and make sure you put in the work. You won't regret is. just remember consistency is the key</p>
-
+          <div class="assess-schedule">
+          <p id= "schedule-p"> Below is your program schedule. Now, its up to you to keep track and make sure you put in the work. You won't regret it. Just remember consistency is the key</p>
+          </div>
 
         <%= raw current_user.program.schedule %> 
       
@@ -167,31 +169,39 @@
 
         <h2 class="text-center"> Assessment results</h2>
 
+          <div class="assess-schedule">
             <p id= "assessment-p"> Unhappy with your results or maybe you think you didn't perform at your best. Then why not retake your assessment again and see if all of this hard work your doing is paying off.  </p>
+            </div>
+         <div class="card card-price">
+ 
 
-            <div class="card card-background"> <!-- start of card -->
-              <div class="image">
-    
-                 <%= image_tag "board.jpg"  %> 
+                           
+                            <div class="content">
 
-                <div class="filter"></div>
-              </div>
-                
-                <div class="content">
-                  <h4 class="title text-center">Your assessment results</h4>
-    
-    
-                
-                   <ul>
+                                <h4 class="text-center">YOUR ASSESSMENT RESULTS </h4>
                       
-                      <li> <span class="badge pull-right"> <%=current_user.assessment.rhr %></span>  Resting Heart Rate </li>
-                      <li > <span class="badge pull-right"><%=current_user.assessment.push_ups%></span> Push Ups</li>
-                      <li > <span class="badge pull-right"><%=current_user.assessment.planks %></span> Planks</li>
-                      <li> <span class="badge pull-right"><%=current_user.assessment.wall_sits%></span> Wall Sits</li>
-                    </ul>
-                
-                </div>
-            </div> <!-- end card -->
+                                
+                                <ul class="list-unstyled list-lines">
+
+                                    <li> <i class="fa fa-heartbeat"></i> Resting Heart Rate <span class="pull-right"> <%=current_user.assessment.rhr %></span>
+                                    </li>
+                                     <li> <i class="fa fa-hand-paper-o"></i> Push Ups <span class="pull-right"> <%=current_user.assessment.push_ups %></span>
+                                    </li>
+                                     <li> <i class="fa fa-user-secret"></i>Planks <span class="pull-right"> <%=current_user.assessment.planks %></span>
+                                    </li>
+                                     <li> <i class="fa fa-thumbs-up"></i> Wall Sits <span class="pull-right"> <%=current_user.assessment.wall_sits %></span>
+                                    </li>
+                                     <li> <i class="fa fa-hand-peace-o"></i> Hamstring Stretch <span class="pull-right"> <%=current_user.assessment.hamstring %></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer">
+                              <button id='assess-button' class="btn btn-fill btn-success center-block"> <%= link_to "Retake your assessment", subscriptions_path %></button>
+                            </div>
+                        </div>
+
+                   
+       </div>
     </div>     
   </div>
 </section>
@@ -209,8 +219,28 @@
       $("#welcome-pop").popover('show');
 
        $('.tour').on('click', function () {
-            $(".tour-pop").popover('show')
-            $("#welcome-pop").popover('hide')  
+            $("#pop-2-nav").popover('show'); 
+            $("#welcome-pop").popover('hide');  
+      });
+
+        $('body').on('click','#next',function () {
+               $("#pop-1").popover('show');
+               $("#pop-2-nav").popover('hide'); 
+      });
+
+         $('body').on('click','#next-1',function () {
+                $("#pop-1").popover('hide');
+               $("#pop-2").popover('show'); 
+      });
+
+          $('body').on('click','#next-2',function () {
+                $("#pop-2").popover('hide');
+               $("#pop-3").popover('show'); 
+      });
+
+            $('body').on('click','#next-3',function () {
+                $("#pop-3").popover('hide');
+               $("#pop-4").popover('show'); 
       });
 
         $('body').on('click','#close-tour',function () {

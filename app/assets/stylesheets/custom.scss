@@ -533,6 +533,10 @@ section {
     @include background-cover;   
 }
 
+.assessment-card{
+    height:500px;
+}
+
 #program-img{
 
     background: image-url('planks.jpg'); 
@@ -2199,6 +2203,10 @@ footer {
 
 }
 
+#assess-button a{
+    color:white;
+}
+
 
 #tell-btn {
     color:white;
@@ -2232,15 +2240,26 @@ height:600px;
     margin-left: 450px;
 }
 
+#program-list li:first-child{
+margin-left:12em;   
+}
+
 #program-list li{
 display:inline;
- margin-right: 15px;
-    
+   
+}
+
+.program-title{
+    color:white;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #program-list{
     margin-top: 50px;
-    width:500px;
+    margin-bottom: 50px;
+    margin-left: 2em;
+    border: 1px solid black;
    
 }
 
@@ -2254,6 +2273,11 @@ display:inline;
 #assessment-p{
     max-width: 500px;
    
+}
+
+.assess-schedule{
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 // background for corrective exercise page
@@ -2483,7 +2507,20 @@ body{
 }
 
 }
-.fa-check{
+.fa-heartbeat{
+    color: red;
+
+}
+
+.fa-hand-paper-o{
+    color: hsla(49, 85%, 45%, 0.67);
+    background:  hsla(49, 85%, 45%, 0.67);
+    border-radius: 10px;
+
+
+}
+
+.fa-user-secret{
     color: $brand-primary;
 
 }
