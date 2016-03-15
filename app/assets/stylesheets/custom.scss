@@ -10,7 +10,6 @@
 
 
 
-
 // Global Components
 
 section{
@@ -465,20 +464,30 @@ h4{
     opacity: 1;
     text-decoration: none;
 }
+
+
+.navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+        .icon-bar {
+            background-color: white;
+        }
+        &:hover,
+        &:focus {
+            background-color: $brand-primary;
+        }
+    }
+
 .navbar-toggle{
     margin-bottom: 27px;
     margin-top: 27px;
     border: 0;
 }
-.navbar-toggle .icon-bar {
-    background-color: #FFFFFF;
-}
+
 .navbar-collapse, .navbar-form {
     border-color: rgba(0, 0, 0, 0);
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: rgba(0,0,0,0);
-}
+
 .navbar-brand-logo{
     padding: 0;
 }
@@ -2237,8 +2246,9 @@ height:600px;
 }
 
 .cta-button{
-    margin-left: 450px;
+    padding-left: 5%;
 }
+
 
 #program-list li:first-child{
 margin-left:12em;   
@@ -2259,7 +2269,6 @@ display:inline;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 2em;
-    border: 1px solid black;
    
 }
 
@@ -2452,6 +2461,42 @@ body{
 
 }
 
+// cta button
+@media (min-width: 500px) and (max-width: 991px){
+
+.cta-button{
+    padding-left: 30%;
+}
+
+}
+
+@media (max-width: 627px){ 
+    .cta-button{
+    padding-left: 27%;
+    
+}
+
+}
+
+@media (max-width: 501px){ 
+    .cta-button{
+    padding-left: 20%;
+    
+}
+
+}
+
+@media (max-width: 501px){ 
+    .cta-button{
+    padding-left: 12%;
+    
+}
+
+}
+
+// end of cta button media queries
+
+
 @media (max-width: 768px){ 
      .navbar-transparent{
          padding-top: 15px;
@@ -2514,13 +2559,20 @@ body{
 
 .fa-hand-paper-o{
     color: hsla(49, 85%, 45%, 0.67);
-    background:  hsla(49, 85%, 45%, 0.67);
-    border-radius: 10px;
-
 
 }
 
 .fa-user-secret{
+    color: $black-color;
+
+}
+
+.fa-thumbs-up{
+    color: $filter-blue;
+
+}
+
+.fa-hand-peace-o{
     color: $brand-primary;
 
 }
