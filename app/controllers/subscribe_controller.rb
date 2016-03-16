@@ -24,6 +24,18 @@ class SubscribeController < ApplicationController
 
   end
 
+  def destroy
+
+   customer = Stripe::Customer.retrieve(current_user.stripeid).delete
+   current_user.destroy
+   
+
+   flash[:success] = "Sorry to see you go :("
+      redirect_to "/"
+ 
+
+  end 
+
 end
 
 
