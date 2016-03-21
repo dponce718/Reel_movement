@@ -23,7 +23,7 @@
                                             
                 </div>
             <div class="row">
-        <div class=" col-md-12">
+        <div class=" col-md-12 program-modal">
 
         <ul id="program-list">
           
@@ -50,7 +50,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4"> 
-          <div  id="pop-2" class="card card-background tour-pop"
+          <div  id="pop-2" class="card card-background center-block"
            data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
@@ -89,7 +89,7 @@
         </div>
 
         <div class="col-md-4"> 
-          <div id = "pop-3" class="card card-background tour-pop"
+          <div id = "pop-3" class="card card-background center-block"
            data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
@@ -120,7 +120,7 @@
         </div>
 
           <div class="col-md-4"> 
-            <div id= "pop-4" class="card card-background tour-pop"
+            <div id= "pop-4" class="card card-background center-block"
              data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
@@ -158,10 +158,10 @@
 
           <h2 class="text-center">Your workout schedule</h2>
 
-          <div class="assess-schedule">
+          <div class="assess-schedule center-block">
           <p id= "schedule-p"> Below is your program schedule. Now, its up to you to keep track and make sure you put in the work. You won't regret it. Just remember consistency is the key</p>
           </div>
-
+            <h2 class="text-center"><i class="fa fa-calendar fa-2x"></i></h2>
         <%= raw current_user.program.schedule %> 
       
       </div>
@@ -169,10 +169,13 @@
 
         <h2 class="text-center"> Assessment results</h2>
 
-          <div class="assess-schedule">
+          <div class="assess-schedule center-block">
             <p id= "assessment-p"> Unhappy with your results or maybe you think you didn't perform at your best. Then why not retake your assessment again and see if all of this hard work your doing is paying off.  </p>
             </div>
-         <div class="card card-price">
+
+              <h2 class="text-center"><i class="fa fa-thumbs-o-up fa-2x"></i></h2>
+
+         <div class="card card-price center-block" id="card-assess">
  
 
                            

@@ -1,0 +1,33 @@
+<section class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-2"></div>
+			<div class="col-md-8">
+					<%= render 'layouts/policies' %>
+
+	<div class="subscription">
+ <%= form_for(:subscription, :url => {:action => 'create'}) do |f| %>
+
+                            <div> 
+                               
+                              <%= f.check_box :subscribed, {}, "true", "false"%>
+                              <%= label_tag(:subscribed, "Accept our terms and policies") %> 
+                            </div>
+
+                            
+                            <div class="actions">
+                            <%= f.submit "Accept our Terms and Privacy Policy", class: 'btn btn-success btn-fill btn-block' %>
+                            </div>
+
+                       
+                          <% end %>
+
+       
+</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		
+	</div>			
+
+</section>

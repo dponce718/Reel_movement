@@ -17,6 +17,14 @@ class StaticPagesController < ApplicationController
 
   end	
 
+  def stripe
+
+  end
+  
+  def forgot_subscription
+
+  end  
+
 
   def create
 

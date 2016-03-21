@@ -28,7 +28,7 @@ schedule: '<div class="table-responsive">
     
             <tr>
     
-                <th class="text-center">#</th>
+                <th class="text-center"> <i class="fa fa-calendar-check-o"></i></th>
     
                 <th>Sunday</th>
     

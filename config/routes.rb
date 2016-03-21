@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get     'recipes'           => 'recipes#index'
   get     'corrective_exercise' => 'programs#show'
   get     'privacy_policy'                =>  'static_pages#privacy_policy'
+  get     'stripe'                =>  'static_pages#stripe'
+  get     'forgot_subscription'                =>  'static_pages#forgot_subscription'
   get     'terms'                =>  'static_pages#terms'
   
 
