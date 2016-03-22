@@ -54,6 +54,8 @@ gem 'figaro'
 
 gem 'gibbon'
 
+gem 'newrelic_rpm'
+
 # for rails blog
 gem 'jekyll', '~> 3.1'
 

@@ -35,6 +35,7 @@ after_create :subscribe_user_to_mailing_list
     includes(:assessment).where(assessments: {user_id: nil})
   end
   
+
   private
  
   def subscribe_user_to_mailing_list
@@ -42,11 +43,10 @@ after_create :subscribe_user_to_mailing_list
   end
 
 
+
+
+
   
-
-
-
-
 
       
 end
