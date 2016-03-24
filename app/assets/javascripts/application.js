@@ -14,8 +14,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require getshitdone.js
-//= require waypoint.js
-//= require lightbox-bootstrap
 //= require typekit
 //= require fittext
 //= require magnific-popup
