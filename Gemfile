@@ -56,6 +56,8 @@ gem 'gibbon'
 
 gem 'newrelic_rpm'
 
+gem 'font_assets'
+
 # for rails blog
 gem 'jekyll', '~> 3.1'
 
