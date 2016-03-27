@@ -52,7 +52,8 @@ gem 'jquery-validation-rails'
 
 gem 'figaro'
 
-gem 'gibbon'
+gem 'gibbon', '~> 1.2.0'
+
 
 gem 'newrelic_rpm'
 
