@@ -1,5 +1,7 @@
 class ProgramsController < ApplicationController
 	before_action :authenticate_user!
+	before_action :forgot_payment
+	
 		
 	
 

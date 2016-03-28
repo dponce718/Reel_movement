@@ -94,9 +94,10 @@
 
        <div class="col-md-12"> 
 
+  <div id="subscribe_user">
        <%= render 'layouts/policies' %>
        
-
+  </div>
 
 <div class="subscription">
  <%= form_for(:subscription, remote: true, :url => {:action => 'create'}) do |f| %>

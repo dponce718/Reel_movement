@@ -18,6 +18,7 @@ class SubscribeController < ApplicationController
 
 
      current_user.stripeid = customer.id
+     current_user.subscribed = true
         current_user.save
    
     redirect_to "/subscriptions"

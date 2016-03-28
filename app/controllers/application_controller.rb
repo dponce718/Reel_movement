@@ -18,6 +18,22 @@ def  no_assessment!
       
 end
 
+def forgot_payment
+  if current_user.subscribed == false
+    flash[:notice] = "Don't forget your payment information"
+    redirect_to "/stripe"
+  end
+end
+
+def forgot_subscription
+  if current_user.subscription == nil
+    flash[:notice] = "Don't forget to accept our terms and policies"
+    redirect_to "/forgot_subscription"
+  end
+end
+
+
+
 
 
 protected
