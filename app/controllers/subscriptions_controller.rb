@@ -1,5 +1,8 @@
 class SubscriptionsController < ApplicationController
 	before_action :authenticate_user!
+	before_action :forgot_subscription!
+	before_action :forgot_payment!
+	before_action :no_assessment!, only: [:show]
 	
 
 

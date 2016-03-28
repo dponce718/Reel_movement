@@ -1,9 +1,5 @@
 class UsersController < ApplicationController
 
-	def show
-
-	end	
-	
 
 	def check_email
   @user = User.find_by_email(params[:user][:email])
@@ -28,9 +24,4 @@ def update
 end
 
 
-
-	protected
-	def program_params
-    		params.require(:program).permit(:title)
-		end	
 end

@@ -1,14 +1,11 @@
 class StaticPagesController < ApplicationController
-	
+	before_action :authenticate_user!, only: [:stripe, :forgot_subscription]
 
   def home
 
   end
 
-  def show
-
-  end
-
+  
   def privacy_policy
   		
   end	

@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_one :subscription
-  has_one :program
+  has_one :program, autosave: true
   has_one :assessment
   has_one :corrective_assessment
 
