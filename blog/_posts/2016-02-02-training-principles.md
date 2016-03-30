@@ -2,6 +2,7 @@
 title:  "Principles of training"
 excerpt: "To better understand how the body reacts to exercise we need to breakdown some basic principles of... 
 "
+image: https://s3.amazonaws.com/reelmovement/cleaneating.jpg
 ---
 
 

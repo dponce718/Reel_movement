@@ -143,6 +143,9 @@ pre {
     fill: #828282; }
 
 /**
+ * mixins
+ */
+/**
  * Site header
  */
 .site-header {
@@ -316,6 +319,90 @@ pre {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 3.125em; }
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.23);
+  background-color: #FFFFFF;
+  margin-bottom: 25px; }
+  .card .image {
+    width: 100%;
+    overflow: hidden;
+    height: 290px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    .card .image img {
+      width: 100%; }
+  .card .filter {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.68);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+    .card .filter .btn {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .card:hover .filter {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .card .btn-hover {
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .card:hover .btn-hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .card .content {
+    padding: 15px 15px 10px 15px; }
+  .card .category {
+    font-size: 18px;
+    color: #9A9A9A;
+    margin-bottom: 0px; }
+  .card .avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px; }
+  .card .footer {
+    padding: 0;
+    background-color: transparent;
+    line-height: 30px; }
+  .card .footer div {
+    display: inline-block; }
+  .card .stats {
+    margin-right: 5px;
+    color: #9A9A9A; }
+  .card .stats.pull-right {
+    margin-left: 5px;
+    margin-left: 0; }
+  .card .author {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .card .author i {
+    font-size: 18px; }
+  .card h6 {
+    font-size: 20px;
+    margin: 0; }
+  .card.card-separator:after {
+    height: 100%;
+    right: -15px;
+    top: 0;
+    width: 1px;
+    background-color: #DDDDDD;
+    content: "";
+    position: absolute; }
 
 /**
  * Syntax highlighting styles

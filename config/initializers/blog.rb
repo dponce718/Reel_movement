@@ -2,8 +2,7 @@
 #  Rails.logger = Logger.new(STDOUT)
 #  begin
 #    # make a spot for the site
-#    dest = Rails.root.join('public/blog')#
-
+#    dest = Rails.root.join('public/blog')
 #    # generate the site
 #    Jekyll::Site.new(
 #      Jekyll.configuration({
@@ -11,8 +10,7 @@
 #        "source" => Rails.root.join('blog').to_s,
 #        "destination" => dest.to_s
 #      })
-#    ).process#
-
+#    ).process
 #                # the strange codes give the output color
 #    Rails.logger.info "\e[0;32;49mJekyll site built!\e[0m]]"
 #  rescue => e

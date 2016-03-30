@@ -1,28 +1,103 @@
 ---
 layout: default
 ---
-<div id="background-image">
-  
 
-</div>
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading text-center">Articles</h1>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+ 
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p> {{post.author}}</p>
-      </li>
-  </ul>
-
-  {{post.excerpt}}
+  {% for post in paginator.posts %}
+<div class="card">
+    
+        <div class="image">
+    
+            <img class="img-responsive" src="{{post.image}}">
+    
+            <div class="filter filter-white">
+    
+                <button type="button" class="btn btn-default btn-simple">
+    
+                    <i class="fa fa-image"></i> Preview 
+    
+                </button>
+    
+                <button type="button" class="btn btn-success btn-simple">
+    
+                    <i class="fa fa-check"></i> Publish 
+    
+                </button>
+    
+                <button type="button" class="btn btn-danger btn-simple">
+    
+                    <i class="fa fa-times"></i> Delete
+    
+                </button>
+    
+            </div>
+    
+        </div>
+    
+        <div class="content">
+    
+            <p class="category"> <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span></p>
+    
+           
+    
+                <h4 class="title"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </h4>
+    
+    
+            <a href="#">
+    
+               {{post.excerpt}}
+    
+            </a>
+    
+             <div class="footer">
+    
+                <div class="author">
+    
+                    <a class="card-link" href="#">
+    
+                         <img src="assets/img/default-avatar.png" alt="..." class="avatar">
+    
+                         <span> {{post.author}}</span>
+    
+                    </a>
+    
+                </div>
+    
+                <div class="stats pull-right">
+    
+                     <a href="#">
+    
+                        <i class="fa fa-comments"></i> 89
+    
+                     </a>
+    
+                </div>
+    
+                <div class="stats pull-right">
+    
+                    <a href="#">
+    
+                        <i class="fa fa-heart"></i> 341
+    
+                    </a>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div> 
+ 
    {% endfor %}
+
+   
+
    
    {% if paginator.total_pages > 1 %}
     <div class="pagination">
@@ -53,3 +128,5 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+
+
