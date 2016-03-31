@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading text-center">Articles</h1>
+  <h1 class="page-heading">Articles</h1>
 
  
 
@@ -48,11 +48,11 @@ layout: default
                 <h4 class="title"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </h4>
     
     
-            <a href="#">
+           
     
-               {{post.excerpt}}
+              <p> {{post.excerpt}} </p>
     
-            </a>
+           
     
              <div class="footer">
     
@@ -60,29 +60,9 @@ layout: default
     
                     <a class="card-link" href="#">
     
-                         <img src="assets/img/default-avatar.png" alt="..." class="avatar">
+                         <img class="avatar" src="{{post.image}}">
     
                          <span> {{post.author}}</span>
-    
-                    </a>
-    
-                </div>
-    
-                <div class="stats pull-right">
-    
-                     <a href="#">
-    
-                        <i class="fa fa-comments"></i> 89
-    
-                     </a>
-    
-                </div>
-    
-                <div class="stats pull-right">
-    
-                    <a href="#">
-    
-                        <i class="fa fa-heart"></i> 341
     
                     </a>
     

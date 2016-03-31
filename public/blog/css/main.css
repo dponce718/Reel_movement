@@ -64,12 +64,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #1e8000;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #1e8000; }
   a:hover {
-    color: #111;
+    color: #124d00;
     text-decoration: underline; }
 
 /**
@@ -149,9 +149,8 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
+  background: #2ab300;
   position: relative; }
 
 .site-title {
@@ -161,7 +160,7 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: white; }
 
 .site-nav {
   float: right;
@@ -169,7 +168,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: white;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -260,9 +259,6 @@ pre {
 /**
  * Page content
  */
-.page-content {
-  padding: 30px 0; }
-
 .page-heading {
   font-size: 20px; }
 
@@ -326,9 +322,8 @@ pre {
   background-color: #FFFFFF;
   margin-bottom: 25px; }
   .card .image {
-    width: 100%;
     overflow: hidden;
-    height: 290px;
+    height: 300px;
     border-radius: 6px 6px 0 0;
     position: relative;
     -webkit-transform-style: preserve-3d;
