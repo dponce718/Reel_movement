@@ -1,6 +1,9 @@
 /**
  * Site header
  */
+
+ 
+
 .site-header {
     min-height: 56px;
     background: lighten($brand-primary, 10%);
@@ -8,6 +11,7 @@
     // Positioning context for the mobile navigation icon
     position: relative;
 }
+
 
 .site-title {
     font-size: 26px;
@@ -83,6 +87,28 @@
             padding: 5px 10px;
         }
     }
+}
+
+#article-image{
+background-size: cover;
+    height: 500px;
+}
+
+.social-buttons{
+    margin-bottom: 50px;
+}
+
+#article-image h1{
+ text-align: center;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
 }
 
 
@@ -164,7 +190,8 @@
 
 
 .page-heading {
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .post-list {
@@ -184,6 +211,10 @@
 .post-link {
     display: block;
     font-size: 24px;
+}
+
+.rss-subscribe{
+    float:left;
 }
 
 
@@ -235,7 +266,7 @@
 
 
 #background-image {
-  height: 335px;
+  height: 450px;
   background: url("https://s3.amazonaws.com/reelmovement/articles.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -250,12 +281,16 @@
     border-radius: $border-radius-large;
     box-shadow: 0 1px 4px rgba(0,0,0,.23);
     background-color: #FFFFFF;
-    margin-bottom: 25px;
+    margin: 25px 30px;
+    width: 300px;
+    height:500px;
+    float:left;
+
     
     
     .image{
         overflow: hidden;
-        height: 300px;
+        height: 200px;
         border-radius: $border-radius-large-top;
         position: relative;
         -webkit-transform-style: preserve-3d;
@@ -349,3 +384,48 @@
         position: absolute;
     }
 }
+
+@media (min-width: 628px) and (max-width: 749px){
+
+.card{
+    margin: 25px 18%;
+    width: 400px;
+}
+
+}
+
+@media (min-width: 500px) and (max-width: 627px){
+
+.card{
+     width: 350px;
+     margin: 25px 12%;
+}
+
+}
+
+@media (max-width: 499px){
+    .card{
+     margin: 25px 12%;
+}
+}
+
+
+.blog-heading{
+ float:left;
+ width: 100%;
+ text-align: center;
+ margin-top: 145px;
+   color: lighten($brand-primary, 5%);
+    font-size: 60px;
+@include media-query($on-laptop) {
+    font-size:45px;
+    @include media-query($on-palm) {
+          font-size: 30px; 
+        }
+    }
+    }
+
+    .article-heading{
+    color:black;
+    }
+

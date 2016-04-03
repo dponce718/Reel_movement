@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 ---
 <div class="post">
 
@@ -8,9 +8,7 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-{%if page.image %}
-  <img class="img-responsive" src="{{page.image}}">
- {%endif%} 
+
 
   <article >
     {{ content }}

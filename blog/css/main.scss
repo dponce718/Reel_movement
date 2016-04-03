@@ -43,6 +43,53 @@ $on-laptop:        800px;
 }
 
 
+@mixin acta-font {
+  font-family:"acta-display", Helvetica, Arial, sans-serif;
+}
+
+
+.light-acta{
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.light-italic-acta{
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.light-acta-book{
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.light-acta-book-italic{
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+@mixin sofia-font {
+   font-family: "sofia-pro-condensed", Helvetica, Arial, sans-serif;
+}
+
+
+.sofia-extra-light{
+  font-style: normal;
+  font-weight: 200;
+}
+
+.sofia-extra-light-italic{
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

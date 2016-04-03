@@ -1,3 +1,31 @@
+.light-acta {
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.light-italic-acta {
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.light-acta-book {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.light-acta-book-italic {
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.sofia-extra-light {
+  font-style: normal;
+  font-weight: 200; }
+
+.sofia-extra-light-italic {
+  font-style: italic;
+  font-weight: 200; }
+
 /**
  * Reset some basic elements
  */
@@ -18,6 +46,9 @@ body {
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
+
+P {
+  font-family: "sofia-pro-condensed", Helvetica, Arial, sans-serif; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -58,7 +89,8 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-family: "acta-display", Helvetica, Arial, sans-serif;
+  line-height: 1.2; }
 
 /**
  * Links
@@ -204,6 +236,23 @@ pre {
         display: block;
         padding: 5px 10px; } }
 
+#article-image {
+  background-size: cover;
+  height: 500px; }
+
+.social-buttons {
+  margin-bottom: 50px; }
+
+#article-image h1 {
+  text-align: center; }
+
+ul.share-buttons {
+  list-style: none;
+  padding: 0; }
+
+ul.share-buttons li {
+  display: inline; }
+
 /**
  * Site footer
  */
@@ -260,7 +309,8 @@ pre {
  * Page content
  */
 .page-heading {
-  font-size: 20px; }
+  font-size: 30px;
+  text-align: center; }
 
 .post-list {
   margin-left: 0;
@@ -275,6 +325,9 @@ pre {
 .post-link {
   display: block;
   font-size: 24px; }
+
+.rss-subscribe {
+  float: left; }
 
 /**
  * Posts
@@ -309,7 +362,7 @@ pre {
         font-size: 18px; } }
 
 #background-image {
-  height: 335px;
+  height: 450px;
   background: url("https://s3.amazonaws.com/reelmovement/articles.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -320,10 +373,13 @@ pre {
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.23);
   background-color: #FFFFFF;
-  margin-bottom: 25px; }
+  margin: 25px 30px;
+  width: 300px;
+  height: 500px;
+  float: left; }
   .card .image {
     overflow: hidden;
-    height: 300px;
+    height: 200px;
     border-radius: 6px 6px 0 0;
     position: relative;
     -webkit-transform-style: preserve-3d;
@@ -398,6 +454,34 @@ pre {
     background-color: #DDDDDD;
     content: "";
     position: absolute; }
+
+@media (min-width: 628px) and (max-width: 749px) {
+  .card {
+    margin: 25px 18%;
+    width: 400px; } }
+@media (min-width: 500px) and (max-width: 627px) {
+  .card {
+    width: 350px;
+    margin: 25px 12%; } }
+@media (max-width: 499px) {
+  .card {
+    margin: 25px 12%; } }
+.blog-heading {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 145px;
+  color: #249900;
+  font-size: 60px; }
+  @media screen and (max-width: 800px) {
+    .blog-heading {
+      font-size: 45px; } }
+  @media screen and (max-width: 800px) and (max-width: 600px) {
+    .blog-heading {
+      font-size: 30px; } }
+
+.article-heading {
+  color: black; }
 
 /**
  * Syntax highlighting styles
