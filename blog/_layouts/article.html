@@ -20,7 +20,9 @@
       <div class="social-buttons">
         <ul class="share-buttons">
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freelmovement.herokuapp.com%2Fblog&t=Reel%20Movement%20Blog" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Freelmovement.herokuapp.com%2Fblog&text=Reel%20Movement%20Blog:%20https%3A%2F%2Freelmovement.herokuapp.com%2Fblog&via=reelmovement" target="_blank" title="Tweet"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+ 
+  <li><a href="https://twitter.com/share"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+
   <li><a href="https://plus.google.com/share?url=https%3A%2F%2Freelmovement.herokuapp.com%2Fblog" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
   <li><a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Freelmovement.herokuapp.com%2Fblog&t=Reel%20Movement%20Blog&s=" target="_blank" title="Post to Tumblr"><i class="fa fa-tumblr-square fa-2x"></i></a></li>
   <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Freelmovement.herokuapp.com%2Fblog&media=https://s3.amazonaws.com/reelmovement/blog.png&description=The%20company%20that%20answers%20all%20of%20your%20fitness%20needs.%20At%20Reel%20Movement%20you%20will%20receive%20professionally%20designed%20programs%2C%20corrective%20exercise%2C%20educational%20articles%2C%20and%20nutritionally%20balanced%20meals%20all%20in%20the%20comfort%20of%20your%20own%20home." target="_blank" title="Pin it"><i class="fa fa-pinterest-square fa-2x"></i></a></li>
@@ -28,6 +30,9 @@
   <li><a href="mailto:?subject=Reel%20Movement%20Blog&body=The%20company%20that%20answers%20all%20of%20your%20fitness%20needs.%20At%20Reel%20Movement%20you%20will%20receive%20professionally%20designed%20programs%2C%20corrective%20exercise%2C%20educational%20articles%2C%20and%20nutritionally%20balanced%20meals%20all%20in%20the%20comfort%20of%20your%20own%20home.:%20https%3A%2F%2Freelmovement.herokuapp.com%2Fblog" target="_blank" title="Email"><i class="fa fa-envelope-square fa-2x"></i></a></li>
 </ul>
         </div>
+
+       
+
         {{ content }}
       </div>
     </div>
@@ -35,5 +40,7 @@
     {% include footer.html %}
 
   </body>
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </html>
