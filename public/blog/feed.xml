@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reel Movement Blog</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://yourdomain.com/blog/</link>
-    <atom:link href="http://yourdomain.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2016 19:47:26 -0400</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2016 19:47:26 -0400</lastBuildDate>
+    <description></description>
+    <link>http://Reelmovement.herokuapp.com/blog/</link>
+    <atom:link href="http://Reelmovement.herokuapp.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 07 Apr 2016 18:29:16 -0400</pubDate>
+    <lastBuildDate>Thu, 07 Apr 2016 18:29:16 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -41,8 +40,8 @@ We are all individuals and thus we have to take into account each person’s res
 &lt;p&gt;&lt;span class=&quot;script&quot;&gt; Daniel Ponce &lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 02 Feb 2016 00:00:00 -0500</pubDate>
-        <link>http://yourdomain.com/blog/training-principles</link>
-        <guid isPermaLink="true">http://yourdomain.com/blog/training-principles</guid>
+        <link>http://Reelmovement.herokuapp.com/blog/training-principles</link>
+        <guid isPermaLink="true">http://Reelmovement.herokuapp.com/blog/training-principles</guid>
         
         
         <category>articles</category>
@@ -83,8 +82,8 @@ Daniel Ponce
 &lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 07:25:09 -0500</pubDate>
-        <link>http://yourdomain.com/blog/core-training</link>
-        <guid isPermaLink="true">http://yourdomain.com/blog/core-training</guid>
+        <link>http://Reelmovement.herokuapp.com/blog/core-training</link>
+        <guid isPermaLink="true">http://Reelmovement.herokuapp.com/blog/core-training</guid>
         
         
         <category>articles</category>
