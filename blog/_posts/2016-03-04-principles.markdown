@@ -1,9 +1,11 @@
 ---
-title:  "Principles of training"
-excerpt: "To better understand how the body reacts to exercise we need to breakdown some basic principles of... 
-"
-image: https://s3.amazonaws.com/reelmovement/sideLunge.jpg
+title:  "PRINCIPLES OF TRAINING"
+date:   2016-03-04 12:25:09
+excerpt: "We all have been in a position where we want to get in better shape but we just have no idea where to begin. At Reel Movement you will not only train hard but you will also train smart..."
+permalink: principles
+image: https://s3.amazonaws.com/reelmovement/jumprope.jpg
 ---
+
 
 <p>
 We all have been in a position where we want to get in better shape but we just have no idea where to begin. At Reel Movement you will not only train hard but you will also train smart. That means getting a better understanding of the human body and how it responds to exercise. To better understand how the body reacts to exercise we need to breakdown some basic principles of training. 
