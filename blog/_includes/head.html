@@ -8,24 +8,10 @@
   
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
- <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-
-<meta property="og:type" content="{% if page.image %}article{% else %}website{% endif %}">
-
-<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-<meta property="og:image" content="{% if page.image %}{{ page.image }}{% endif %}">
-
-<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-
-<meta property="og:site_name" content="{{ site.title }}">
-
-<meta property="og:locale" content="{{ site.locale }}">
-
-
-<meta property="fb:app_id" content="{{ site.fb_appid }}">
+ {% include opengraph.html %}
 <script src="https://use.typekit.net/yqy2cas.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
