@@ -2,11 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reel Movement Blog</title>
-    <description></description>
-    <link>http://Reelmovement.herokuapp.com/blog/</link>
-    <atom:link href="http://Reelmovement.herokuapp.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Apr 2016 16:34:45 -0400</pubDate>
-    <lastBuildDate>Fri, 08 Apr 2016 16:34:45 -0400</lastBuildDate>
+    <description>check out my blog
+</description>
+    <link>/blog/</link>
+    <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 09 Apr 2016 08:36:59 -0400</pubDate>
+    <lastBuildDate>Sat, 09 Apr 2016 08:36:59 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -40,8 +41,50 @@ We are all individuals and thus we have to take into account each person’s res
 &lt;p&gt;&lt;span class=&quot;script&quot;&gt; Daniel Ponce &lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Mar 2016 07:25:09 -0500</pubDate>
-        <link>http://Reelmovement.herokuapp.com/blog/principles</link>
-        <guid isPermaLink="true">http://Reelmovement.herokuapp.com/blog/principles</guid>
+        <link>/blog/principles</link>
+        <guid isPermaLink="true">/blog/principles</guid>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>What is The Core and Why is it Important?</title>
+        <description>&lt;p&gt;
+Core training has become extremely popular over the past several years, but why is it so important and what are the potential benefits of training the core? The core musculature is not just made up of the rectus abdominus and the internal and external oblique, but a much more extensive network of muscles. The core is broken down into three systems.
+&lt;/p&gt;
+
+&lt;h2&gt;The Local Stabilization System&lt;/h2&gt;
+
+&lt;p&gt;
+The local core stabilizers are muscles that attach directly to the spine and aid in stability in between each vertebra.  Some muscles that comprise the local stabilization system are the transverse abdominus, internal oblique, and the multifidus. This system overall contributes in increasing segmental spinal stability.  
+&lt;/p&gt;
+
+&lt;h2&gt;The Global Stabilization System &lt;/h2&gt;
+
+&lt;p&gt;
+The muscles of the global stabilization system attach the pelvis to the spine. Some of the major muscles of this system include the quadratus lumborum, psoas major, and the external oblique. Its main function is to provide stability between the pelvis and the spine and transfer loads between the upper and lower extremities. 
+&lt;/p&gt;
+
+&lt;h2&gt;The Movement System&lt;/h2&gt;
+
+&lt;p&gt;
+The muscles of this system attach the spine and/or pelvis to the extremities. The movement systems primary muscles are the latissimus dorsi, hip flexors, hamstrings, and quadriceps. When it comes to the core the movement system provides dynamic stabilization when the body is performing functional activities. 
+&lt;/p&gt;
+
+&lt;p&gt;	
+The core ultimately provides stabilization throughout the spine and hips allowing for optimum joint movement. A strengthened core reduces the risk of injury, improves function and performance, and improves neuromuscular control and stability. A good core program focuses on function and movement rather than just quantity.  So, in your workout include some core exercises and watch how much more your performance improves
+&lt;p&gt;
+
+&lt;p&gt;Founder and CEO of Reel Movement&lt;/p&gt;
+
+Daniel Ponce
+&lt;/p&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Feb 2016 07:25:09 -0500</pubDate>
+        <link>/blog/core-training</link>
+        <guid isPermaLink="true">/blog/core-training</guid>
         
         
         <category>articles</category>
