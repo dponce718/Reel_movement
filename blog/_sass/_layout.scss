@@ -111,6 +111,14 @@ ul.share-buttons li{
   display: inline;
 }
 
+ul.share-buttons li:nth-last-child(-n+4) { 
+     margin-top:50px;
+}
+
+.fb_iframe_widget {
+    display: inline-flex !important;
+}
+
 
 
 /**
