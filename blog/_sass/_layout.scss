@@ -274,12 +274,19 @@ ul.share-buttons li:nth-last-child(-n+4) {
 
 
 #background-image {
-  height: 450px;
+  height: 650px;
   background: url("https://s3.amazonaws.com/reelmovement/articles.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 3.125em; }
+  margin-bottom: 3.125em;
+    @include media-query($on-laptop) {
+        height: 550px;
+    @include media-query($on-palm) {
+           height: 450px;
+        }
+    }
+   }
 
 
 
@@ -422,13 +429,14 @@ ul.share-buttons li:nth-last-child(-n+4) {
  float:left;
  width: 100%;
  text-align: center;
- margin-top: 145px;
+ margin-top: 245px;
    color: lighten($brand-primary, 5%);
     font-size: 60px;
 @include media-query($on-laptop) {
     font-size:45px;
     @include media-query($on-palm) {
-          font-size: 30px; 
+          font-size: 30px;
+          margin-top: 145px; 
         }
     }
     }
@@ -440,7 +448,7 @@ ul.share-buttons li:nth-last-child(-n+4) {
 @media (min-width: 1500px){
     
     #article-image{
-    height: 900px;
+    height: 800px;
 }
 
     .blog-heading{

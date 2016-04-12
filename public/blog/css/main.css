@@ -368,12 +368,18 @@ ul.share-buttons li:nth-last-child(-n+4) {
         font-size: 18px; } }
 
 #background-image {
-  height: 450px;
+  height: 650px;
   background: url("https://s3.amazonaws.com/reelmovement/articles.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 3.125em; }
+  @media screen and (max-width: 800px) {
+    #background-image {
+      height: 550px; } }
+  @media screen and (max-width: 800px) and (max-width: 600px) {
+    #background-image {
+      height: 450px; } }
 
 .card {
   border-radius: 6px;
@@ -476,7 +482,7 @@ ul.share-buttons li:nth-last-child(-n+4) {
   float: left;
   width: 100%;
   text-align: center;
-  margin-top: 145px;
+  margin-top: 245px;
   color: #249900;
   font-size: 60px; }
   @media screen and (max-width: 800px) {
@@ -484,14 +490,15 @@ ul.share-buttons li:nth-last-child(-n+4) {
       font-size: 45px; } }
   @media screen and (max-width: 800px) and (max-width: 600px) {
     .blog-heading {
-      font-size: 30px; } }
+      font-size: 30px;
+      margin-top: 145px; } }
 
 .article-heading {
   color: white; }
 
 @media (min-width: 1500px) {
   #article-image {
-    height: 900px; }
+    height: 800px; }
 
   .blog-heading {
     margin-top: 345px; } }
