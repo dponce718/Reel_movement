@@ -3,7 +3,7 @@ title:  "What is The Core and Why is it Important?"
 date:   2016-02-01 12:25:09
 excerpt: "Core training has become extremely popular over the past several years, but why is it so..."
 permalink: core-training
-image: https://s3.amazonaws.com/reelmovement/planks.jpg
+image: https://s3.amazonaws.com/reelmovement/groupplank.jpg
 ---
 
 

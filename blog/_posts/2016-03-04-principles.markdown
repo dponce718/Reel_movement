@@ -3,7 +3,7 @@ title:  "PRINCIPLES OF TRAINING"
 date:   2016-03-04 12:25:09
 excerpt: "We all have been in a position where we want to get in better shape but we just have no idea where to begin. At Reel Movement you will not only train hard but you will also train smart..."
 permalink: principles
-image: https://s3.amazonaws.com/reelmovement/mountain_climbers.jpg
+image: https://s3.amazonaws.com/reelmovement/General.jpg
 ---
 
 

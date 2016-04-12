@@ -487,8 +487,14 @@ ul.share-buttons li:nth-last-child(-n+4) {
       font-size: 30px; } }
 
 .article-heading {
-  color: black; }
+  color: white; }
 
+@media (min-width: 1500px) {
+  #article-image {
+    height: 900px; }
+
+  .blog-heading {
+    margin-top: 345px; } }
 /**
  * Syntax highlighting styles
  */
