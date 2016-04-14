@@ -2,6 +2,22 @@ class SubscribeController < ApplicationController
   
 
   def new
+     token = params[:stripeToken]
+
+    # Create a Customer
+    customer = Stripe::Customer.create(
+    :source => token,
+    :plan => 'unlimited',
+    :email => current_user.email,
+    :description => "Another subscriber for the unlimited program"
+  )
+
+
+     current_user.stripeid = customer.id
+     current_user.subscribed = true
+        current_user.save
+   
+    flash[:success] = "Sorry to see you go :("
   end
 
   def update
@@ -36,6 +52,14 @@ class SubscribeController < ApplicationController
  
 
   end 
+
+  def index
+   
+  end
+
+  def create
+    raise foo
+   end 
 
 end
 

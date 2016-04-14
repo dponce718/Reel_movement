@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
 
 	def new 
+		raise foo
 	end
 	
 	def update
@@ -15,4 +16,9 @@ class ChargesController < ApplicationController
 		 current_user.stripeid = customer.id
 		 current_user.save
 	end	
+
+
+	def create
+		raise foo
+	end
 end

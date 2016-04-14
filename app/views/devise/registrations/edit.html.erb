@@ -1,7 +1,7 @@
 <section class="bg-light-gray">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-8">
          <div class="card card-user corrective-form">
             <div class="content">
 
@@ -53,6 +53,54 @@
             </div>
         </div>   
       </div>
+
+       <div class="col-md-4">  
+<div class="card card-price">
+                            <div class="content">
+                                <h6 class="category">Your Plan</h6>
+                                <h1 class="price">
+                                    <small>$</small>14<small> /mo</small>
+                                </h1>                        
+                                
+                                <ul class="list-unstyled list-lines">
+                                    <li>
+                                      <i class="fa fa-check"></i> <b>Unlimited</b> access to all programs, recipes, and corrective exercise
+                                    </li>
+                                    <li>
+                                      <i class="fa fa-check"></i>  <b>Constant</b> updates and new programs
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i>  <b>Learn</b> to cook healthy meals
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> </i> <b>Cancel</b> anytime
+                                    </li>
+                                </ul>
+                            </div>
+                              <div class="footer">
+            <%= form_tag charges_path(1), class: "text-center", method: :post do %>
+            
+
+
+<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Update your card information"
+          data-image="https://s3.amazonaws.com/reelmovement/logo.png" 
+          data-name= "Reel Movement"
+          data-label= "Update your card info"
+           data-panel-label="Update Card Details"
+          data-allow-remember-me=false
+          data-locale="auto">
+          </script>
+
+<% end %>       
+                              </div>
+</div>
+
+</div> 
+
     </div>
   </div>
 </section>
+
+

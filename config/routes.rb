@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   
   
   
-  resources :extras
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
@@ -24,8 +23,8 @@ Rails.application.routes.draw do
   resources :subscriptions
   resources :static_pages 
   resources :recipes, only: [:index]
-  resources :charges
   resources :subscribe
+   resources :charges
 
 
 
