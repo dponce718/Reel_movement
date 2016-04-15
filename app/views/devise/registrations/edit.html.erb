@@ -84,6 +84,7 @@
 
 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-email= <%= current_user.email %>
           data-description="Update your card information"
           data-image="https://s3.amazonaws.com/reelmovement/logo.png" 
           data-name= "Reel Movement"
