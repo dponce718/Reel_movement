@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get     'stripe'                =>  'static_pages#stripe'
   get     'forgot_subscription'                =>  'static_pages#forgot_subscription'
   get     'terms'                =>  'static_pages#terms'
+  post 'webhooks' => 'subscribe#webhooks'
   
 
  
@@ -32,6 +33,7 @@ Rails.application.routes.draw do
   resources 'users' do
  get 'check_email', :on => :collection
  resources :programs
+
 
 end
   # The priority is based upon order of creation: first created -> highest priority.
