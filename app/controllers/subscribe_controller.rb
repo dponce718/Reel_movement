@@ -1,5 +1,5 @@
 class SubscribeController < ApplicationController
- protect_from_forgery :except => :webhook
+ protect_from_forgery :except => :webhooks
 
   # Method responsbile for handling stripe webhooks
 # reference https://stripe.com/docs/webhooks
