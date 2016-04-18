@@ -20,7 +20,6 @@ def webhook
       when 'charge.failed'
         handle_failure_charge event_object
       when 'charge.succeeded'
-        render current_user.name
       when 'customer.subscription.deleted'
       when 'customer.subscription.updated'
     end
