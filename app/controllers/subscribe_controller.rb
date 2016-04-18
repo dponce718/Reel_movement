@@ -5,8 +5,11 @@ class SubscribeController < ApplicationController
 # reference https://stripe.com/docs/webhooks
 def webhook
   
+  StripeEvent.event_retriever = lambda do |params|
+  return nil if StripeWebhook.exists?(stripe_id: params[:id])
   StripeWebhook.create!(stripe_id: params[:id])
   Stripe::Event.retrieve(params[:id])
+end
 
   begin
     event_json = JSON.parse(request.body.read)
