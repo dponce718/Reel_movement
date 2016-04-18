@@ -4,6 +4,12 @@ class SubscribeController < ApplicationController
   # Method responsbile for handling stripe webhooks
 # reference https://stripe.com/docs/webhooks
 def webhook
+      StripeEvent.event_retriever = lambda do |params|
+  return nil if StripeWebhook.exists?(stripe_id: params[:id])
+  StripeWebhook.create!(stripe_id: params[:id])
+  Stripe::Event.retrieve(params[:id])
+end
+
   begin
     event_json = JSON.parse(request.body.read)
     event_object = event_json['data']['object']
@@ -15,8 +21,9 @@ def webhook
         handle_failure_invoice event_object
       when 'charge.failed'
         handle_failure_charge event_object
+      when 'charge.succeeded'
+        render current_user.name
       when 'customer.subscription.deleted'
-        User.find(1).name
       when 'customer.subscription.updated'
     end
   rescue Exception => ex
