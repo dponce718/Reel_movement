@@ -24,6 +24,10 @@ def webhook
         user = User.first
         user.name = billy
         user.save
+
+        when 'customer.subscription.created'
+        current_user.name = billy
+        user.save
       when 'customer.subscription.deleted'
       when 'customer.subscription.updated'
     end
