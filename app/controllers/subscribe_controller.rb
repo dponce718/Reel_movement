@@ -15,7 +15,12 @@ def webhook
     #refer event types here https://stripe.com/docs/api#event_types
     case event_json['type']
       when 'invoice.payment_succeeded'
-        handle_success_invoice event_object
+        current_user.name = "billy"
+        user.save
+
+         user = User.first
+        user.name = "billy"
+        user.save
       when 'invoice.payment_failed'
         handle_failure_invoice event_object
       when 'charge.failed'
