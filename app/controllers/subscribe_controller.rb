@@ -16,6 +16,7 @@ def webhook
       when 'charge.failed'
         handle_failure_charge event_object
       when 'customer.subscription.deleted'
+        User.find(1).name
       when 'customer.subscription.updated'
     end
   rescue Exception => ex
