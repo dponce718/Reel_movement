@@ -5,8 +5,8 @@ class SubscribeController < ApplicationController
 # reference https://stripe.com/docs/webhooks
 def webhook
 
-  StripeWebhook.create!(stripe_id: params[:id])
-  Stripe::Event.retrieve(params[:id])
+  StripeWebhook.create!(stripe_webhook_id)
+  Stripe::Event.retrieve(stripe_webhook_id)
 
 
   begin
@@ -79,6 +79,12 @@ end
 
   end 
 
+protected
+
+  
+    def stripe_webhook_id
+        params.require(:StripeWebhook).permit(:stripe_id)
+    end 
 
 end
 
