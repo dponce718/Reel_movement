@@ -184,7 +184,6 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kramdown (1.10.0)
-    lightbox-bootstrap-rails (3.3.0.3)
     liquid (3.0.6)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
@@ -372,7 +371,6 @@ DEPENDENCIES
   jquery-turbolinks
   jquery-validation-rails
   jquery-waypoints-rails (~> 2.0, >= 2.0.5)
-  lightbox-bootstrap-rails
   magnific-popup-rails
   newrelic_rpm
   pg

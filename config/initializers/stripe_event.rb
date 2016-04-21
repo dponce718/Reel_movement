@@ -6,7 +6,7 @@ end
 
 
 StripeEvent.configure do |events|
-  events.subscribe 'charge.dispute.created' do |event|
+  events.subscribe 'customer.created' do |event|
     
   end
 end

@@ -13,9 +13,10 @@ puts 'CREATED PLANS'
 
 #programs
  Program.create(title: "General Conditioning", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-6564419" mozallowfullscreen name="vzvd-6564419" src="//view.vzaar.com/6564419/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
-code_two: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-6564490" mozallowfullscreen name="vzvd-6564490" src="//view.vzaar.com/6564490/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
-code_three: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-6564538" mozallowfullscreen name="vzvd-6564538" src="//view.vzaar.com/6564538/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+code_one: '<iframe id="vzvd-6870457" name="vzvd-6870457" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870457/player"></iframe>',
+code_two: '<iframe id="vzvd-6870415" name="vzvd-6870415" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870415/player"></iframe>',
+code_three: '<iframe id="vzvd-6870478" name="vzvd-6870478" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870478/player"></iframe>',
+code_four: '<iframe id="vzvd-6870434" name="vzvd-6870434" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870434/player"></iframe>',
 description: 'This is your introduction into our level 1 General Conditioning program and we take off running. This program focuses on building strength, core endurance, flexibility, and cardiovascular endurance. No need for any special equipment you just need to show up. Lets get started!',
 style: 'general-conditioning',
 

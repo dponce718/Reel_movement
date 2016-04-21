@@ -8,7 +8,7 @@
               <div id="fittext2" class="center-block">
                 <div> <h2 class="sofia-extra-light"> Take our free fitness assesment and find the perfect program for you </h2></div>
                 </div>
-               <a href="#" class="page-scroll btn btn-success btn-lg" id="tell-btn" data-toggle="modal" data-target="#lightbox"> <i class="fa fa-play-circle"></i> Tell Me More</a>
+               <a href="#promo-video" class="open-popup-link btn btn-success btn-lg btn-fill" id="tell-btn"> <i class="fa fa-play-circle"></i> Tell Me More</a>
                
                <a class="popup-modal page-scroll btn btn-success btn-fill btn-lg" href="#test-modal"> <i class="icon-happy"></i> Find my program now</a>  
                 
@@ -18,17 +18,11 @@
     </header>
   
     
-            <!-- lightbox -->
-                 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true"></button>
-       
-            <div class="modal-body video-container">
-                <iframe allowFullScreen allowTransparency="true" class="vzaar-video-player" frameborder="0" height="324" id="vzvd-5248691" mozallowfullscreen name="vzvd-5248691" src="//view.vzaar.com/5248691/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="576"></iframe>
-            </div>
-        
-    </div>
-</div>
+            <!-- modalbox -->
+                  <%= render 'layouts/promo' %>
+
+
+
            
         <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
