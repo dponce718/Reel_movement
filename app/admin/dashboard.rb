@@ -3,12 +3,32 @@ ActiveAdmin.register_page "Dashboard" do
   menu priority: 1, label: proc{ I18n.t("active_admin.dashboard") }
 
   content title: proc{ I18n.t("active_admin.dashboard") } do
-    div class: "blank_slate_container", id: "dashboard_default_message" do
-      span class: "blank_slate" do
-        span I18n.t("active_admin.dashboard_welcome.welcome")
-        small I18n.t("active_admin.dashboard_welcome.call_to_action")
+    
+
+    section "Reel Movement Users" do
+    table_for User.order("id desc").limit(15) do
+      column :name do |user|
+        link_to user.name, [:admin, user]
       end
+      column :email
+      column :subscribed
+      column :stripeid 
     end
+    strong { link_to "View All Users", admin_users_path }
+  end
+
+
+  section "Reel Movement Programs" do
+    table_for   Program.order("id desc").limit(10) do
+      column :level
+      column :title do |program|
+        link_to program.title, [:admin, program]
+      end
+      column :description
+   
+    end
+    strong { link_to "View All Programs", admin_programs_path }
+  end
 
     # Here is an example of a simple dashboard with columns and panels.
     #

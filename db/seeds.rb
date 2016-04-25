@@ -799,3 +799,4 @@ Recipe.create(preparation: '30 minutes', total_time:'40 minutes', servings: '4',
     image:"nope")
 
 
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
