@@ -22,22 +22,16 @@
              <%= raw current_user.program.code_one %> 
                                             
                 </div>
-            <div class="row">
-        <div class=" col-md-12 program-modal">
-
-        <ul id="program-list">
-          
-          <li> <a href="#program-one" class="open-popup-link btn btn-lg btn-success btn-fill"> Core training </a> </li>
-
-          <li  class="pop-1"
+            <div class="row pop-1"
                 data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Workouts" 
-                data-content="<div> <p> Every video attached to your program is here. Just click the button and your next workout will pop right up </p> </div> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-1' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div>"> <a href="#program-two" class="open-popup-link btn btn-lg btn-success btn-fill"> cardio training</a> </li>
+                data-content="<div> <p> Every video attached to your program is here. Just click the button and your next workout will pop right up </p> </div> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-1' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div>">
+        <div class=" col-md-12 program-modal">
 
-          <li> <a href="#program-three" class="open-popup-link btn btn-success btn-lg btn-fill">flexibility and mobility</a> </li>
-         </ul>  
+          <%= raw current_user.program.frame %> 
+
         </div>
         </div>
         </div>
@@ -159,10 +153,11 @@
           <h2 class="text-center">Your workout schedule</h2>
 
           <div class="assess-schedule center-block">
-          <p id= "schedule-p"> Below is your program schedule. Now, its up to you to keep track and make sure you put in the work. You won't regret it. Just remember consistency is the key</p>
+          <p id= "schedule-p"> Below is your program schedule. Now, its up to you to keep track and make sure you put in the work. You won't regret it. Just remember consistency is the key. Click on the calendar below to print your workout schedule. Kepp it close by.</p>
           </div>
-            <h2 class="text-center"><i class="fa fa-calendar fa-2x"></i></h2>
+            <h2 class="text-center"> <a href="/schedule"> <i class="fa fa-calendar fa-2x"></i> </a> </h2>
         <%= raw current_user.program.schedule %> 
+
       
       </div>
       <div class="col-md-4"> 

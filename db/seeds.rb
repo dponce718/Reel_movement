@@ -272,13 +272,24 @@ schedule: '<div class="table-responsive">
 '
 )
 
-Program.create(title: "Cardiovascular Training", level: "level 1", frame: "http://api.vzaar.com/videos/5248691.embed", 
+Program.create(title: "Cardiovascular Training", level: "level 1", 
 code_one: '<iframe id="vzvd-6870658" name="vzvd-6870658" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870658/player"></iframe>',
 code_two: '<iframe id="vzvd-6870681" name="vzvd-6870681" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870681/player"></iframe>',
 code_three: '<iframe id="vzvd-6870708" name="vzvd-6870708" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870708/player"></iframe>' ,
 code_four: '<iframe id="vzvd-6870713" name="vzvd-6870713" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6870713/player"></iframe>',
 description:'It’s time to get moving. This beginners cardio program is designed to improve the overall health of your heart, improve cardiovascular endurance, and reduce body fat. Lets start burning those calories',
 style: 'cardiovascular-training',
+frame: '<ul id="program-list">
+          
+          <li> <a href="#program-one" class="open-popup-link btn btn-lg btn-success btn-fill"> Cardio session 2</a> </li>
+
+          <li > <a href="#program-two" class="open-popup-link btn btn-lg btn-success btn-fill"> Cardio session 3</a> </li>
+
+          <li > <a href="#program-three" class="open-popup-link btn btn-lg btn-success btn-fill"> Recovery and flexibility</a> </li>
+
+
+         </ul>  ',
+
 schedule: '<div class="table-responsive">
     
     <table class="table">
@@ -315,15 +326,15 @@ schedule: '<div class="table-responsive">
     
                 <td>Flexibility and Mobility</td>
     
-                <td>Total Body 1</td>
+                <td>Cardio session 1</td>
     
                 <td>Rest Day</td>
     
-                <td> Core and stability</td>
+                <td> Cardio session 2</td>
 
                 <td>Rest Day</td>
     
-                <td>Total Body 2</td>
+                <td>Cardio session 3</td>
     
                 <td>Rest Day</td>
     
@@ -340,17 +351,18 @@ schedule: '<div class="table-responsive">
     
                 <td>Flexibility and Mobility</td>
     
-                <td>Total Body 1</td>
+                <td>Cardio session 1</td>
     
                 <td>Rest Day</td>
     
-                <td> Core and stability</td>
+                <td> Cardio session 2</td>
 
+                <td>Cardio Session 3</td>
+    
+                <td>Cardio session 1</td>
+    
                 <td>Rest Day</td>
     
-                <td>Total Body 2</td>
-    
-                <td>Rest Day</td>
     
             </tr>
     
@@ -358,39 +370,42 @@ schedule: '<div class="table-responsive">
     
                 <td class="text-center">3</td>
     
-                <td>Flexibility and Mobility</td>
+               <td>Flexibility and Mobility</td>
     
-                <td>Total Body 1</td>
+                <td>Cardio session 1</td>
     
                 <td>Rest Day</td>
     
-                <td> Core and stability</td>
+                <td> Cardio session 2</td>
 
+                <td>Cardio Session 3</td>
+    
+                <td>Cardio session 1</td>
+    
                 <td>Rest Day</td>
     
-                <td>Total Body 2</td>
     
-                <td>Rest Day</td>
     
             </tr>
     
             <tr>
     
                 <td class="text-center">4</td>
+    <td>Flexibility and Mobility</td>
     
-                 <td>Flexibility and Mobility</td>
-    
-                <td>Total Body 1</td>
+                <td>Cardio session 1</td>
     
                 <td>Rest Day</td>
     
-                <td> Core and stability</td>
+                <td> Cardio session 2</td>
 
+                <td>Cardio Session 3</td>
+    
+                <td>Cardio session 1</td>
+    
                 <td>Rest Day</td>
     
-                <td>Total Body 2</td>
     
-                <td>Rest Day</td>
             </tr>
     
         </tbody>
@@ -402,10 +417,27 @@ schedule: '<div class="table-responsive">
 ')
 
  
- Program.create(title: "General Conditioning 1", level: "Level 2", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe allowFullScreen allowTransparency="true" class="vzaar-video-player center-block" frameborder="0" height="432" id="vzvd-5641580" mozallowfullscreen name="vzvd-5641580" src="//view.vzaar.com/5641580/player" title="vzaar video player" type="text/html" webkitAllowFullScreen width="768"></iframe>',
+ Program.create(title: "General Conditioning 2", level: "Level 2",
+code_one: '<iframe id="vzvd-6871787" name="vzvd-6871787" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6871787/player"></iframe>',
+code_two: '<iframe id="vzvd-6931352" name="vzvd-6931352" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6931352/player"></iframe>',
+code_three: '<iframe id="vzvd-6938496" name="vzvd-6938496" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6938496/player"></iframe>',
+code_four: '<iframe id="vzvd-6939951" name="vzvd-6939951" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6939951/player"></iframe>',
+code_five: '<iframe id="vzvd-6937924" name="vzvd-6937924" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6937924/player"></iframe>',
 description:'This is a total body program designed to shed those pounds and build lean muscle. This program provides a little taste of everything, resistance training, flexibility & mobility, core conditioning, and cardiovascular training. We are stepping up the intensity but keep up the pace and you will reach your goals',
 style: 'general-conditioning-2',
+frame: '<ul id="program-list">
+          
+          <li> <a href="#program-one" class="open-popup-link btn btn-lg btn-success btn-fill">Cardio</a> </li>
+
+          <li > <a href="#program-two" class="open-popup-link btn btn-lg btn-success btn-fill">Recovery and flexibility </a></li>
+
+          <li > <a href="#program-three" class="open-popup-link btn btn-lg btn-success btn-fill"> Total body 2</a> </li>
+
+           <li > <a href="#program-four" class="open-popup-link btn btn-lg btn-success btn-fill"> Intervals</a> </li>
+
+
+         </ul>  ',
+
 schedule: '<div class="table-responsive">
     
     <table class="table">
@@ -461,23 +493,21 @@ schedule: '<div class="table-responsive">
     
             <tr>
     
-                
+                 <td class="text-center">1</td>                            
     
-                <td class="text-center">2</td>
-    
-                <td>Flexibility and Mobility</td>
+                <td>Rest day</td>
     
                 <td>Total Body 1</td>
     
-                <td>Rest Day</td>
+                <td> cardio </td>
     
-                <td> Core and stability</td>
+                <td> Recovery and flexibility</td>
 
-                <td>Rest Day</td>
-    
                 <td>Total Body 2</td>
     
-                <td>Rest Day</td>
+                <td>Interval Training</td>
+    
+                <td>Recovery and flexibility</td>
     
             </tr>
     
@@ -485,39 +515,38 @@ schedule: '<div class="table-responsive">
     
                 <td class="text-center">3</td>
     
-                <td>Flexibility and Mobility</td>
+                <td>Rest day</td>
     
                 <td>Total Body 1</td>
     
-                <td>Rest Day</td>
+                <td> cardio </td>
     
-                <td> Core and stability</td>
+                <td> Recovery and flexibility</td>
 
-                <td>Rest Day</td>
-    
                 <td>Total Body 2</td>
     
-                <td>Rest Day</td>
+                <td>Interval Training</td>
     
+                <td>Recovery and flexibility</td>
             </tr>
     
             <tr>
     
                 <td class="text-center">4</td>
     
-                 <td>Flexibility and Mobility</td>
+                <td>Rest day</td>
     
                 <td>Total Body 1</td>
     
-                <td>Rest Day</td>
+                <td> cardio </td>
     
-                <td> Core and stability</td>
+                <td> Recovery and flexibility</td>
 
-                <td>Rest Day</td>
-    
                 <td>Total Body 2</td>
     
-                <td>Rest Day</td>
+                <td>Interval Training</td>
+    
+                <td>Recovery and flexibility</td>
             </tr>
     
         </tbody>
@@ -528,9 +557,18 @@ schedule: '<div class="table-responsive">
     
 ')
 
- Program.create(title: "Resistance Training", level: "level 2", frame: "http://api.vzaar.com/videos/5248691.embed", 
-code_one: '<iframe id="vzvd-6871787" name="vzvd-6871787" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6871787/player"></iframe>',
-code_two: '',
+ Program.create(title: "Resistance Training", level: "level 2", 
+code_one: '<iframe id="vzvd-6912692" name="vzvd-6912692" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6912692/player"></iframe>',
+code_two: '<iframe id="vzvd-6912741" name="vzvd-6912741" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6912741/player"></iframe>',
+code_three: '<iframe id="vzvd-6912761" name="vzvd-6912761" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/6912761/player"></iframe>',
+frame: '<ul id="program-list">
+          
+          <li> <a href="#program-one" class="open-popup-link btn btn-lg btn-success btn-fill"> Lower body workout </a> </li>
+
+          <li > <a href="#program-two" class="open-popup-link btn btn-lg btn-success btn-fill"> Rest and Recovery</a> </li>
+
+         </ul>  ',
+
 description:'It’s time to bring up the intensity. Our resistance training program is designed to build muscle, increase muscle endurance, increase strength, and improve mobility. all this just using your own  body weight. No equipment needed!',
 style: 'resistance-training',
 schedule: '<div class="table-responsive">
@@ -567,17 +605,17 @@ schedule: '<div class="table-responsive">
     
                 <td class="text-center">1</td>                            
     
-                <td>Flexibility and Mobility</td>
+                <td>Upper body</td>
     
-                <td>Total Body 1</td>
+                <td> Lower body</td>
     
-                <td>Rest Day</td>
+                <td>Flexibility training</td>
     
-                <td> Core and stability</td>
+                <td>Upper body</td>
 
-                <td>Rest Day</td>
+                <td>Lower body</td>
     
-                <td>Total Body 2</td>
+                <td>Flexibility training</td>
     
                 <td>Rest Day</td>
     
@@ -592,37 +630,36 @@ schedule: '<div class="table-responsive">
     
                 <td class="text-center">2</td>
     
-                <td>Flexibility and Mobility</td>
+               <td>Upper body</td>
     
-                <td>Total Body 1</td>
+                <td> Lower body</td>
     
-                <td>Rest Day</td>
+                <td>Flexibility training</td>
     
-                <td> Core and stability</td>
+                <td>Upper body</td>
 
+                <td>Lower body</td>
+    
+                <td>Flexibility training</td>
+    
                 <td>Rest Day</td>
-    
-                <td>Total Body 2</td>
-    
-                <td>Rest Day</td>
-    
             </tr>
     
             <tr>
     
                 <td class="text-center">3</td>
     
-                <td>Flexibility and Mobility</td>
+                <td>Upper body</td>
     
-                <td>Total Body 1</td>
+                <td> Lower body</td>
     
-                <td>Rest Day</td>
+                <td>Flexibility training</td>
     
-                <td> Core and stability</td>
+                <td>Upper body</td>
 
-                <td>Rest Day</td>
+                <td>Lower body</td>
     
-                <td>Total Body 2</td>
+                <td>Flexibility training</td>
     
                 <td>Rest Day</td>
     
@@ -632,17 +669,17 @@ schedule: '<div class="table-responsive">
     
                 <td class="text-center">4</td>
     
-                 <td>Flexibility and Mobility</td>
+                <td>Upper body</td>
     
-                <td>Total Body 1</td>
+                <td> Lower body</td>
     
-                <td>Rest Day</td>
+                <td>Flexibility training</td>
     
-                <td> Core and stability</td>
+                <td>Upper body</td>
 
-                <td>Rest Day</td>
+                <td>Lower body</td>
     
-                <td>Total Body 2</td>
+                <td>Flexibility training</td>
     
                 <td>Rest Day</td>
             </tr>
@@ -799,4 +836,4 @@ Recipe.create(preparation: '30 minutes', total_time:'40 minutes', servings: '4',
     image:"nope")
 
 
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+#AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')

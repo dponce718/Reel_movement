@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get     'stripe'                =>  'static_pages#stripe'
   get     'forgot_subscription'                =>  'static_pages#forgot_subscription'
   get     'terms'                =>  'static_pages#terms'
+  get     'schedule'                =>  'programs#schedule'
   
   #post 'webhook' => 'subscribe#webhook'
 

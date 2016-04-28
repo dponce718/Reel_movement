@@ -21,6 +21,10 @@ class ProgramsController < ApplicationController
 
 	end	
 
+	def schedule
+		
+	end
+
 
 	protected
 
