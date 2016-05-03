@@ -8,6 +8,6 @@ class StripeMailer < ActionMailer::Base
   def welcome_email(customer)
     @customer = customer
     @user = User.find_by!(stripe_id: @customer.id)
-    mail(to: @user.email, subject: "Thanks for purchasing)
+    mail(to: @user.email, subject: "Thanks for purchasing")
   end
 end
