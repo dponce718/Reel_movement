@@ -4,6 +4,7 @@
 
 
 // work out schedule //
+@import "variables.scss";
 
 @media print {
 
@@ -11,10 +12,21 @@ nav, footer{
 	display: none;
 }
 
+ * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+
+.fa-calendar {
+     color: $brand-primary;
+
 }
 
 
@@ -33,7 +45,7 @@ caption {
 thead th {
   font-weight: 400;
   background: #8a97a0;
-  color: #FFF;
+  color: #FFF !important; 
 }
 
 tr {
