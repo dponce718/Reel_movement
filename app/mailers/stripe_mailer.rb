@@ -7,9 +7,8 @@ class StripeMailer < ActionMailer::Base
 
 
 
-  def welcome_email(customer)
-    @customer = customer
-    @user = User.find_by!(stripe_id: @customer.id)
+  def welcome_email(user)
+     @user = user
     mail(to: @user.email, subject: "Thanks for purchasing")
   end
 end
