@@ -7,11 +7,8 @@ end
 
 StripeEvent.configure do |events|
   events.subscribe 'customer.created' do |event|
-   charge = event.data.object
-   # StripeMailer.receipt(charge).deliver
-    StripeMailer.admin_charge_succeeded(charge).deliver
+     customer = event.data.object
+    StripeMailer.new_member(customer).deliver
+    StripeMailer.welcome_email(customer).deliver
   end
 end
-
-
- 
