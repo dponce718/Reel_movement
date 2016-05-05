@@ -12,24 +12,16 @@ def webhook
     #refer event types here https://stripe.com/docs/api#event_types
     case event_json['type']
       when 'invoice.payment_succeeded'
-        current_user.name = "billy"
-        user.save
-
-         user = User.first
-        user.name = "billy"
-        user.save
+        
       when 'invoice.payment_failed'
         handle_failure_invoice event_object
       when 'charge.failed'
         handle_failure_charge event_object
       when 'charge.succeeded'
-        user = User.first
-        user.name = billy
-        user.save
-
-        when 'customer.subscription.created'
-        current_user.name = "billy"
-        user.save
+        
+        when 'customer.created'
+          StripeMailer.new_member(@user).deliver_now
+        
       when 'customer.subscription.deleted'
       when 'customer.subscription.updated'
     end

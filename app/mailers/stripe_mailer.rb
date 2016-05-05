@@ -1,9 +1,11 @@
 class StripeMailer < ActionMailer::Base
 
-  def new_member(customer)
-   @customer = customer
+  def new_member(user)
+     @user = user
     mail(to: 'daniel.ponce@reelmovement.com', subject: 'Woo! Charge Succeeded!')
   end
+
+
 
   def welcome_email(customer)
     @customer = customer
@@ -11,3 +13,4 @@ class StripeMailer < ActionMailer::Base
     mail(to: @user.email, subject: "Thanks for purchasing")
   end
 end
+
