@@ -1,4 +1,5 @@
 class StripeMailer < ActionMailer::Base
+  from: "info@reelmovement.com"
 
   def new_member(user)
      @user = user
