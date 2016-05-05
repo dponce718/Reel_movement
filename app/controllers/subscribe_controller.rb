@@ -13,8 +13,8 @@ def webhook
     case event_json['type']
       when 'invoice.payment_succeeded'
         
-      when 'invoice.payment_failed'
-        handle_failure_invoice event_object
+      when 'invoice.payment_failed' #credit card does not go through
+       StripeMailer.deliquent(@user).deliver_now
       when 'charge.failed'
         handle_failure_charge event_object
       when 'charge.succeeded'
