@@ -5,10 +5,6 @@ protect_from_forgery :except => :webhook
 # reference https://stripe.com/docs/webhooks
 def webhook
 
-stripe_event = Stripe::Event.retrieve(params[:id])
-  StripeWebhook.create!(stripe_id: stripe_event)
-  Stripe::Event.retrieve(stripe_event)
-
 
   begin
     event_json = JSON.parse(request.body.read)
