@@ -14,15 +14,14 @@ def webhook
       when 'invoice.payment_succeeded'
         
       when 'invoice.payment_failed' #credit card does not go through
-       StripeMailer.deliquent(@user).deliver_now
+       
       when 'charge.failed'
-        StripeMailer.deliquent(@user).deliver_now
+        
       when 'charge.succeeded'
         
         when 'customer.created'
           StripeMailer.new_member(@user).deliver_now
            StripeMailer.welcome_email(@user).deliver_now
-              StripeMailer.deliquent(@user).deliver_now
         
       when 'customer.subscription.deleted'
       when 'customer.subscription.updated'

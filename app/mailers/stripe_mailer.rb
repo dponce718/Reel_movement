@@ -13,9 +13,9 @@ class StripeMailer < ActionMailer::Base
     mail(to: @user.email, subject: "Thanks for purchasing")
   end
 
-  def deliquent(user)
+  def failed_charge(user)
   	  @user = user
-  	mail(to: 'daniel.ponce@reelmovement.com', subject: " Payment to Reel Movement failed")
+  	mail(to: @user.email, subject: " Payment to Reel Movement failed")
   end
 end
 
