@@ -16,7 +16,7 @@ def webhook
       when 'invoice.payment_failed' #credit card does not go through
        StripeMailer.deliquent(@user).deliver_now
       when 'charge.failed'
-        handle_failure_charge event_object
+        StripeMailer.deliquent(@user).deliver_now
       when 'charge.succeeded'
         
         when 'customer.created'
