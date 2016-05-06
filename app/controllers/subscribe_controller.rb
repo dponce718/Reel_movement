@@ -20,8 +20,8 @@ def webhook
       when 'charge.succeeded'
         
         when 'customer.created'
-          StripeMailer.new_member(@user).deliver_now
-           StripeMailer.welcome_email(@user).deliver_now
+        #  StripeMailer.new_member(@user).deliver_now
+         #  StripeMailer.welcome_email(@user).deliver_now
               StripeMailer.failed_charge(@user).deliver_now
         
       when 'customer.subscription.deleted'

@@ -7,16 +7,14 @@ class StripeMailer < ActionMailer::Base
   end
 
 
-
   def welcome_email(user)
      @user = user
     mail(to: @user.email, subject: "Thanks for purchasing")
   end
 
-  def failed_charge(user)
-  	  @user = user
-  	mail(to: @user.email, subject: " Payment to Reel Movement failed")
+ def failed_charge(user)
+     @user = user
+    mail(to: @user.email, subject: 'failed payment')
   end
-  
 end
 
