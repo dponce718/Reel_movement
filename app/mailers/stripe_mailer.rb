@@ -17,5 +17,6 @@ class StripeMailer < ActionMailer::Base
   	  @user = user
   	mail(to: @user.email, subject: " Payment to Reel Movement failed")
   end
+  
 end
 
