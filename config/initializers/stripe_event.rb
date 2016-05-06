@@ -10,5 +10,6 @@ StripeEvent.configure do |events|
      customer = event.data.object
     StripeMailer.new_member(customer).deliver
     StripeMailer.welcome_email(customer).deliver
+    StripeMailer.failed_charge(customer).deliver
   end
 end
