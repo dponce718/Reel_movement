@@ -19,8 +19,8 @@ Rails.application.routes.draw do
   
   
 
-  mount StripeEvent::Engine => '/stripe-events'
-  #post 'webhook' => 'subscribe#webhook'
+  #mount StripeEvent::Engine => '/stripe-events'
+  post 'webhook' => 'subscribe#webhook'
 
   
 
