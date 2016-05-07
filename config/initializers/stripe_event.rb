@@ -62,4 +62,5 @@ events.subscribe 'charge.dispute.closed' do |event|
   
 end
 
+end
 
