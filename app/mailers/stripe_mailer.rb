@@ -24,7 +24,7 @@ class UserMailer < ActionMailer::Base
 
   def user_deleted(user)
 
-  	@user = user
+    @user = User.find_by_email(params[:user][:email])
     mail(to: @user.email, subject: 'failed payment')
   	
   end
