@@ -3,7 +3,7 @@ class StripeMailer < ActionMailer::Base
 
   def new_member(user)
      @user = user
-    mail(to: 'daniel.ponce@reelmovement.com', subject: 'Woo! Charge Succeeded!')
+    mail(to: 'daniel.ponce@reelmovement.com', subject: 'Welcome to Reel Movement')
   end
 
 
@@ -24,7 +24,7 @@ class StripeMailer < ActionMailer::Base
 
   def user_deleted(user)
 
-  	@user = user
+  	@user = current_user
     mail(to: @user.email, subject: 'failed payment')
   	
   end
