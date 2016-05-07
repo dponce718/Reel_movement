@@ -11,7 +11,7 @@ class SubscribeController < ApplicationController
 
     when 'customer.created'
       UserMailer.new_member(@user).deliver_now
-          UserMailer.welcome_email(@user).deliver_now
+     UserMailer.user_deleted(current_user).deliver
       when 'invoice.payment_succeeded'
         handle_success_invoice event_object
       when 'invoice.payment_failed'

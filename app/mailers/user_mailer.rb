@@ -19,10 +19,10 @@ class UserMailer < ApplicationMailer
   #   en.user_mailer.welcome_email.subject
   #
   def welcome_email(user)
-    
+    @user = user
     @greeting = "Hi"
 
-    mail(:to => user.email, :subject => 'Welcome')    
+    mail(:to => @user.email, :subject => 'Welcome')    
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
