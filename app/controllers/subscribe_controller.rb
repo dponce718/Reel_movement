@@ -14,18 +14,17 @@ def webhook
       when 'invoice.payment_failed' #credit card does not go through
        
       when 'charge.failed'
-        
+        StripeMailer.failed_charge(@user).deliver_now
       when 'charge.succeeded'
         
         when 'customer.created'
           StripeMailer.new_member(@user).deliver_now
           StripeMailer.welcome_email(@user).deliver_now
-          StripeMailer.failed_charge(@user).deliver_now
-           StripeMailer.user_deleted(customer).deliver
-           StripeMailer.updated_info(customer).deliver
-            StripeMailer.dispute(customer).deliver
+           StripeMailer.updated_info(@user).deliver
+            StripeMailer.dispute(@user).deliver
         
-      when 'customer.subscription.deleted'
+      when 'customer.deleted'
+         StripeMailer.user_deleted(@user).deliver
       when 'customer.subscription.updated'
     end
   rescue Exception => ex
