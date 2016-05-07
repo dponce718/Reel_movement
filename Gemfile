@@ -55,8 +55,6 @@ gem 'gibbon', '~> 1.2.0'
 
 
 gem 'newrelic_rpm'
-#handles stripe webhooksooks
-gem 'stripe_event'
 
 gem 'font_assets'
 

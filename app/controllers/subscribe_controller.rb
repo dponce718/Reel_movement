@@ -1,30 +1,20 @@
 class SubscribeController < ApplicationController
-protect_from_forgery :except => :webhook
-  # Method responsbile for handling stripe webhooks
-# reference https://stripe.com/docs/webhooks
-def webhook
+   protect_from_forgery :except => :webhook
 
+
+  def webhook
   begin
     event_json = JSON.parse(request.body.read)
     event_object = event_json['data']['object']
     #refer event types here https://stripe.com/docs/api#event_types
     case event_json['type']
       when 'invoice.payment_succeeded'
-        
-      when 'invoice.payment_failed' #credit card does not go through
-       
+        handle_success_invoice event_object
+      when 'invoice.payment_failed'
+        handle_failure_invoice event_object
       when 'charge.failed'
-        StripeMailer.failed_charge(@user).deliver_now
-      when 'charge.succeeded'
-        
-        when 'customer.created'
-          StripeMailer.new_member(@user).deliver_now
-          StripeMailer.welcome_email(@user).deliver_now
-           StripeMailer.updated_info(@user).deliver_now
-            StripeMailer.dispute(@user).deliver_now
-        
-      when 'customer.deleted'
-        StripeMailer.user_deleted(@user).deliver_now
+        handle_failure_charge event_object
+      when 'customer.subscription.deleted'
       when 'customer.subscription.updated'
     end
   rescue Exception => ex
@@ -33,7 +23,7 @@ def webhook
   end
   render :json => {:status => 200}
 end
- 
+
   def update
     #gets the credit card details submitted in the form
     token = params[:stripeToken]
