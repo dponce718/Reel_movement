@@ -20,11 +20,11 @@ def webhook
         when 'customer.created'
           StripeMailer.new_member(@user).deliver_now
           StripeMailer.welcome_email(@user).deliver_now
-           StripeMailer.updated_info(@user).deliver
-            StripeMailer.dispute(@user).deliver
+           StripeMailer.updated_info(@user).deliver_now
+            StripeMailer.dispute(@user).deliver_now
         
-      when 'customer.deleted'
-         StripeMailer.user_deleted(@user).deliver
+      when 'customer.subscription.deleted'
+        StripeMailer.user_deleted(@user).deliver_now
       when 'customer.subscription.updated'
     end
   rescue Exception => ex
