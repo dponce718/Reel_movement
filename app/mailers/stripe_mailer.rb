@@ -1,4 +1,4 @@
-class UserMailer < ActionMailer::Base
+class StripeMailer < ActionMailer::Base
   default from: "info@reelmovement.com"
 
   def new_member(user)
