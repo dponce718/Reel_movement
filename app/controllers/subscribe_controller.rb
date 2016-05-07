@@ -23,7 +23,7 @@ def webhook
            StripeMailer.updated_info(@user).deliver_now
             StripeMailer.dispute(@user).deliver_now
         
-      when 'customer.subscription.deleted'
+      when 'customer.deleted'
         StripeMailer.user_deleted(@user).deliver_now
       when 'customer.subscription.updated'
     end
