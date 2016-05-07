@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
     @user = user
     @greeting = "Hi"
 
-    mail to: "to@example.org"
+    mail to: @user.email, subject: 'Welcome to Reel Movement'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -22,7 +22,7 @@ class UserMailer < ApplicationMailer
     @user = user
     @greeting = "Hi"
 
-    mail to: "to@example.org"
+    mail to: @user.email, subject: 'Welcome to Reel Movement'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -34,7 +34,7 @@ class UserMailer < ApplicationMailer
     @user = user
     @greeting = "Hi"
 
-    mail to: "to@example.org"
+    mail to: "to@example.org", subject: 'Welcome to Reel Movement'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
