@@ -11,7 +11,6 @@ class SubscribeController < ApplicationController
 
     when 'customer.created'
       UserMailer.new_member(@user).deliver_now
-     UserMailer.user_deleted(current_user).deliver
       when 'invoice.payment_succeeded'
         handle_success_invoice event_object
       when 'invoice.payment_failed'
@@ -43,7 +42,8 @@ end
 
      current_user.stripeid = customer.id
      current_user.subscribed = true
-        current_user.save
+      current_user.save
+      UserMailer.welcome_email(current_user).deliver
    
     redirect_to "/subscriptions"
 
