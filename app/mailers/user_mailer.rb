@@ -33,8 +33,7 @@ class UserMailer < ApplicationMailer
   def failed_charge(user)
     @user = user
     @greeting = "Hi"
-
-    mail to: "to@example.org", subject: 'Welcome to Reel Movement'
+    mail to: @user.email, subject: 'Welcome to Reel Movement'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
