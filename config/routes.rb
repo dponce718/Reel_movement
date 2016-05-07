@@ -17,10 +17,10 @@ Rails.application.routes.draw do
   get     'terms'                =>  'static_pages#terms'
   get     'schedule'                =>  'programs#schedule'
   
-  #post 'webhook' => 'subscribe#webhook'
+  
 
   mount StripeEvent::Engine => '/stripe-events'
-  post 'webhook' => 'subscribe#webhook'
+  #post 'webhook' => 'subscribe#webhook'
 
   
 
