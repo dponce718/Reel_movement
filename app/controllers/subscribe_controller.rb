@@ -52,6 +52,7 @@ end
   def destroy
 
    customer = Stripe::Customer.retrieve(current_user.stripeid).delete
+   UserMailer.user_deleted(current_user).deliver
    current_user.destroy
    
 
