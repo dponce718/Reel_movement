@@ -8,8 +8,12 @@ end
 StripeEvent.configure do |events|
   events.subscribe 'customer.created' do |event|
      customer = event.data.object
-    StripeMailer.new_member(customer).deliver
-    StripeMailer.welcome_email(customer).deliver
+    StripeMailer.new_member(@user).deliver_now
+          StripeMailer.welcome_email(@user).deliver_now
+          StripeMailer.failed_charge(@user).deliver_now
+           StripeMailer.user_deleted(customer).deliver
+           StripeMailer.updated_info(customer).deliver
+            StripeMailer.dispute(customer).deliver
   end
 
   events.subscribe 'charge.failed' do |event|
