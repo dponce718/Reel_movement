@@ -28,7 +28,7 @@ end
    
 end
 
- events.subscribe 'customer.subscription.deleted' do |event|
+ events.subscribe 'customer.deleted' do |event|
   	customer = event.data.object
     StripeMailer.user_deleted(customer).deliver
 end
