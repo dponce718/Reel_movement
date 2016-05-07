@@ -1,4 +1,4 @@
-class StripeMailer < ActionMailer::Base
+class UserMailer < ActionMailer::Base
   default from: "info@reelmovement.com"
 
   def new_member(user)
@@ -24,7 +24,7 @@ class StripeMailer < ActionMailer::Base
 
   def user_deleted(user)
 
-  	@user = current_user
+  	@user = user
     mail(to: @user.email, subject: 'failed payment')
   	
   end

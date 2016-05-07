@@ -30,7 +30,7 @@ end
 
  events.subscribe 'customer.deleted' do |event|
   	customer = event.data.object
-    StripeMailer.user_deleted(@user).deliver
+    UserMailer.user_deleted(@user).deliver
 end
 
  events.subscribe 'charge.dispute.created' do |event|
