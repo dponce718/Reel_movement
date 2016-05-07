@@ -25,7 +25,7 @@ class StripeMailer < ActionMailer::Base
   def user_deleted(user)
 
   	@user = user
-    mail(to: @user.email, subject: 'failed payment')
+    mail(to: @user.stipeEmail, subject: 'failed payment')
   	
   end
 
