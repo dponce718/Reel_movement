@@ -11,9 +11,9 @@ StripeEvent.configure do |events|
     StripeMailer.new_member(@user).deliver_now
           StripeMailer.welcome_email(@user).deliver_now
           StripeMailer.failed_charge(@user).deliver_now
-           StripeMailer.user_deleted(customer).deliver
-           StripeMailer.updated_info(customer).deliver
-            StripeMailer.dispute(customer).deliver
+           StripeMailer.user_deleted(@user).deliver
+           StripeMailer.updated_info(@user).deliver
+            StripeMailer.dispute(@user).deliver
   end
 
   events.subscribe 'charge.failed' do |event|
@@ -30,7 +30,7 @@ end
 
  events.subscribe 'customer.deleted' do |event|
   	customer = event.data.object
-    StripeMailer.user_deleted(customer).deliver
+    StripeMailer.user_deleted(@user).deliver
 end
 
  events.subscribe 'charge.dispute.created' do |event|
