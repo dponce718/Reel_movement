@@ -21,6 +21,9 @@ def webhook
           StripeMailer.new_member(@user).deliver_now
           StripeMailer.welcome_email(@user).deliver_now
           StripeMailer.failed_charge(@user).deliver_now
+           StripeMailer.user_deleted(customer).deliver
+           StripeMailer.updated_info(customer).deliver
+            StripeMailer.dispute(customer).deliver
         
       when 'customer.subscription.deleted'
       when 'customer.subscription.updated'
