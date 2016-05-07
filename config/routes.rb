@@ -31,7 +31,7 @@ Rails.application.routes.draw do
    resources :charges
 
 
-post 'webhooks' => 'subscribe#webhooks'
+post 'webhook' => 'subscribe#webhook'
 
 
 
