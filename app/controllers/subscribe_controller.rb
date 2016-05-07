@@ -8,6 +8,10 @@ class SubscribeController < ApplicationController
     event_object = event_json['data']['object']
     #refer event types here https://stripe.com/docs/api#event_types
     case event_json['type']
+
+    when 'cutomer.created'
+      UserMailer.new_member(@user).deliver_now
+          UserMailer.welcome_email(@user).deliver_now
       when 'invoice.payment_succeeded'
         handle_success_invoice event_object
       when 'invoice.payment_failed'
