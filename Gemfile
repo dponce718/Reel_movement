@@ -58,6 +58,8 @@ gem 'newrelic_rpm'
 
 gem 'font_assets'
 
+gem  'mail'
+
 # for rails blog
 gem 'jekyll', '~> 3.1'
 

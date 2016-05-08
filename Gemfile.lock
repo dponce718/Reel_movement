@@ -369,6 +369,7 @@ DEPENDENCIES
   jquery-validation-rails
   jquery-waypoints-rails (~> 2.0, >= 2.0.5)
   magnific-popup-rails
+  mail
   newrelic_rpm
   pg
   pry
