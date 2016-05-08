@@ -16,7 +16,7 @@ class SubscribeController < ApplicationController
       when 'invoice.payment_failed'
         handle_failure_invoice event_object
       when 'charge.failed'
-         UserMailer.failed_charge(@user).deliver_now
+         UserMailer.failed_charge(current_user).deliver
       when 'customer.subscription.deleted'
       when 'customer.subscription.updated'
     end
