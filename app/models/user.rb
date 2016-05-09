@@ -47,6 +47,11 @@ after_create :subscribe_user_to_mailing_list
 end
 
 
+ def send_failed_charge(user)
+    UserMailer.failed_charge(self).deliver
+  end
+
+
 
 
 
