@@ -20,8 +20,7 @@ class UserMailer < ApplicationMailer
   #
   def welcome_email(user)
     @user = user
-    @greeting = "Hi"
-
+    
     mail(:to => @user.email, :subject => 'Welcome')    
   end
 
@@ -32,7 +31,6 @@ class UserMailer < ApplicationMailer
   #
   def failed_charge(user)
     @user = user
-    @greeting = "Hi"
     mail to: @user.email, subject: 'Welcome to Reel Movement'
   end
 
