@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
   has_one :subscription
-  has_one :program, autosave: true
   has_one :assessment
   has_one :corrective_assessment
+  belongs_to :program
 
    accepts_nested_attributes_for :program
    accepts_nested_attributes_for :corrective_assessment
