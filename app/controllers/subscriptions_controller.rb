@@ -23,6 +23,7 @@ class SubscriptionsController < ApplicationController
 
 	def create
 
+			user = current_user
 		 	
 		 	current_user.create_assessment(assessment_params)
 		 	
@@ -35,8 +36,8 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.hamstring <= 2 
 			   
 				
-			current_user.program = Program.find_by_title("General Conditioning")
-			current_user.program.save
+			program = Program.find_by_title("General Conditioning")
+			program.users << current_user
 			flash[:success] = "Welcome to the program that best suits your needs"
 			redirect_to "/subscriptions/show"
 
@@ -46,8 +47,8 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits.between?(0,50)
 			   current_user.assessment.hamstring <= 2 
 
-			   current_user.program = Program.find_by_title("Core Conditioning")
-			   current_user.program.save
+			   program = Program.find_by_title("Core Conditioning")
+			   program.users << current_user
 			flash[:success] = "Welcome to the program that best suits your needs"
 			redirect_to "/subscriptions/show"
 				
@@ -58,8 +59,8 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits.between?(60,89) 
 			   current_user.assessment.hamstring <= 2
 
-			 current_user.program = Program.find_by_title("Cardiovascular Training")
-			  current_user.program.save
+			 program = Program.find_by_title("Cardiovascular Training")
+			  program.users << current_user
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
 
@@ -70,8 +71,8 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits >= 90 
 			   current_user.assessment.hamstring >= 2
 
-			 current_user.program = Program.find_by_title("tomatoes")
-			  current_user.program.save
+			 program = Program.find_by_title("tomatoes")
+			  program.users << current_user
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
 
@@ -81,9 +82,9 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.planks >= 100 
 			   current_user.assessment.wall_sits >= 100 
 			   current_user.assessment.hamstring >= 2
-
-			 current_user.program = Program.find_by_title("General Conditioning 1")
-			 current_user.program.save
+			
+			program = Program.find_by_title("General Conditioning 1")
+			 program.users << current_user
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
 			
@@ -93,8 +94,8 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits >= 100 
 			   current_user.assessment.hamstring >= 2
 
-			 current_user.program = Program.find_by_title("Resistance Training")
-			  current_user.program.save
+			  program = Program.find_by_title("Resistance Training")
+			  program.users << current_user
 			flash[:success] = "yay!" 
 			redirect_to "/subscriptions/show"
 			
