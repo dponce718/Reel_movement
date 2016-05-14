@@ -71,7 +71,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits >= 90 
 			   current_user.assessment.hamstring >= 2
 
-			 program = Program.find_by_title("tomatoes")
+			 program = Program.find_by_title("General Conditioning 2")
 			  program.users << current_user
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
@@ -83,7 +83,7 @@ class SubscriptionsController < ApplicationController
 			   current_user.assessment.wall_sits >= 100 
 			   current_user.assessment.hamstring >= 2
 			
-			program = Program.find_by_title("General Conditioning 1")
+			program = Program.find_by_title("General Conditioning 2")
 			 program.users << current_user
 			flash[:success] = "yay!"
 			redirect_to "/subscriptions/show"
