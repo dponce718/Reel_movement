@@ -30,6 +30,17 @@ ActiveAdmin.register_page "Dashboard" do
     strong { link_to "View All Programs", admin_programs_path }
   end
 
+  section "Reel Movement Recipes" do
+    table_for   Recipe.order("id desc").limit(10) do
+
+      column :title do |program|
+        link_to program.title, [:admin, program]
+      end
+   
+    end
+    strong { link_to "View All Recipes", admin_recipes_path }
+  end
+
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
