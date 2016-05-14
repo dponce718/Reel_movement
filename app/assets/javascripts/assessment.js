@@ -44,15 +44,15 @@
   
        // popovers
      $(function () {
-      $("#pop-1").popover('show');
+      $("#pop-1-assessment").popover('show');
       
 
       $('.close-btn').on('click', function () {
             $("[data-toggle = 'popover']").popover('destroy'); 
       });
 
-       $('.tour').on('click', function () {
-             $("#pop-1").popover('hide');
+       $('.tour-assessment').on('click', function () {
+             $("#pop-1-assessment").popover('hide');
               $("#pop-2").popover('show');
       });
 
