@@ -32,7 +32,9 @@ Rails.application.routes.draw do
    resources :charges
 
 
-post 'webhook' => 'subscribe#webhook'
+#post 'webhook' => 'subscribe#webhook'
+mount StripeEvent::Engine, at: '/stripewebhook' # provide a custom path
+
 
 
 

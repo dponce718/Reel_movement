@@ -1,5 +1,5 @@
 class SubscribeController < ApplicationController
-   protect_from_forgery :except => :webhook
+  # protect_from_forgery :except => :webhook
 
 
   def update
@@ -39,53 +39,55 @@ class SubscribeController < ApplicationController
 
 
 
-def webhook
-
-  begin
-    event_json = JSON.parse(request.body.read)
-    event_object = event_json['data']['object']
-    #refer event types here https://stripe.com/docs/api#event_types
-    case event_json['type']
-
-    when 'customer.created'
-      UserMailer.new_member(@user).deliver_now
-        UserMailer.failed_charge(current_user).deliver
-         UserMailer.failed_charge(@user).deliver
-      
-
-      when 'charge.failed'
-         UserMailer.failed_charge(current_user).deliver
-
-      when 'customer.updated'
-         UserMailer.updated_info(@user).deliver_now
-
-      when 'charge.dispute.created'
-         UserMailer.dispute(@user).deliver_now
-
-      when 'charge.dispute.updated'
-         UserMailer.dispute_updated(@user).deliver_now
-
-      when 'charge.dispute.funds_reinstated'
-         UserMailer.funds_reinstated(@user).deliver_now
-
-      when 'charge.dispute.funds_withdrawn'
-
-         UserMailer.funds_withdrawn(@user).deliver_now
-
-      when 'charge.dispute.closed'
-           UserMailer.dispute_closed(@user).deliver_now
-            
-               
-    end
 
 
+#def webhook#
 
-  rescue Exception => ex
-    render :json => {:status => 422, :error => "Webhook call failed"}
-    return
-  end
-  render :json => {:status => 200}
-end
+#  begin
+#    event_json = JSON.parse(request.body.read)
+#    event_object = event_json['data']['object']
+#    #refer event types here https://stripe.com/docs/api#event_types
+#    case event_json['type']#
+
+#    when 'customer.created'
+#      UserMailer.new_member(@user).deliver_now
+#        UserMailer.failed_charge(current_user).deliver
+#         UserMailer.failed_charge(@user).deliver
+#      #
+
+#      when 'charge.failed'
+#         UserMailer.failed_charge(current_user).deliver#
+
+#      when 'customer.updated'
+#         UserMailer.updated_info(@user).deliver_now#
+
+#      when 'charge.dispute.created'
+#         UserMailer.dispute(@user).deliver_now#
+
+#      when 'charge.dispute.updated'
+#         UserMailer.dispute_updated(@user).deliver_now#
+
+#      when 'charge.dispute.funds_reinstated'
+#         UserMailer.funds_reinstated(@user).deliver_now#
+
+#      when 'charge.dispute.funds_withdrawn'#
+
+#         UserMailer.funds_withdrawn(@user).deliver_now#
+
+#      when 'charge.dispute.closed'
+#           UserMailer.dispute_closed(@user).deliver_now
+#            
+#               
+#    end#
+#
+#
+
+#  rescue Exception => ex
+#    render :json => {:status => 422, :error => "Webhook call failed"}
+#    return
+#  end
+#  render :json => {:status => 200}
+#end
 
 
 
