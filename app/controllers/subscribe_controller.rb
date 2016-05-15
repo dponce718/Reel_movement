@@ -49,7 +49,9 @@ def webhook
 
     when 'customer.created'
       UserMailer.new_member(@user).deliver_now
-      current_user.send_failed_charge
+        UserMailer.failed_charge(current_user).deliver
+         UserMailer.failed_charge(@user).deliver
+      
 
       when 'charge.failed'
          UserMailer.failed_charge(current_user).deliver
