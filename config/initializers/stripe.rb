@@ -22,7 +22,6 @@ end
 
 StripeEvent.configure do |events|
   events.subscribe 'customer.created', RecordSubscriber.new 
-
-  UserMailer.failed_charge(@user).deliver
+    UserMailer.failed_charge(user).deliver
 end
 
