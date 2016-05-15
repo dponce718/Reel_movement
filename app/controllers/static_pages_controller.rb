@@ -5,6 +5,10 @@ class StaticPagesController < ApplicationController
 
   end
 
+  def video
+
+   end 
+
   
   def privacy_policy
   		

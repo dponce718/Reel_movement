@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get     'forgot_subscription'                =>  'static_pages#forgot_subscription'
   get     'terms'                =>  'static_pages#terms'
   get     'schedule'                =>  'programs#schedule'
+  get     'video'                =>  'static_pages#video'
   
   
 
