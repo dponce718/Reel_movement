@@ -16,12 +16,12 @@ class RecordSubscriber
   def call(event)
     event.class       #=> Stripe::Event
     	event.type        #=> "customer.created"
-    	event.data.object #=> #<Stripe::Charge:0x3fcb34c115f8>  
+    e =	event.data.object #=> #<Stripe::Charge:0x3fcb34c115f8>  
   end
 end
 
 StripeEvent.configure do |events|
   events.subscribe 'customer.created', RecordSubscriber.new 
-    UserMailer.failed_charge(event.data.object).deliver
+    UserMailer.failed_charge(e).deliver
 end
 
