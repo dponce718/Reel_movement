@@ -18,6 +18,7 @@ StripeEvent.configure do |events|
    UserMailer.new_member(@user).deliver_now
   end
   events.subscribe 'charge.failed' do |event|
+     charge = event.data.object
     UserMailer.failed_charge(charge).deliver
   end
   events.subscribe 'customer.updated' do |event|
