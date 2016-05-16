@@ -29,11 +29,11 @@ class UserMailer < ApplicationMailer
   #
   #   en.user_mailer.failed_charge.subject
   #
-  def failed_charge(charge)
+  def failed_charge(customer)
 
-    @charge = charge
+    @customer = customer
 
-    @user = User.find_by!(stripeid: @charge.id)
+    @user = User.find_by!(stripeid: @customer.id)
     mail to: @user.email, subject: 'Welcome to Reel Movement'
   end
 
