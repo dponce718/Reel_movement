@@ -8,8 +8,7 @@ class UserMailer < ApplicationMailer
   #
   def new_member(user)
     @user = user
-    @greeting = "Hi"
-
+    
     mail(to: "daniel.ponce@reelmovement.com", subject: 'Welcome to Reel Movement')
   end
 
@@ -32,7 +31,7 @@ class UserMailer < ApplicationMailer
   def failed_charge(user)
 
     @user = user
-    mail to: @user.receipt_email, subject: 'Welcome to Reel Movement'
+    mail to: @user.receipt_email, subject: 'Payment to Reel Movement Failed'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -44,7 +43,7 @@ class UserMailer < ApplicationMailer
     @user = user
     @greeting = "Hi"
 
-    mail to: "to@example.org"
+    mail to: @user.email, subject: 'Payment to Reel Movement Failed'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
