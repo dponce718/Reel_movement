@@ -28,6 +28,14 @@
                 $(".pop-3").popover('hide');
                $(".pop-4").popover('show'); 
       });
+            $('body').on('click','#next-4',function () {
+                $(".pop-4").popover('hide');
+               $(".pop-5").popover('show'); 
+      });
+            $('body').on('click','#next-5',function () {
+                $(".pop-5").popover('hide');
+               $(".pop-6").popover('show'); 
+      });
 
         $('body').on('click','#close-tour',function () {
             $(".tour-pop").popover('hide')

@@ -49,18 +49,31 @@
 
           <h2 class="text-center">Your workout schedule</h2>
 
-          <div class="assess-schedule center-block">
+          <div class="assess-schedule center-block pop-2"
+          data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Workouts" 
+                data-content="<div> <p> Here is your workout schedule. Make sure you read it and follow it closely </p> </div> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-2' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div>">
+
           <p id= "schedule-p"> Below is your program schedule. Now, its up to you to keep track and make sure you put in the work. You won't regret it. Just remember consistency is the key. Click on the calendar below to print your workout schedule. Keep it close by.</p>
           </div>
             <h2 class="text-center"> <a href="/schedule"> <i class="fa fa-calendar fa-2x calendar-tooltip" type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Print your schedule here"></i> </a> </h2>
+
         <%= raw current_user.program.schedule %> 
       </div>
       <div class="col-md-4"> 
 
-        <h2 class="text-center"> Assessment results</h2>
+        <h2 class="text-center"> 
+                Assessment results</h2>
 
           <div class="assess-schedule center-block">
-            <p id= "assessment-p"> Unhappy with your results or maybe you think you didn't perform at your best. Then why not retake your assessment again and see if all of this hard work you're doing is paying off.  </p>
+            <p id= "assessment-p" class="pop-3"
+            data-html="true" 
+                data-toggle="popover"
+                data-placement="top" 
+                title="Workouts" 
+                data-content="<div> <p> here are your assessment results. Want to take it again? Just click the button below. Scroll down below and continu your tour </p> </div> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-3' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div>"> Unhappy with your results or maybe you think you didn't perform at your best. Then why not retake your assessment again and see if all of this hard work you're doing is paying off.  </p>
             </div>
 
               <h2 class="text-center"><i class="fa fa-thumbs-o-up fa-2x"></i></h2>
@@ -103,12 +116,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4"> 
-          <div  class="card card-background center-block pop-2"
+          <div  class="card card-background center-block pop-4"
            data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Reel Movement Blog" 
-                data-content="<div> <p> Here we have the Reel Movement Blog. Time to start learning about fitness and your body. Click here and find plenty of articles to educate yourself about your health </p> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div><div id = 'next-2' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div> </div> "> <!-- start of card -->
+                data-content="<div> <p> Here we have the Reel Movement Blog. Time to start learning about fitness and your body. Click here and find plenty of articles to educate yourself about your health </p> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div><div id = 'next-4' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div> </div> "> <!-- start of card -->
             <div class="image">
     
            <%= image_tag "https://s3.amazonaws.com/reelmovement/articles.jpg"  %> 
@@ -142,12 +155,12 @@
         </div>
 
         <div class="col-md-4"> 
-          <div class="card card-background center-block pop-3"
+          <div class="card card-background center-block pop-5"
            data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
                 title="Recipes" 
-                data-content="<div> <p> Time to to watch and learn how to cook some healthy nutrious meals from professional chefs </p> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-3' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div></div> "> <!-- start of card -->
+                data-content="<div> <p> Time to to watch and learn how to cook some healthy nutrious meals from professional chefs </p> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next-5' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div></div> "> <!-- start of card -->
             <div class="image">
     
             <%= image_tag "https://s3.amazonaws.com/reelmovement/cleaneating.jpg"  %> 
@@ -173,7 +186,7 @@
         </div>
 
           <div class="col-md-4"> 
-            <div  class="card card-background center-block pop-4"
+            <div  class="card card-background center-block pop-6"
              data-html="true" 
                 data-toggle="popover"
                 data-placement="top" 
