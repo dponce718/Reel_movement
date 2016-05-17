@@ -17,7 +17,7 @@ StripeEvent.configure do |events|
   events.subscribe 'customer.created' do |event|
     UserMailer.new_member(event.data.object).deliver
   end
-  events.subscribe 'invoice.created' do |event|
+  events.subscribe 'invoice.payment_failed' do |event|
    UserMailer.failed_charge(event.data.object).deliver
   end
 end

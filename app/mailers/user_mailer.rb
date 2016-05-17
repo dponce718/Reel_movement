@@ -31,7 +31,7 @@ class UserMailer < ApplicationMailer
   #
   def failed_charge(user)
 
-   @user = Stripe::Customer.retrieve(stripeid: @customer.id)
+    @user = user
     mail to: @user.email, subject: 'Welcome to Reel Movement'
   end
 
