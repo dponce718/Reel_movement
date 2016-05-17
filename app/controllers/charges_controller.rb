@@ -12,11 +12,12 @@ class ChargesController < ApplicationController
 
       customer = Stripe::Customer.retrieve(current_user.stripeid)
 
-token = params[:stripeToken]
+	  token = params[:stripeToken]
       customer.source = token
       customer.save
 
-
+      flash[:success] = "Thanks for updating your credit card information"
+      redirect_to "/users/edit"
 
 	
 	end
