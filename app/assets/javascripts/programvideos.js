@@ -8,5 +8,7 @@
   showCloseBtn: false
 });
 
+      $('.calendar-tooltip').tooltip();
+
       
 });
