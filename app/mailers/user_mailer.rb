@@ -23,7 +23,7 @@ class UserMailer < ApplicationMailer
     mail(:to => @user.email, :subject => 'Welcome')    
   end
 
-  def charge_succeeded
+  def charge_succeeded(user)
     @user = user
     
     mail(:to => @user.receipt_email, :subject => '') 
