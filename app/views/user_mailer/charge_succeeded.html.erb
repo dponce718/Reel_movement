@@ -6,13 +6,13 @@
 RECEIPT #: [RECEIPT ID]
 
 Bill to:
-<%= user.name %>
+<%= @user.name %>
 
 [PLAN LEVEL NAME] – [START DATE] to [END DATE]
 
  <%= user.statement_descriptor %>
 
- Total: $ <%= user.statement_amount %>
+ Total: $ <%= @user.statement_amount %>
 
 Your next billing date will be [NEXT BILLING DATE].
 
