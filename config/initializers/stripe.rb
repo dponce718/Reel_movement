@@ -38,6 +38,9 @@ StripeEvent.configure do |events|
   events.subscribe 'charge.dispute.closed' do |event|
     UserMailer.dispute_closed(event.data.object).deliver
   end
+  events.subscribe 'charge.succeeded' do |event|
+    UserMailer.charge_succeeded(event.data.object).deliver
+  end
 end
 
 
