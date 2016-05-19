@@ -23,7 +23,7 @@ class SubscriptionsController < ApplicationController
 
 	def create
 
-			user = current_user
+			
 		 	
 		 	current_user.create_assessment(assessment_params)
 		 	
@@ -61,7 +61,7 @@ class SubscriptionsController < ApplicationController
 
 			 program = Program.find_by_title("Cardiovascular Training")
 			  program.users << current_user
-			flash[:success] = "yay!"
+			flash[:success] = "Its time to get moving lets do it"
 			redirect_to "/subscriptions/show"
 
 
@@ -73,7 +73,7 @@ class SubscriptionsController < ApplicationController
 
 			 program = Program.find_by_title("General Conditioning 2")
 			  program.users << current_user
-			flash[:success] = "yay!"
+			flash[:success] = "Welcome to the program that best suits your needs"
 			redirect_to "/subscriptions/show"
 
 
@@ -96,7 +96,7 @@ class SubscriptionsController < ApplicationController
 
 			  program = Program.find_by_title("Resistance Training")
 			  program.users << current_user
-			flash[:success] = "yay!" 
+			flash[:success] = "Welcome to the program that best suits your needs" 
 			redirect_to "/subscriptions/show"
 			
 

@@ -17,8 +17,17 @@ class ProgramsController < ApplicationController
 	def create
 	
 	current_user.create_corrective_assessment(corrective_assessment_params)
-			redirect_to "/subscriptions/show"
 
+	if 
+			   current_user.corrective_assessment.sitting == true   
+			   current_user.corrective_assessment.dress_shoes == true
+
+			   flash[:success] = "yay!"  
+			 redirect_to "/corrective_exercise"
+
+	else
+			redirect_to "/"
+		end		   
 	end	
 
 	def schedule

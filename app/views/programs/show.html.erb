@@ -13,12 +13,13 @@
     <%= form_for(:corrective_assessment, :url => {:action => 'create'}) do |f| %>
 
                          <div class="form-group"> 
-                          <%= f.label :occupation, 'What is your current occupation?' %>
+                          <%= f.label :occupation, 'What is your current occupation?',class: 'sofia-extra-light' %>
                           <%= f.text_field :occupation, class: 'form-control' %>
                          </div>
                          
                           <div class="form-group">  
-                          <%= f.label :sitting, 'Does your occupation require long periods of sitting?' %>
+                          <%= f.label :sitting, 'Does your occupation require long periods of sitting?',class: 'sofia-extra-light' %>
+                          </br>
                           <%= f.label :sitting, 'Yes'%>
                           <%= f.radio_button :sitting, true %>
                            <%= f.label :sitting, 'No' %>
@@ -26,7 +27,8 @@
                           </div>
 
                            <div class="form-group"> 
-                          <%= f.label :dress_shoes, 'Do you wear dress shoes or heels for your occupation?' %>
+                          <%= f.label :dress_shoes, 'Do you wear dress shoes or heels for your occupation?',class: 'sofia-extra-light' %>
+                          </br>
                            <%= f.label :dress_shoes, 'Yes' %>
                           <%= f.radio_button(:dress_shoes, true) %>
                            <%= f.label :dress_shoes, 'No' %>
@@ -34,7 +36,7 @@
                           </div>
 
                           <div class="form-group"> 
-                          <%= f.label :repetition, 'Does your occupation require you to work on a computer for long periods of time?' %>
+                          <%= f.label :repetition, 'Does your occupation require you to work on a computer for long periods of time?',class: 'sofia-extra-light' %>
                            <%= f.label :repetition, 'Yes' %>
                           <%= f.radio_button(:repetition, true) %>
                            <%= f.label :repetition, 'No' %>
@@ -42,7 +44,7 @@
                           </div>
 
                           <div class="form-group"> 
-                          <%= f.label :recreation, 'Do you participate in any sports or recreational activity (baseball, football, martial arts, golf, tennis, etc.)?' %>
+                          <%= f.label :recreation, 'Write a sport or recreational activity you spend a lot of time performing(baseball, football, martial arts, golf, tennis, etc.)',class: 'sofia-extra-light' %>
                           <%= f.text_field :recreation, class: 'form-control' %>
                           </div>
 

@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   resources :recipes, only: [:index]
   resources :subscribe
    resources :charges
+   resources :programs   
 
 
 #post 'webhook' => 'subscribe#webhook'
