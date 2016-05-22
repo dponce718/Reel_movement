@@ -44,7 +44,7 @@ class UserMailer < ApplicationMailer
     @user = user
     @greeting = "Hi"
 
-    mail to: @user.email, subject: 'Payment to Reel Movement Failed'
+    mail to: @user.email, subject: 'Thanks for updating your information'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml

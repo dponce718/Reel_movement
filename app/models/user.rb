@@ -31,10 +31,6 @@ class User < ActiveRecord::Base
 after_create :subscribe_user_to_mailing_list
 
 
- def self.without_assessment
-    includes(:assessment).where(assessments: {user_id: nil})
-  end
-  
 
   private
  
@@ -42,20 +38,9 @@ after_create :subscribe_user_to_mailing_list
     SubscribeUserToMailingListJob.perform_later(self)
   end
 
-  def role?(r)
-  role.include? r.to_s
-end
+ 
 
 
- def send_failed_charge(user)
-    UserMailer.failed_charge(self).deliver
-  end
-
-
-
-
-
-  
 
       
 end

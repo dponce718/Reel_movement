@@ -27,10 +27,10 @@
     <%= f.password_field :password, autofocus: true, autocomplete: "off", class: 'form-control', placeholder: "Your Password" %>
   </div>
 
-<div>
+<div class="form-group">
    <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: "Confirm your password"  %>
 </div>
-</div> </br>
+ 
   
   <div class="actions">
     <%= f.submit "Change my password", class: 'btn btn-info btn-fill btn-block' %>
@@ -38,6 +38,9 @@
 
 <% end %>
 
+<div>
+       <p class="">Looking to <%= link_to "Log in", new_session_path(resource_name) %>?</p>
+      </div>
 
     
         </div>

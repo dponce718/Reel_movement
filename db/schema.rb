@@ -71,49 +71,6 @@ ActiveRecord::Schema.define(version: 20160519215815) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "coupons", force: :cascade do |t|
-    t.string   "code"
-    t.string   "free_trial_length"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-  end
-
-  create_table "meetings", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "start_time"
-    t.datetime "workout_one"
-    t.datetime "workout_two"
-    t.datetime "workout_three"
-    t.datetime "workout_four"
-    t.datetime "workout_five"
-    t.datetime "workout_six"
-    t.datetime "workout_seven"
-    t.datetime "middle"
-    t.datetime "workout_eight"
-    t.datetime "workout_nine"
-    t.datetime "workout_ten"
-    t.datetime "workout_eleven"
-    t.datetime "workout_twelve"
-    t.datetime "workout_thirteen"
-    t.datetime "workout_fourteen"
-    t.datetime "workout_fifteen"
-    t.datetime "end_date"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
-  create_table "plans", force: :cascade do |t|
-    t.string   "name"
-    t.string   "stripe_id"
-    t.float    "price"
-    t.string   "interval"
-    t.text     "features"
-    t.boolean  "highlight"
-    t.integer  "display_order"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
   create_table "programs", force: :cascade do |t|
     t.string   "title"
     t.string   "level"

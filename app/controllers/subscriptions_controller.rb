@@ -38,7 +38,7 @@ class SubscriptionsController < ApplicationController
 				
 			program = Program.find_by_title("General Conditioning")
 			program.users << current_user
-			flash[:success] = "Welcome to the program that best suits your needs"
+			flash[:success] = "Congratulations, the best program for you is General Conditioning"
 			redirect_to "/subscriptions/show"
 
 		elsif current_user.assessment.rhr.between?(75,79)
