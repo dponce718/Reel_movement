@@ -18,7 +18,7 @@ class SubscribeController < ApplicationController
      current_user.stripeid = customer.id
      current_user.subscribed = true
       current_user.save
-      UserMailer.welcome_email(current_user).deliver
+     # UserMailer.welcome_email(current_user).deliver
    
     redirect_to "/subscriptions"
 
