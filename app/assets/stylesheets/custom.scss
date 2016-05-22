@@ -346,6 +346,18 @@ h4{
     border-radius: 10%;
 
 }
+
+.do{
+    width: 200px;
+}
+
+#first-workout{
+    color: white;
+    text-align: center;
+    background-color: $brand-primary;
+    border-radius: 4px;
+    margin: 0px;
+}
     
 .navbar-transparent .navbar-brand:hover, .navbar-transparent .navbar-brand:focus, [class*="navbar-ct"] .navbar-brand:hover, [class*="navbar-ct"] .navbar-brand:focus {
     background-color: rgba(0, 0, 0, 0);
