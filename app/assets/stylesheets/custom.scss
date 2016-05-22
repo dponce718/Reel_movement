@@ -336,10 +336,6 @@ h4{
     opacity: 1;
 }
 
-//.navbar-nav li:last-child > a{
-//    background: $success-color;
- //   border-radius: 10%;
-//}
 
 #call-to-action{
     background: $success-color;
@@ -2236,6 +2232,14 @@ display:inline;
     color:white;
     margin-bottom: 50px;
     margin-top: 50px;
+}
+
+#program-title-div{
+    width:650px;
+    text-align: center;
+     background-color: hsla(0, 0, 45%, .5);
+    border-radius: 4px;
+    opacity: 1;
 }
 
 #program-list{
