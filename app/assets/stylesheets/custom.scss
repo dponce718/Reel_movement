@@ -9,12 +9,23 @@
 @import "mixins.scss";
 
 
+
 // Global Components
 
 section{
    
    // z-index: 3;
  //   background-image: url('http://basehold.it/i/44');
+}
+
+.table-heading{
+    background:  hsla(106, 100%, 25%, .7) !important;
+    color:white;
+}
+
+#main-table-heading{
+    background:  hsla(106, 100%, 25%, 1) !important;
+    color:white;
 }
 
 body {
@@ -128,6 +139,25 @@ h4{
 
 .bg-darkest-gray {
 	background-color: $gray-darkest;
+}
+
+/* Styles for dialog window */
+
+#modal-dialog {
+    background: white;
+    padding: 20px 30px;
+    text-align: left;
+    border-radius: 1%;
+    margin: 40px auto;
+    position: relative;
+}
+
+ul{
+     list-style: none;
+}
+
+#schedule-heading{
+    margin: 50px;
 }
 
 

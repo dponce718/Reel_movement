@@ -62,7 +62,6 @@ $('#new_user').on('submit', function(event) {
     type: 'POST',
     });   
     if($(this).valid()) {
-            alert('the form is valid');
             $('#new_user').remove();
             $('#subscribe_user').fadeIn(400);
         }

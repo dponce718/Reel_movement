@@ -91,7 +91,7 @@
                                            <%= image_tag "https://s3.amazonaws.com/reelmovement/hipflexor.jpg" %>                   
                                         <div class="filter filter-green">
 
-                                      <a href="#recipe-one" class="open-popup-link btn btn-neutral btn-round"> Lets get started </a> 
+                                      <a href="#corrective-one" class="open-popup-link btn btn-neutral btn-round"> Lets get started </a> 
 
 
                                           
@@ -105,24 +105,16 @@
                                         
                                          <h4 class="title text-center"> Excessive squat with a forward lean </h4>
                                         
-                                           <p> Proper mechanics are extremely important. Improper mechanics can lead to potential injuries. An execssive forward lean during squats may lead to lower back pain or  quadricep and groin strains. Lets working on fixing some muscle imbalnces you may have.  </p>
+                                           <p> Proper mechanics are extremely important. Improper mechanics can lead to potential injuries. An execssive forward lean during squats may lead to lower back pain or  quadricep and groin strains. Lets working on fixing some muscle imbalances you may have.  </p>
 
 
-                       
+            <div >      
+<ul class="dislay-li">
+     <li class="pull-left">   <a class="popup-with-schedule btn btn-info btn-round" href="#modal-dialog">Click for more info</a><br></li>
 
-                    <div class="col-md-6">
-                         <ul class="list-group">
-                        <li class="list-group-item">Preparation time: <%= Recipe.first.preparation %></li>
-                        <li class="list-group-item">Total cooking time: <%= Recipe.first.total_time %></li>
-                       </ul>
-                    </div>
-
-                     <div class="col-md-6">
-                         <ul class="list-group">
-                        <li class="list-group-item">Amount of servings: <%= Recipe.first.servings %></li>
-                        <li class="list-group-item">Duration: 4 weeks</li>
-                       </ul>
-                    </div>
+      <li class="pull-right">  <a class="popup-with-schedule btn btn-info btn-round" href="#modal-dialog">Print your workout schedule</a><br></li>
+</ul>
+        </div>
                                       
                                     </div>
                                 </div>
@@ -136,7 +128,7 @@
                                            <%= image_tag "https://s3.amazonaws.com/reelmovement/badsquats.jpg" %>                   
                                         <div class="filter filter-green">
 
-                                           <a href="#recipe-two" class="open-popup-link btn btn-neutral btn-round"> Lets start training</a>  
+                                           <a href="#corrective-two" class="open-popup-link btn btn-neutral btn-round"> Lets start training</a>  
                                           
                                         </div>
                                     </div>
@@ -154,19 +146,7 @@
 
                        
 
-                    <div class="col-md-6">
-                         <ul class="list-group">
-                        <li class="list-group-item">Preparation time: <%= Recipe.find(2).preparation %></li>
-                        <li class="list-group-item">Total cooking time: <%= Recipe.find(2).total_time %></li>
-                       </ul>
-                    </div>
-
-                     <div class="col-md-6">
-                         <ul class="list-group">
-                        <li class="list-group-item">Amount of servings: <%= Recipe.find(2).servings %></li>
-                        <li class="list-group-item">Duration: 4 weeks</li>
-                       </ul>
-                    </div>
+                   
                                       
                                     </div>
                                 </div>
@@ -178,4 +158,6 @@
 
   </div>
 </section>
-<%= render 'layouts/recipemodal' %>
+ 
+    <%= render 'layouts/schedule' %>
+ <%= render 'layouts/correctiveprogram' %>
