@@ -25,6 +25,14 @@ class ProgramsController < ApplicationController
 			   flash[:success] = "yay!"  
 			 redirect_to "/corrective_exercise"
 
+	elsif		 
+
+		current_user.corrective_assessment.sitting == false  
+			   current_user.corrective_assessment.dress_shoes == true
+
+			   flash[:success] = "thats cool!"
+			   redirect_to "/corrective_exercise" 
+
 	else
 			redirect_to "/"
 		end		   
