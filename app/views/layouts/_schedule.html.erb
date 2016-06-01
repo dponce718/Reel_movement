@@ -1,8 +1,10 @@
-<div id="modal-dialog-1" class="mfp-hide corrective-schedule">
+<div id="modal-dialog" class="mfp-hide corrective-schedule">
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <h2 id="schedule-heading" class="text-center"><%= Program.find_by_title("Excessive squat with a forward lean").title %> </h2>
+
+            <p class="text-center"> Watch the video and it will explain each exercise in detail </p>
 
      <%= raw Program.find_by_title("Excessive squat with a forward lean").schedule %> 
             
@@ -16,9 +18,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2 id="schedule-heading" class="text-center"><%= Program.find_by_title("Excessive squat with a forward lean").title %> </h2>
+            <h2 id="schedule-heading" class="text-center"><%= Program.find_by_title("Rounded Shoulders").title %> </h2>
+            <p class="text-center"> Watch the video and it will explain each exercise in detail </p>
 
-     kaboom
+     <%= raw Program.find_by_title("Rounded Shoulders").schedule %>
             
         </div>
     </div>

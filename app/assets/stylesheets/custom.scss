@@ -143,7 +143,7 @@ h4{
 
 /* Styles for dialog window */
 
-#corrective-1 {
+.corrective-schedule {
     background: white;
     padding: 20px 30px;
     text-align: left;
@@ -2257,7 +2257,11 @@ height:600px;
 margin-left:12em;   
 }
 
-#program-list li{
+.program-list li:first-child{
+margin-left:7em;
+}   
+
+#program-list li, .program-list li{
 display:inline;
    
 }
@@ -2269,7 +2273,7 @@ display:inline;
 }
 
 #program-title-div{
-    width:650px;
+    width:100%;
     text-align: center;
      background-color: hsla(0, 0, 45%, .5);
     border-radius: 4px;
@@ -2421,9 +2425,9 @@ body{
 }
 
 @media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
+    //section {
+      //  padding: 150px 0;
+    //}
      .profile-section {
         padding: 50px 0;
     }
@@ -2601,6 +2605,11 @@ padding-bottom: 20px;
     padding-left: 12%;
     
 }
+
+.btn-lg{
+       padding: 7px 6px;
+}
+
 #program-list{
     padding: 20px;
     height: 300px;
@@ -2835,5 +2844,9 @@ ul.social-buttons {
 .update-info{
     background:  hsla(106, 100%, 45%, .5);
 
+}
+
+#card-section{
+    margin-bottom: 150px;
 }
 
