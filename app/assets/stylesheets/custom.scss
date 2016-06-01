@@ -143,7 +143,7 @@ h4{
 
 /* Styles for dialog window */
 
-#modal-dialog {
+#corrective-1 {
     background: white;
     padding: 20px 30px;
     text-align: left;
@@ -751,11 +751,15 @@ section {
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d;
-      
         img {
             width: 100%;
         }
     }
+
+    #shoulder{
+        background-position: 50% 1% !important;
+    }
+
     .filter{
         position: absolute;
         z-index: 2;
