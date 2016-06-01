@@ -40,7 +40,7 @@ StripeEvent.configure do |events|
   end
   events.subscribe 'customer.subscription.deleted' do |event|
     customer = event.data.object
-     User.find_by!(stripeid: customer.id).destroy
+     User.find_by!(stripeid: customer).destroy
   end
 end
 
