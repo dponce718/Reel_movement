@@ -39,8 +39,8 @@ StripeEvent.configure do |events|
     UserMailer.dispute_closed(event.data.object).deliver
   end
   events.subscribe 'customer.subscription.deleted' do |event|
-    customer = event.data.object
-     User.find_by!(stripeid: customer).destroy
+    event = event.data.object
+     User.find_by!(stripeid: event.customer).destroy
   end
 end
 
