@@ -523,8 +523,12 @@ background-image: url('https://s3.amazonaws.com/reelmovement/planks1.jpg');
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+  padding: 100px 0;
    
+}
+
+.profile-background{
+    padding: 0;
 }
 
 
@@ -2426,9 +2430,13 @@ body{
 }
 
 @media(min-width:768px) {
-    //section {
-      //  padding: 150px 0;
-    //}
+    section {
+       padding: 150px 0;
+    }
+
+    .profile-background{
+        padding: 0;
+    }
      .profile-section {
         padding: 50px 0;
     }
@@ -2573,20 +2581,18 @@ padding-bottom: 20px;
     
 }
 
-#program-list{
-    padding: 20px;
-    height: 300px;
-    margin: 110px;
+#program-list, .program-list{
+    padding: 26px;
    
 }
 
 
-#program-list li:first-child{
+#program-list li:first-child, .program-list li:first-child{
 margin-left:0px;
 padding-bottom: 20px;
 }
 
-#program-list a{
+#program-list a, .program-list a{
     margin-bottom: 20px;
      display: block;
 }
@@ -2606,6 +2612,8 @@ padding-bottom: 20px;
     padding-left: 12%;
     
 }
+
+
 
 .btn-lg{
        padding: 7px 6px;
