@@ -1,28 +1,24 @@
 
- 
-       <!--    
-        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange  
-        -->
-        <nav class="navbar navbar-default navbar-fixed-top navbar-transparent" id= 'header' role="navigation">
-          
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand navbar-brand-logo" href="/">
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" id= 'header' role="navigation">
+
+    
+
+    <div class="container">
+        <a class="navbar-brand navbar-brand-logo" href="/">
                     <div class="logo">
                     <%= image_tag "https://s3.amazonaws.com/reelmovement/rm-green+copy.png", size: "200x150" %>
-                    </div>
-              </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
+                    </div> </a>
+             
+
+
+
+<div id="slide">
+
+<label for="show-menu" class="show-menu pull-right">
+                Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+
+        <ul id="menu" class="nav navbar-nav navbar-right all">
 
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -77,13 +73,14 @@
 
                              <li class="dropdown">
 
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                            <a href="#" tabindex="0" class="dropdown-toggle clickable" data-toggle="dropdown"> 
                             <i class="fa fa-cog"></i>
                             <p> Account <b class="caret"></b> </p>
                             </a>
+                            
                   
             
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu " id="showedClickable">
 
                         <li><%= link_to " Profile",  profile_path, class: "fa fa-home"  %></li> 
 
@@ -136,15 +133,8 @@
 
                         
                     </ul>
+                    </div>
 
                 <% end %> 
-               </ul>
-               
-              
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-
-
-     
-
+                </div> <!--   end of container --> 
+                </nav>

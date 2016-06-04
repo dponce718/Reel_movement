@@ -51,8 +51,8 @@ $(document).ready(function(){
     $('.btn-tooltip').tooltip();
     $('.label-tooltip').tooltip();
     
-	// Carousel
-	$('.carousel').carousel({
+    // Carousel
+    $('.carousel').carousel({
       interval: 4000
     });
     
@@ -161,8 +161,8 @@ gsdk = {
    
     },
     
-    checkScrollForTransparentNavbar: debounce(function() {	
-        	if($(document).scrollTop() > 260 ) {
+    checkScrollForTransparentNavbar: debounce(function() {  
+            if($(document).scrollTop() > 260 ) {
                 if(transparent) {
                     transparent = false;
                     $('nav[role="navigation"]').removeClass('navbar-transparent');
@@ -256,33 +256,33 @@ gsdk = {
         // Sliders for demo purpose in refine cards section
         if($('#slider-range').length != 0){
             $( "#slider-range" ).slider({
-        		range: true,
-        		min: 0,
-        		max: 500,
-        		values: [ 75, 300 ],
-        	});
+                range: true,
+                min: 0,
+                max: 500,
+                values: [ 75, 300 ],
+            });
         }
         if($('#refine-price-range').length != 0){
-        	 $( "#refine-price-range" ).slider({
-        		range: true,
-        		min: 0,
-        		max: 999,
-        		values: [ 100, 850 ],
-        		slide: function( event, ui ) {
-        		    min_price = ui.values[0];
-        		    max_price = ui.values[1];
-            		$(this).siblings('.price-left').html('&euro; ' + min_price);
-            		$(this).siblings('.price-right').html('&euro; ' + max_price)
-        		}
-        	});
+             $( "#refine-price-range" ).slider({
+                range: true,
+                min: 0,
+                max: 999,
+                values: [ 100, 850 ],
+                slide: function( event, ui ) {
+                    min_price = ui.values[0];
+                    max_price = ui.values[1];
+                    $(this).siblings('.price-left').html('&euro; ' + min_price);
+                    $(this).siblings('.price-right').html('&euro; ' + max_price)
+                }
+            });
         }
         if($('#slider-default').length != 0 || $('#slider-default2').length != 0){
-        	$( "#slider-default, #slider-default2" ).slider({
-        			value: 70,
-        			orientation: "horizontal",
-        			range: "min",
-        			animate: true
-        	});
+            $( "#slider-default, #slider-default2" ).slider({
+                    value: 70,
+                    orientation: "horizontal",
+                    range: "min",
+                    animate: true
+            });
         }
     },
     initVideoCards: function(){
@@ -365,14 +365,14 @@ examples = {
 // leading edge, instead of the trailing.
 
 function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		clearTimeout(timeout);
-		timeout = setTimeout(function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		}, wait);
-		if (immediate && !timeout) func.apply(context, args);
-	};
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        }, wait);
+        if (immediate && !timeout) func.apply(context, args);
+    };
 };

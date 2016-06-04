@@ -1,19 +1,140 @@
+
+
 <section>
 
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" id= 'header' role="navigation">
 
- <div class="container">
+    
 
-            <div class="row">
-  
-         
-            
-                 <div class="user-program video-container program-video">
+    <div class="container">
+        <a class="navbar-brand navbar-brand-logo" href="/">
+                    <div class="logo">
+                    <%= image_tag "https://s3.amazonaws.com/reelmovement/rm-green+copy.png", size: "200x150" %>
+                    </div> </a>
+             
+
+    <label for="show-menu" class="show-menu pull-right"><span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>sssss</label>
+    <input type="checkbox" id="show-menu" role="button">
+
+
+        <ul id="menu" class="nav navbar-nav navbar-right">
+
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
                     
-                     
-           <iframe id="vzvd-7048367" name="vzvd-7048367" title="vzaar video player" class="vzaar-video-player center-block" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/7048367/player"></iframe>
-                </div>
-          
-        </div>
-	
- </div>
+                        <%  if user_signed_in?  %>
+
+                            <li>
+                        <a href="/blog">
+                            <i class="fa fa-university"></i> 
+                            <p>Blog</p>
+                        </a>
+                    </li> 
+
+
+                               
+                    <li>
+                   
+                     <%= link_to  user_programs_path(current_user) do %>
+                     <i class="fa fa-book"></i> 
+                    <p>Programs</p>
+                    <% end %>
+
+                    </li> 
+
+                      <li>
+                        <a href="/corrective_exercise">
+                            <i class="fa fa-balance-scale"></i>      
+                            <p>Corrective exercise</p>
+                        </a>
+                    </li> 
+
+
+                    <li id="pop-2-nav"
+                     data-html="true" 
+                data-toggle="popover"
+                data-placement="bottom" 
+                title="Nav Bar" 
+                data-content="<div> <p> Here we have the nav bar. If you feel the need to change or browse our programs then just go ahead and click program or maybe you're looking for a meal. Then just click on recipes. It's pretty easy, here you have access to everything Reel Movement has to offer. </P> </div> <div id = 'close-tour' class='pull-left btn btn-fill btn-success btn-xs'> Finish tour</div> <div id = 'next' class='pull-right btn btn-primary btn-xs'> next tip</div> </br> </div></br>  ">
+                   
+                     <%= link_to recipes_path do %>
+                     <i class="fa fa-cutlery"></i>
+                    <p>Recipes</p>
+                    <% end %>
+
+                    </li> 
+
+                   
+
+                   
+
+
+                             <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                            <i class="fa fa-cog"></i>
+                            <p> Account <b class="caret"></b> </p>
+                            </a>
+                  
+            
+                    <ul class="dropdown-menu">
+
+                        <li><%= link_to " Profile",  profile_path, class: "fa fa-home"  %></li> 
+
+                        <li> <%= link_to ' Edit profile', edit_user_registration_path, class: "fa fa-user" %> </li>
+
+
+                        <li class="divider"></li>
+                        <li> <%= link_to " Log out", destroy_user_session_path, method: "delete", class: "fa fa-bed" %> </li>
+                       
+
+                    </ul> 
+
+                       </li> <% else %> 
+
+
+                        <li>
+                        <a href="#promo-video" class="open-popup-link">
+                            <i class="icon-library"></i>
+                            <p>Learn More</p>
+                        </a>
+                    </li> 
+                        <li>
+                        <a class="page-scroll" href="#price"> 
+                            <i class="icon-money"></i>
+                            <p>Pricing</p>
+                        </a>
+                    </li> 
+
+                        <li>
+                        <a href="/blog">
+                            <i class="icon-article"></i>
+                            <p>Blog</p>
+                        </a>
+                    </li>     
+
+                    <li>
+                             <%= link_to new_user_session_path do %>
+                                    <i class="icon-profile"></i>
+                                    <p> Log in </p>
+                                     <% end %>
+                        </li>         
+
+                        <li>
+                  
+                         <%= render 'layouts/modal' %>
+                                
+                        </li> 
+
+                        
+
+                        
+                    </ul>
+
+                <% end %> 
+                </div> <!--   end of container --> 
+                </nav>
 </section>
