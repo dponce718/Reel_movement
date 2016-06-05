@@ -2173,9 +2173,7 @@ section {
 }
 
 
-//.program-video iframe{
- //   opacity: 0.8;
-//}
+
 
 
 
@@ -2866,20 +2864,7 @@ ul.social-buttons {
 
 
 
-
 /*Style for dropdown links*/
-#slide li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-}
-
-/*Hover state for dropdown links*/
-li:hover ul a:hover {
-    background: #19c589;
-    color: #fff;
-}
 
 /*Hide dropdown links until they are needed*/
 li ul {
@@ -2932,8 +2917,40 @@ input[type=checkbox]:checked ~ #menu{
 
 /*Responsive Styles*/
 
-@media screen and (max-width : 760px){
+ .account-menu{
+    background:white;
+    border-radius: 10%;
+}
+
+     .account-menu > li > a {
+    padding: 8px 20px;
+    color: #333333;
+    margin-left: -50px;
+}
+ .account-menu > li:first-child > a{
+    border-radius: 10px 10px 0 0;
+}
+ .account-menu > li:last-child > a{
+    border-bottom: 0 none;
+    border-radius: 0 0 10px 10px;
+}
+ .account-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #F5F5F5;
+    color: #333333;
+    opacity: 1;
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width : 768px){
     /*Make dropdown links appear inline*/
+
+    .account-menu > li > a {
+    padding: 8px 20px;
+    color: #333333;
+    margin-left: 36%;
+}
    #slide ul {
         position: static;
         display: none;
@@ -2956,13 +2973,13 @@ input[type=checkbox]:checked ~ #menu{
     }
     #call-to-action{
     background: $gray-darkest;
+    } 
+     .account-menu{
+    background:$gray-darkest;
+}
+
+     .account-menu li a{
+        color:white;
     }
 
-    a.clickable:focus + #showedClickable {
-display:block;
 }
-
-
-}
-
-

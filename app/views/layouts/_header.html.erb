@@ -18,7 +18,7 @@
                 Menu</label>
     <input type="checkbox" id="show-menu" role="button">
 
-        <ul id="menu" class="nav navbar-nav navbar-right all">
+        <ul id="menu" class="nav navbar-nav navbar-right">
 
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -73,14 +73,13 @@
 
                              <li class="dropdown">
 
-                            <a href="#" tabindex="0" class="dropdown-toggle clickable" data-toggle="dropdown"> 
+                            <a href="#" class="account" > 
                             <i class="fa fa-cog"></i>
                             <p> Account <b class="caret"></b> </p>
                             </a>
-                            
                   
             
-                    <ul class="dropdown-menu " id="showedClickable">
+                    <ul class="account-menu">
 
                         <li><%= link_to " Profile",  profile_path, class: "fa fa-home"  %></li> 
 
