@@ -2902,12 +2902,13 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 /*Hide checkbox*/
-input[type=checkbox]{
+#slide input[type=checkbox]{
     display: none;
 }
 
 /*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
+
+ input[type=checkbox]:checked ~ #menu{
     display: block;
     padding-top: 83px;
     background: $gray-darkest;
