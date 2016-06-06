@@ -1,7 +1,7 @@
 ---
 title:  "PRINCIPLES OF TRAINING"
 date:   2016-03-04 12:25:09
-excerpt: "We all have been in a position where we want to get in better shape but we just have no idea where to begin. At Reel Movement you will not only train hard but you will also train smart..."
+excerpt: "We all have been in a position where we want to get in better shape but we just have no idea where to begin ..."
 permalink: principles
 image: https://s3.amazonaws.com/reelmovement/General.jpg
 ---
@@ -14,19 +14,19 @@ We all have been in a position where we want to get in better shape but we just 
 <h2>Principle of overload </h2>
 
 <p>
-The body constantly adapts to the pressure that is exerted on it. If you intend to continue to see training adaptations you must place additional stress on the body. For example, you can increasing the intensity of an exercise by decreasing rest time, adding additional weight, or progressing from a level 1 program to a level 2 program. It is important that you understand that the intensity should be raised progressively and cautiously in order to prevent overtraining.
+The body constantly adapts to the pressure that is exerted on it. If you intend to continue to see training adaptations you must place additional stress on the body. For example, you can increase the intensity of an exercise by decreasing rest time, adding additional weight, or progressing from a static movement to a dynamic one. It is important that you understand that the intensity should be raised progressively and cautiously in order to prevent overtraining.
 </p>
 
 <h2>Principle of Specificity</h2>
 
 <p>
-The body adapts to the specific demand placed on it. For, example you should not expect to lift heavier weights by running three miles. You should expect to improve at running three miles. If your goal is to improve your cardiovascular system that running is a good approach but if your goal is to improve lean muscle mass resistance training would be the best option. You should include different types of training because that all offer unique adaptations.
+The body adapts to the specific demand placed on it. For, example you should not expect to lift heavier weights by running three miles. You should expect to improve at running three miles. If your goal is to improve your cardiovascular system than running is a good approach but if your goal is to improve lean muscle mass resistance training would be the best option. You should include different types of training because they all offer unique adaptations.
 </p>
 
 <h2>Principle of Individualization</h2>
 
 <p>
-We are all individuals and thus we have to take into account each person’s response to exercise. There is no exercise program that can be prescribed for everyone. Understanding your body is a key principle of training smart. For instance, you may need to remain at a level 1 program for slightly longer than another individual or you may progress faster than another individual. Once you become conscious of your own body you will continue to progress safely and efficiently. 
+We are all individuals and thus we have to take into account each person’s response to exercise. There is no exercise program that is one size fits all. Understanding your body is a key principle of training smart. For instance, you may need to remain at a lower intensity program for slightly longer than another individual or you may progress faster. Once you become conscious of your own body you will continue to progress safely and efficiently. 
 
 
 “Remember train hard and train smart!”
