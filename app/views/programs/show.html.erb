@@ -43,6 +43,14 @@
                           </div>
 
                           <div class="form-group"> 
+                          <%= f.label :overhead, 'Does your occupation or recreational activity require a lot of overhead movements (swimming, throwing, lifting objects overhead, construction work, etc..)?',class: 'sofia-extra-light' %>
+                           <%= f.label :overhead, 'Yes' %>
+                          <%= f.radio_button(:overhead, true) %>
+                           <%= f.label :overhead, 'No' %>
+                          <%= f.radio_button(:overhead, false) %>
+                          </div>
+
+                          <div class="form-group"> 
                           <%= f.label :recreation, 'Write a sport or recreational activity you spend a lot of time performing(baseball, football, martial arts, golf, tennis, etc.)',class: 'sofia-extra-light' %>
                           <%= f.text_field :recreation, class: 'form-control' %>
                           </div>
