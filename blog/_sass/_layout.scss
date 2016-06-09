@@ -26,6 +26,104 @@
     }
 }
 
+.waypoint-nav{
+    background:white;
+    position:fixed;
+    width:100%;
+    z-index:1;
+    margin-top: -57px;
+    border-bottom:$gray-lighter solid 1px;
+
+}
+
+@include media-query($on-laptop) {
+
+#waypoint-offer p{
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+}
+
+.hidden{
+    display:none;
+}
+
+#waypoint-offer{
+    padding:31px;
+    
+    a{
+        font-size:16px;
+        text-decoration:none;
+    } 
+
+    p{
+        color: $brand-primary;
+
+    }   
+
+
+     @include media-query($on-palm) {
+        #waypoint-p{ 
+            display: none;
+        }
+        #waypoint-p-2{
+            display:inline; 
+            font-size: 16px;
+            margin-left: 20%;
+        }
+        #waypoint-offer a{
+            font-size: 14px;
+
+        }
+
+       #waypoint-offer a:hover{
+        background: white;
+        color:blue;
+    }
+
+        .btn{
+            display:none;
+        }
+    }
+
+}
+
+#waypoint-p-2{ 
+            display:none;
+        }
+
+
+#logo{
+    width:50px;
+    padding-right: 10px;
+}
+
+
+.btn{
+    border: 2px solid  #05AE0E;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: -54px;
+    background: white;
+
+    &:hover {
+        background: #05AE0E;
+        color:white;
+    }
+@include media-query($on-laptop) {
+    padding: 2px;
+    margin-top: -43px;
+}
+     @include media-query($on-palm) {
+        .btn{ 
+            font-size: 12px;
+            padding: 5px;
+        }
+    }
+}
+
 .site-nav {
     float: right;
     line-height: 56px;
@@ -284,7 +382,7 @@ ul.share-buttons li:nth-last-child(-n+4) {
     @include media-query($on-laptop) {
         height: 550px;
     @include media-query($on-palm) {
-           height: 450px;
+           height: 500px;
         }
     }
    }

@@ -37,9 +37,12 @@
 
 <meta property="fb:app_id" content="1063835490346190">
 
+
  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="scripts/basic.js"></script>
+<script src="/blog/scripts/basic.js"></script>
+<script src="/blog/scripts/jquery.waypoints.min.js"></script>
+<script src="/blog/scripts/waypoints.js"></script>
 <script src="https://use.typekit.net/yqy2cas.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -53,7 +56,8 @@
 
   <body>
 
-    <header class="site-header">
+    
+  <header class="site-header">
 
   <div class="wrapper">
 
@@ -89,7 +93,22 @@
 
 </header>
 
+    <div class="waypoint-nav hidden">
 
+<div id="waypoint-offer">
+	
+	<img class="pull-left" id="logo" src="https://s3.amazonaws.com/reelmovement/logo.png"> 
+
+	<div class="wrapper">
+	<p id="waypoint-p"> Take your fitness assessment with Reel Movement and get two weeks free  <p>
+<a href="/">	<p id="waypoint-p-2"> Try Reel Movement for 2 weeks </p> </a>
+	</div>
+
+	<a href="/" class="btn pull-right"> Free Trial</a>
+	
+
+</div>
+</div>
     <div class="page-content">
       <div id="background-image">
 
@@ -206,6 +225,7 @@
 
 
 
+         <div class="remove"></div>
       </div>
     </div>
 
