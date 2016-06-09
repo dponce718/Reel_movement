@@ -12,6 +12,9 @@
     position: relative;
 }
 
+#wrapper {
+    display: -webkit-box;
+}
 
 .site-title {
     font-size: 26px;
@@ -37,25 +40,21 @@
 }
 
 @include media-query($on-laptop) {
-
+    #wrapper {
+    display: block;
+}
 #waypoint-offer p{
     font-size: 14px;
     margin-top: 10px;
 
 }
 
-  #wrapper {
-    display: block;
-}
 }
 
 .hidden{
     display:none;
 }
 
-#wrapper {
-    display: -webkit-box;
-}
 
 #waypoint-offer{
     padding:31px;
