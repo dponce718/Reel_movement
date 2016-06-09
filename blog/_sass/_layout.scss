@@ -44,6 +44,9 @@
 
 }
 
+  #wrapper {
+    display: block;
+}
 }
 
 .hidden{
@@ -81,6 +84,11 @@
             font-size: 14px;
 
         }
+
+        #wrapper {
+    display: block;
+}
+
 
        #waypoint-offer a:hover{
         background: white;
