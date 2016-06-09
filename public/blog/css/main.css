@@ -185,6 +185,9 @@ pre {
   background: #2ab300;
   position: relative; }
 
+#wrapper {
+  display: -webkit-box; }
+
 .site-title {
   font-size: 26px;
   line-height: 56px;
@@ -203,9 +206,15 @@ pre {
   border-bottom: #f7f7f7 solid 1px; }
 
 @media screen and (max-width: 800px) {
+  #wrapper {
+    display: block; }
+
   #waypoint-offer p {
     font-size: 14px;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  #offer-wrapper {
+    width: 100px; } }
 .hidden {
   display: none; }
 
@@ -225,6 +234,8 @@ pre {
       margin-left: 34px; }
     #waypoint-offer #waypoint-offer a {
       font-size: 14px; }
+    #waypoint-offer #wrapper {
+      display: block; }
     #waypoint-offer #waypoint-offer a:hover {
       background: white;
       color: blue; }
