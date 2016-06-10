@@ -39,8 +39,7 @@
   <li> <a href="https://twitter.com/share" class="twitter-share-button" data-via="ReelMovement">Tweet</a></li>
 
   <li><a href="mailto:?subject={{ page.title }}
-
-  &body=REEL%20MOVEMENT%20BLOG%0A%0A{{ page.title }}%0A%0A{{ page.excerpt }}%0A%0AClick%20the%20link%20below%20to%20read%20more%0A%0Areelmovement.herokuapp.com{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+&body=REEL%20MOVEMENT%20BLOG%0A%0A{{ page.title }}%0A%0A{{ page.excerpt }}%0A%0AClick%20the%20link%20below%20to%20read%20more%0A%0Areelmovement.com{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <i class="fa fa-envelope-square fa-2x"></i></a></li>
 </a></li>
 
@@ -53,9 +52,8 @@
         </div>
 
         {{ content }}
-
+         <div class="remove"></div>
       </div>
-      <div class="remove"></div>
     </div>
     {% include footer.html %}
 
