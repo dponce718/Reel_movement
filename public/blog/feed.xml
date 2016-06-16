@@ -6,9 +6,75 @@
 </description>
     <link>/blog/</link>
     <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Jun 2016 16:23:36 -0400</pubDate>
-    <lastBuildDate>Wed, 15 Jun 2016 16:23:36 -0400</lastBuildDate>
+    <pubDate>Thu, 16 Jun 2016 18:37:55 -0400</pubDate>
+    <lastBuildDate>Thu, 16 Jun 2016 18:37:55 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Why is Interval Training so Popular?</title>
+        <description>&lt;p&gt; Interval training is really just one way to perform cardiovascular endurance training. Cardiovascular training is any type of exercise that improves the aerobic efficiency of the human body. Meaning, this type of training improves the ability of the lungs to take in oxygen, transfer it to the blood, and ultimately deliver that oxygen to the working muscles in order to aid in the production of energy. This type of exercise has many benefits, including the ability to perform cardiovascular training in a short amount of time and aiding in weight loss and management. A cardiovascular endurance program will aid weight loss as long as it is properly structured and accompanied by healthy eating habits.&lt;/p&gt;
+
+&lt;p&gt; There are many different methods of cardiovascular training: such long slow distance running, pace/tempo training, fartlek training, and interval training. Despite these entire different methods, interval training has become quite popular, but what is interval training?&lt;/p&gt;
+
+&lt;p&gt;  Basically, interval training involves training at an intensity that is as close to your VO2max as possible. For example, an individual with a good cardiovascular base may perform a sprint at maximum capacity, about 85-95% their max heart rate, for a 30 seconds then go back down to 70-80 percent of their max heart rate for 1 minute. They may continue to cycle at this rate for about 5-15 minutes, which, is very intense on the body. This is not the only way to perform interval training rather it is just a simplistic method of breaking it down. The reason it has become so popular is because it can be done in a relatively short amount of time and it has the potential to burn more calories from fat which of course will aid in weight management. &lt;/p&gt;
+
+&lt;p&gt;Although, when an individual performs intervals it becomes relatively easy to over train the body with such an intense activity. So, ample rest and adequate nutritional intake is necessary between each session of interval training in order to ensure maximum performance and reduce the risk of injury. &lt;/p&gt;
+
+&lt;div class=&quot;bar&quot;&gt;
+&lt;table id=&quot;q-graph&quot;&gt;
+&lt;caption&gt;Example of interval training program&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th class=&quot;sent sent-map&quot;&gt;sprint&lt;/th&gt;
+&lt;th class=&quot;paid paid-map&quot;&gt;jog&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;qtr&quot; id=&quot;q1&quot;&gt;
+&lt;th scope=&quot;row&quot;&gt;1 minute / 20 sec&lt;/th&gt;
+&lt;td class=&quot;sent bar&quot; style=&quot;height: 50px;&quot;&gt;&lt;p&gt;sprint&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;paid bar&quot; style=&quot;height: 120px;&quot;&gt;&lt;p&gt;jog&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;qtr&quot; id=&quot;q2&quot;&gt;
+&lt;th scope=&quot;row&quot;&gt; 1 minute / 20 sec&lt;/th&gt;
+&lt;td class=&quot;sent bar&quot; style=&quot;height: 50px;&quot;&gt;&lt;p&gt;sprint&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;paid bar&quot; style=&quot;height: 120px;&quot;&gt;&lt;p&gt;jog&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;qtr&quot; id=&quot;q3&quot;&gt;
+&lt;th scope=&quot;row&quot;&gt; 1 minute / 20 sec&lt;/th&gt;
+&lt;td class=&quot;sent bar&quot; style=&quot;height: 50px;&quot;&gt;&lt;p&gt;sprint&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;paid bar&quot; style=&quot;height: 120px;&quot;&gt;&lt;p&gt;jog&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;qtr&quot; id=&quot;q4&quot;&gt;
+&lt;th scope=&quot;row&quot;&gt; 1 minute / 20 sec&lt;/th&gt;
+&lt;td class=&quot;sent bar&quot; style=&quot;height: 50px;&quot;&gt;&lt;p&gt;sprint&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;paid bar&quot; style=&quot;height: 120px;&quot;&gt;&lt;p&gt;jog&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div id=&quot;ticks&quot;&gt;
+&lt;div class=&quot;tick&quot; style=&quot;height: 59px;&quot;&gt;&lt;p&gt;4 minutes&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;tick&quot; style=&quot;height: 59px;&quot;&gt;&lt;p&gt;3 minutes&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;tick&quot; style=&quot;height: 59px;&quot;&gt;&lt;p&gt;2 minutes&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;tick&quot; style=&quot;height: 59px;&quot;&gt;&lt;p&gt;1 minute&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;tick&quot; style=&quot;height: 59px;&quot;&gt;&lt;p&gt;20 seconds&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Founder and CEO of Reel Movement &lt;/p&gt;
+&lt;p&gt;Daniel Ponce&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Jun 2016 08:25:09 -0400</pubDate>
+        <link>/blog/intervals</link>
+        <guid isPermaLink="true">/blog/intervals</guid>
+        
+        
+        <category>articles</category>
+        
+      </item>
     
       <item>
         <title>PRINCIPLES OF TRAINING</title>
@@ -52,7 +118,7 @@ We are all individuals and thus we have to take into account each person’s res
       <item>
         <title>What is The Core and Why is it Important?</title>
         <description>&lt;p&gt;
-Core training has become extremely popular over the past several years, but why is it so important and what are the potential benefits of training the core? The core musculature is not just made up of the rectus abdominus and the internal and external oblique, but a much more extensive network of muscles. The core is broken down into three systems.
+Core training has become extremely popular over the past several years, but why is it so important and what are the potential benefits of training the core? The core musculature is not just made up of the rectus abdominus and the internal and external obliques, but a much more extensive network of muscles. The core is broken down into three systems.
 &lt;/p&gt;
 
 &lt;h2&gt;The Local Stabilization System&lt;/h2&gt;
@@ -64,7 +130,7 @@ The local core stabilizers are muscles that attach directly to the spine and aid
 &lt;h2&gt;The Global Stabilization System &lt;/h2&gt;
 
 &lt;p&gt;
-The muscles of the global stabilization system attach the pelvis to the spine. Some of the major muscles of this system include the quadratus lumborum, psoas major, and the external oblique. Its main function is to provide stability between the pelvis and the spine and transfer loads between the upper and lower extremities. 
+The muscles of the global stabilization system attach the pelvis to the spine. Some of the major muscles of this system include the quadratus lumborum, psoas major, and the external obliques. Its main function is to provide stability between the pelvis and the spine and transfer loads between the upper and lower extremities. 
 &lt;/p&gt;
 
 &lt;h2&gt;The Movement System&lt;/h2&gt;
@@ -74,7 +140,7 @@ The muscles of this system attach the spine and/or pelvis to the extremities. Th
 &lt;/p&gt;
 
 &lt;p&gt;	
-The core ultimately provides stabilization throughout the spine and hips allowing for optimum joint movement. A strengthened core reduces the risk of injury, improves function and performance, and improves neuromuscular control and stability. A good core program focuses on function and movement rather than just quantity.  So, in your workout include some core exercises and watch how much more your performance improves
+The core ultimately provides stabilization throughout the spine and hips allowing for optimum joint movement. A strengthened core reduces the risk of injury, improves function and performance, and improves neuromuscular control and stability. A good core program focuses on function and movement rather than just quantity.  So, in your training regime be sure include some core exercises and watch how much more your performance improves
 &lt;p&gt;
 
 &lt;p&gt;Founder and CEO of Reel Movement&lt;/p&gt;
