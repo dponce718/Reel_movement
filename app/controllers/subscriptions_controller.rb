@@ -16,6 +16,10 @@ class SubscriptionsController < ApplicationController
 	
 	end	
 
+	def assessment
+		
+	end
+
 	def show
 		
 		

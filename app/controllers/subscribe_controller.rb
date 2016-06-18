@@ -20,7 +20,7 @@ class SubscribeController < ApplicationController
       current_user.save
      UserMailer.welcome_email(current_user).deliver
    
-    redirect_to "/subscriptions"
+    redirect_to "/assessment"
 
   end
 
