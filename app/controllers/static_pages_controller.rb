@@ -5,9 +5,13 @@ class StaticPagesController < ApplicationController
 
   end
 
-  def video
+  def about
 
    end 
+
+   def free_workout
+     
+   end
 
   
   def privacy_policy
