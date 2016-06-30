@@ -57,27 +57,17 @@
        <div class="col-md-4">  
 <div class="card card-price">
                             <div class="content">
-                                <h6 class="category">Your Plan</h6>
-                                <h1 class="price">
-                                    <small>$</small>14<small> /mo</small>
-                                </h1>                        
                                 
-                                <ul class="list-unstyled list-lines">
-                                    <li>
-                                      <i class="fa fa-check"></i> <b>Unlimited</b> access to all programs, recipes, and corrective exercise
-                                    </li>
-                                    <li>
-                                      <i class="fa fa-check"></i>  <b>Constant</b> updates and new programs
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>  <b>Learn</b> to cook healthy meals
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i> </i> <b>Cancel</b> anytime
-                                    </li>
-                                </ul>
+                                 <%= image_tag "https://s3.amazonaws.com/reelmovement/logo-1.jpg", class: "plain-logo center-block"   %> 
+                                
+                               <p> Do you need to email us proof that you are a veteran or are you on active duty? Then click the button below  <p>
+
+                                <a class="btn btn-fill btn-success center-block" href="mailto:info@reelmovement.com?subject=Proof%20of%20military%20service%20"> Email us your proof of service (e.g DD-214)</a>
+
                             </div>
                               <div class="footer">
+
+                               <p> Do you need to update your card information? Just click the button below? <p>
             <%= form_tag charges_path(1), class: "text-center", method: :post do %>
             
 
