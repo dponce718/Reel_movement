@@ -26,9 +26,19 @@
                     
                         <%  if user_signed_in?  %>
 
+                        <li>
+                   
+                     <%= link_to  about_path do %>
+                     <i class="fa fa-info-circle"></i> 
+                    <p>About</p>
+                    <% end %>
+
+                    </li> 
+
+
                             <li>
                         <a href="/blog">
-                            <i class="fa fa-university"></i> 
+                            <i class="fa fa-newspaper-o"></i> 
                             <p>Blog</p>
                         </a>
                     </li> 
@@ -95,29 +105,41 @@
                        </li> <% else %> 
 
 
+
+
                         <li>
                         <a href="#promo-video" class="open-popup-link">
-                            <i class="icon-library"></i>
+                            <i class="fa fa-university"></i>
                             <p>Learn More</p>
                         </a>
                     </li> 
+
+
+                    <li>
+                             <%= link_to about_path do %>
+                                    <i class="fa fa-info-circle"></i>
+                                    <p> About </p>
+                                     <% end %>
+                        </li>         
+
+
                         <li>
                         <a class="page-scroll" href="https://www.reelmovement.com/#price"> 
-                            <i class="icon-money"></i>
+                            <i class="fa fa-usd"></i>
                             <p>Pricing</p>
                         </a>
                     </li> 
 
                         <li>
                         <a href="/blog">
-                            <i class="icon-article"></i>
+                            <i class="fa fa-newspaper-o"></i>
                             <p>Blog</p>
                         </a>
                     </li>     
 
                     <li>
                              <%= link_to new_user_session_path do %>
-                                    <i class="icon-profile"></i>
+                                    <i class="fa fa-paper-plane-o"></i>
                                     <p> Log in </p>
                                      <% end %>
                         </li>         
