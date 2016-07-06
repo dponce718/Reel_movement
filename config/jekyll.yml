@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 twitter_username: reelmovement
 fb_appid:    1063835490346190     
 baseurl: "/blog"
-paginate: 3
+paginate: 4
 exclude:
   - 'config.ru'
   - 'gemfile'
