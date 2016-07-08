@@ -121,7 +121,7 @@
    </section>
 
 <div>
-   <!-- Facebook Pixel Code -->
+ <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -130,11 +130,14 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '334864339970535');
-fbq('track', 'CompleteRegistration');</script>
+fbq('track', "PageView");
+// CompleteRegistration
+// Track when a registration form is completed (ex. complete subscription, sign up for a service)
+fbq('track', 'CompleteRegistration');
+</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=334864339970535&ev=PageView&noscript=1"
 /></noscript>
-
 <!-- End Facebook Pixel Code -->
 </div>
 
