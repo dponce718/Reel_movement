@@ -1,0 +1,195 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" id= 'header' role="navigation">
+
+    
+
+    <div class="container">
+        <a class="navbar-brand navbar-brand-logo" href="">
+                    <div class="logo">
+                    <%= image_tag "https://s3.amazonaws.com/reelmovement/rm-green-copy-1.png", size: "200x150" %>
+                    </div> </a>
+             
+
+                </div> <!--   end of container --> 
+                </nav>
+    <header class= "signup-background">
+        <div class="container header-background">
+           <div id="test-modal" class="white-popup-block">
+    
+      <div class="modal-dialog modal-small container row">
+    
+        <div class="modal-content">
+    
+          <div class="modal-header">
+    
+        
+                  
+                  <%= image_tag "https://s3.amazonaws.com/reelmovement/logo-1.jpg", class: "plain-logo center-block"   %> 
+      
+            <h4 class="modal-title text-center">Sign up now!</h4>
+            <p class="modal-p"> This is the first step to new you. Best part,&nbsp;it's&nbsp;free&nbsp;for&nbsp;14&nbsp;days! </br> if you cancel before your trial period is&nbsp;over&nbsp;you&nbsp;won't&nbsp;be&nbsp;charged  </p>
+
+           
+           
+          </div>
+    
+          <div class="modal-body sign_up">
+    
+           <%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true, class: 'sign-up-form') do |f| %>
+          <%= devise_error_messages! %>
+
+
+          <div class="form-group">
+                    <%= f.text_field :name, class: 'form-control', placeholder: "Your Name" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.email_field :email,class: 'form-control', placeholder: "Your Email", autofocus: true %>
+          </div>
+
+          <div class="form-group">
+            <%= f.password_field :password, class: 'form-control', placeholder: "Your Password (8 characters minimum)", autocomplete: "off" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.password_field :password_confirmation,class: 'form-control', placeholder: "Password Confirmation", autocomplete: "off" %>
+          </div>
+
+  
+            <%= f.submit "Sign up", class: 'btn btn-info btn-fill btn-block'  %>
+
+            <% end %>
+
+            <div class="modal-footer">
+       <span class="text-muted">Looking to <%= link_to "Log in", new_session_path(resource_name) %>?</span>
+      </div>
+
+          
+
+<div class="card card-price stripe-form">
+                            <div class="content">
+                            <div class="row">
+                                 <div class="col-md-12">
+                          <ul class="list-group">
+                        <li class="list-group-item"><i class="fa fa-credit-card" aria-hidden="true"></i>Regular price: <span id="line-price">$14.95</span> /month</li>
+                        <li class="list-group-item"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Total today: $0</li>
+                        </ul>
+                    </div>
+
+
+                            </div>           
+
+                                <p class="text-left"> Don't like it? Don't worry! You won't be charged until the end of your 14-day trial. You can cancel anytime.</p>
+
+                                <p> Your Free Trial includes:
+                                <ul class="list-unstyled list-lines">
+                                    <li>
+                                      <i class="fa fa-check"></i> <b>Unlimited</b> access to all programs, recipes, and corrective exercise
+                                    </li>
+                                    <li>
+                                      <i class="fa fa-check"></i>  <b>Constant</b> updates and new programs
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i>  <b>Healthy</b> meals taught to you by professional chefs
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer">
+                              <%= render 'layouts/stripeform' %>
+                              <p class="service-policy"> We may email you regarding our services. When you submit your payment information your 14-day trial will begin and you won't be charged $15.00 until after 2 weeks. You are also agreeing to our <a href="/terms">Terms of Service</a> and our <a href="/privacy_policy">Privacy Policy.</a> </p>
+                            </div>
+                        </div>
+
+       </div>
+
+</div>
+      
+
+      
+        </div>
+    
+      </div>
+    
+
+
+    </div>
+
+   
+        </div>
+    </header>
+
+
+    <script type="text/javascript">
+        
+   
+    $(document).on("ready page:load", function() {
+
+        $(function () {
+  $('.popup-modal').magnificPopup({
+    
+    type: 'inline',
+    preloader: false,
+    focus: '#user_name',
+    modal: true
+  });
+  $(document).on('click', '.popup-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});  
+
+
+
+        $('.stripe-form').hide();// hide stripe form
+         jQuery.validator.setDefaults({
+    debug: false,
+    success: "valid"
+});;
+        $('#new_user').validate({
+          rules : {
+             'user[name]' : { required : true,
+                           minlength : 2 
+                         }, //END OF USERNAME
+              'user[email]' : { required : true,
+                           email : true,
+                           remote:"/users/check_email"
+                         },  // end of email
+              'user[password]' : { required : true,
+                           minlength : 8
+                         },  // end of password 
+               'user[password_confirmation]' : { required : true,
+                           equalTo : "#user_password"
+                         },  // end of password 
+          },//end of rules
+          messages: {
+    'user[name]': "Please specify your name",
+    'user[email]': {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+      remote: "This email is already taken"
+    },// end of email
+     'user[password]': {
+      required: "Please enter a password",  
+    },
+    'user[password_confirmation]': {
+      required: "Please Re-enter your password ",
+      equalTo: "Please make sure the passwords are equal"
+    }
+  }
+        }); // end validation
+$('#new_user').on('submit', function(event) {
+  event.preventDefault();
+   $.ajax('/users', {
+    type: 'POST',
+    });   
+    if($(this).valid()) {
+            $('#new_user').remove();
+            $('.modal-p').remove();
+            $('.modal-footer').remove();
+            $('.stripe-form').fadeIn(400);
+        }
+       }); 
+               
+}); // end ready
+
+
+    </script>

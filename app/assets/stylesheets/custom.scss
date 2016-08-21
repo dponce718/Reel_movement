@@ -9,7 +9,6 @@
 @import "mixins.scss";
 
 
-
 // Global Components
 
 section{
@@ -507,8 +506,8 @@ ul{
 
 
 
-header {
-background-image: url('https://s3.amazonaws.com/reelmovement/planks-header-1.jpg');
+.main-header {
+background-image: url('https://s3.amazonaws.com/reelmovement/squat-header.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
 	 background-position: 50% 70%;
@@ -517,6 +516,18 @@ background-image: url('https://s3.amazonaws.com/reelmovement/planks-header-1.jpg
 	color: white;
 	
 }
+
+.signup-background{
+background-image: url('https://s3.amazonaws.com/reelmovement/group+push+up.jpg');
+    background-repeat: none;
+    background-attachment: scroll;
+     background-position: 50% 70%;
+    @include background-cover;
+    text-align: center;
+    color: white;
+    
+}
+
 
 
 
@@ -714,7 +725,32 @@ section {
 
 
 
+
 //prices
+
+.workout-background{
+    background-image: url('https://s3.amazonaws.com/reelmovement/group+pose.jpg
+');
+    }
+
+    .jump-squat{
+    background-image: url('https://s3.amazonaws.com/reelmovement/jumpsquat.jpg
+');
+    }
+
+    .green-background{
+    background-color: rgba(30, 160, 110, .9);
+    margin-top: -150px;
+    margin-bottom: -150px;
+    }
+
+ .green-background h2, .green-background h3, .green-background p{
+    color:white; 
+ }
+
+ #white-color{
+      color:white; 
+ }
 
 #prices{
 	
@@ -996,16 +1032,12 @@ section {
     }    
 }
 .card-price{
+    min-width:254px;
     position: relative;
     .price{
         font-weight: $font-weight-light;
         text-align: center;
         font-size: 66px;
-        small{
-            margin-right: 4px;
-            margin-left: -13px;
-            color: $black-color;
-        }
     }
     .category{
         text-align: center;
@@ -1277,6 +1309,7 @@ section {
     margin-top:150px;
 }
 
+
 }
 
 @media (min-width: 768px){
@@ -1342,11 +1375,15 @@ section {
     body > .navbar-collapse.collapse{
         display: none !important;
     }
+
+
 }
 
 /*          Changes for small display      */
 
 @media (max-width: 767px){ 
+
+
     .navbar-transparent{
         padding-top: 15px;
         background-color: rgba(0, 0, 0, 0.45);
@@ -1693,7 +1730,7 @@ section {
 
 .footer-black,
 .footer-transparent{
-    background-color: $black-bg;
+    background-color: rgba(30, 30, 30, 1);
     color: $medium-gray;
     
     nav > ul{
@@ -1980,9 +2017,13 @@ section {
     border: 0 none;
 }
 .modal-content {
+margin-left: -19px;
+margin-bottom: 100px;
+    min-width:280px;
     border: 0 none;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    color:black;
 }
 .modal-dialog {
     padding-top: 60px;
@@ -2212,6 +2253,7 @@ footer {
 #wrapper {
     min-height:100%;
     position:relative;
+    background-color: #1e1e1e;
 }
 
 #header {
@@ -2725,7 +2767,7 @@ padding-bottom: 20px;
 }
 
 
-.fa-check, .fa-long-arrow-down{
+.fa-check,  .fa-credit-card{
     color: $brand-primary;
 }
 
@@ -3011,7 +3053,7 @@ ul li a:hover + .hidden, .hidden:hover {
 // Timeline
 
 .my-life{
-    padding: 15px;
+    padding: 55px;
 }
 
 .timeline {
@@ -3208,4 +3250,75 @@ ul li a:hover + .hidden, .hidden:hover {
 #about{
     margin-top: -198px;
 }
+
+.header-background{
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#line-price{
+    text-decoration: line-through;
+}
+
+.service-policy{
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+.white{ 
+   margin-top: -150px;
+    margin-bottom: -150px;
+    background-color: black;
+    background-color: rgba(255, 255, 255, .9)
+}
+
+.extra-margin-bottom{
+    margin-bottom: 60px;
+}
+
+.extra-margin-top{
+    margin-top: 80px;
+}
+
+
+@media (max-width: 767px){ 
+
+ .white{
+        margin-top: -101px;
+    }
+
+     .green-background{
+        margin-top: -100px;
+    }
+
+    
+
+                            }
+
+    .gradient{
+        background: linear-gradient(270deg, #8e9eab,  #eef2f3);
+       
+    }
+
+   #no-margin p {
+    margin-top: -61px;
+    margin-bottom: 80px;
+}
+
+#cta-p-margin{
+    margin-top: -61px;
+    margin-bottom: 80px;
+}
+
+
+
+   
 

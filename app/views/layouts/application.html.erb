@@ -18,7 +18,7 @@
 <body>
 <div id="wrapper" class="bg-light-gray">
 
-	<%= render 'layouts/header' %>
+	<%= render 'layouts/header' unless @skip_header %>
 	<div id="content">
 
 	<% flash.each do |message_type, message| %>

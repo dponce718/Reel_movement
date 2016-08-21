@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
 	before_action :authenticate_user!, only: [:stripe, :forgot_subscription]
+ 
 
   def home
 
@@ -28,7 +29,15 @@ class StaticPagesController < ApplicationController
   
   def forgot_subscription
 
-  end  
+  end 
+
+  def free_trial
+     @skip_header = true
+   end 
+
+   def sign_up
+     @skip_header = true
+   end
 
 
   def create

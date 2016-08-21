@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get     'corrective_exercise' => 'programs#show'
   get     'privacy_policy'                =>  'static_pages#privacy_policy'
   get     'stripe'                =>  'static_pages#stripe'
+  get     'free_trial'                =>  'static_pages#free_trial'
+  get     'sign_up'                =>  'static_pages#sign_up'
   get     'forgot_subscription'                =>  'static_pages#forgot_subscription'
   get     'terms'                =>  'static_pages#terms'
   get     'about'                =>  'static_pages#about'
