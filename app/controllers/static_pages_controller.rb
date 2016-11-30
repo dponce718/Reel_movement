@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
    end 
 
    def free_workout
-     
+      @skip_header = true
    end
 
   

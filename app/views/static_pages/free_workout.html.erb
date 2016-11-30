@@ -1,8 +1,20 @@
 
-    <header>
-        <div class="container">
-            <div class="intro-text free-workout">
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" id= 'header' role="navigation">
+
+    
+
+    <div class="container">
+        <a class="navbar-brand navbar-brand-logo" href="">
+                    <div class="logo">
+                    <%= image_tag "https://s3.amazonaws.com/reelmovement/rm-green-copy-1.png", size: "200x150" %>
+                    </div> </a>
              
+
+                </div> <!--   end of container --> 
+                </nav>
+    <header class="main-header">
+        <div class="container header-background">
+            <div class="intro-text">
              <div class="do center-block">
                     <h2 id="first-workout"> Free Total Body Workout </h2>
                     </div>
@@ -12,29 +24,81 @@
                 <iframe id="vzvd-7467742" name="vzvd-7467742" title="vzaar video player" class="vzaar-video-player" type="text/html" width="768" height="432" frameborder="0" allowFullScreen allowTransparency="true" mozallowfullscreen webkitAllowFullScreen src="//view.vzaar.com/7467742/player"></iframe>
 </div>
             
-               <a href="#promo-video" class="open-popup-link btn btn-success btn-lg" id="tell-btn"> <i class="fa fa-play-circle"></i> Tell Me More</a>
-               
-               <a class="popup-modal page-scroll btn btn-success btn-fill btn-lg" href="#test-modal"> <i class="icon-happy"></i> Find my program now</a>  
-                
-                
-                
+               </div> 
         </div>
     </header>
   
     
-            <!-- modalbox -->
+         <!-- modalbox -->
                   <%= render 'layouts/promo' %>
+
+                  <!-- Services Section -->
+    <section class="workout-background " >
+    <div class="white" >
+        <div class="container port-container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="extra-margin-top"> Start Working Out Right Now</h2>
+                    <h3 class="sofia-extra-light">Get full access to all our programs for 2 weeks, for free!</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 >Receive a Free Fitness Assessment</h4>
+                    <p class="text-muted text-left"> Are you a beginner? Advanced? Don't worry, take our online fitness assessment and we will be able to prescribe a program made to help you reach your fitness goals. Whether it is losing 10 to 15 pounds, gaining more muscle definition, or maybe you just want to improve your heath. Regardless of your goals we have a program for you.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 >Unlimited access to all programs</h4>
+                    <p class="text-muted text-left"> For just 15 dollars a month you have access to hours of footage.  This includes strentgh training, core training, and cardiovascular training programs. Don't forget our corrective exercise programs and our clean eating recipes taught to you by professional chefs. Bon Appetit!</p>
+                                    
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                    </span>
+
+
+
+                    <h4 >No contract or commitments</h4>
+                    <p class="text-muted text-left"> Remember consistency and commitment is key to achieving your desired results but we understand that sometimes things come up. At Reel movement you can cancel or suspend your account at anytime</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3" >
+
+                    <a class="popup-modal page-scroll btn btn-info btn-fill btn-lg extra-margin-bottom" href="/sign_up"> <i class="icon-happy"></i> Try it FREE for 14 days</a>  
+                     <div id="no-margin">
+                <p> Just $15 a month after your trial. Cancel anytime. </p>  
+                
+                </div>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
 
 
            
         <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <section id="portfolio" class="bg-light-gray jump-squat">
+    <div class="green-background">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 >What We Do</h2>
+                    <h2 class="extra-margin-top" >What We Do</h2>
                     <h3 class="sofia-extra-light"> We help you reach your goals</h3>
+                    <h4 class="sofia-extra-light" id="white-color"> Stream a workout anywhere and learn to make a great meal all in the comfort of your own home </h4>
                     <p> <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
                     Click below to find out how <i class="fa fa-long-arrow-down" aria-hidden="true"></i></p> 
                 </div>
@@ -99,58 +163,58 @@
                 <div class="col-md-4"></div>
                     <div class="col-md-4 cta-button">
 
-                    <a class="popup-modal btn btn-success btn-fill btn-lg" href="#test-modal"> <i class="icon-happy"></i> Find my program now</a>    
+                    <a class="btn btn-info btn-fill btn-lg extra-margin-bottom" href="/sign_up"> <i class="icon-happy"></i> Try it FREE for 14 days</a>  
+
                     </div>
+
                      <div class="col-md-4"></div>
+
+                     <div class="row">
+                         <div class="col-lg-8 col-lg-offset-2 text-center">
+                              <p id="cta-p-margin" > Just $15 a month after your trial. Cancel anytime. </p>  
+                         </div>
+                     </div>
+
                 </div>
                 </div>
 
         </div>
 
         <%= render 'layouts/aboutusmodal' %>
+        </div>
     </section>
 
 
-  <!-- Services Section -->
-    <section id="price" >
-        <div class="container port-container">
+  
+
+    <section id="team" class="bg-light-gray gradient">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2> Price</h2>
-                    <h3 class="sofia-extra-light">$15 per month</h3>
+                    <h2 class="section-heading">Find out what others think</h2>
+                    <h3 class="section-subheading text-muted"> Start working out with us now</h3>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-star fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 >Receive a Free Fitness Assesment</h4>
-                    <p class="text-muted text-left"> After you take our online fitness assesment, we will be able to prescribe a program made to help you reach your fitness goals. Whether it is losing 10 to 15 pounds, gaining more mucsle definition, or maybe you just want to improve your heath. Regardless of your goals we have a program for you.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 >Unlimited access to all programs</h4>
-                    <p class="text-muted text-left"> For just 15 dollars a month you have access to hours of footage.  This includes strentgh training, core training, and cardiovascular training programs. Don't forget our corrective exercise programs and our clean eating recipes taught to you by professional chefs. Bon Appetit!</p>
-                                    
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 >No contract or commitments</h4>
-                    <p class="text-muted text-left"> Remember consistency and commitment is key to achieving your desired results but we understand that sometimes things come up. At Reel movement you can cancel or suspend your account at anytime</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
 
-                    <a class="popup-modal page-scroll btn btn-success btn-fill btn-lg" href="#test-modal"> <i class="icon-happy"></i> Find my program now</a>    
-                    </div>
+                <img src="https://s3.amazonaws.com/reelmovement/sasha.jpg" class="img-responsive img-circle danny-img center-block" alt="">
+                        <h4>Aliaksandra Davydava</h4>
+                        <p class="text-muted sofia-extra-light-italic">Dance Instructor</p>
+
+                  
+                </div>
+               
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="text-left my-life sofia-extra-light-italic"> "Reel Movement is great. I'm so busy with work but I can workout out with Reel Movement anywhere. There are so many workout programs to choose from. I just keep getting in better and better shape"</p>
+
+                     <a class="popup-modal page-scroll btn btn-info btn-fill btn-lg" href="/sign_up"> <i class="icon-happy"></i> Try it FREE for 14 days</a>
+                      <div>
+               <p> Just $15 a month after your trial. Cancel anytime. </p>  
+                
+                </div>
+                   
                 </div>
             </div>
         </div>
@@ -160,4 +224,12 @@
 
     
 
+<script type="text/javascript">
+$('#fittext').fitText(3);
+$('#fittext2').fitText(3.5);
+// ViewContent
+// Track key page views (ex: product page, landing page or article)
+fbq('track', 'ViewContent');
+
+</script>
 
