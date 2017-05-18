@@ -68,7 +68,7 @@ class SubscriptionsController < ApplicationController
 			redirect_to "/subscriptions/show"
 
 
-			elsif current_user.assessment.rhr.between?(65, 74)
+			elsif current_user.assessment.rhr.between?(65, 79)
 			   current_user.assessment.push_ups.between?(23,35)
 			   current_user.assessment.planks >= 90 
 			   current_user.assessment.wall_sits >= 90 
