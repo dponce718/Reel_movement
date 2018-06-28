@@ -4,6 +4,9 @@ email: info@reelmovement.com
 description: > # this means to ignore newlines until "baseurl:"
   check out my blog
 twitter_username: reelmovement
+facebook_username:  reelmovement
+instagram_username: coach_daniel0311
+
 fb_appid:    1063835490346190     
 baseurl: "/blog"
 paginate: 4
