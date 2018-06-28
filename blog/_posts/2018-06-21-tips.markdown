@@ -39,7 +39,7 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
 
         <div class="image">
 
-            <img src="assets/img/thumb.jpg&fit=max&fm=jpg&auto=format&s=5c4d815f60933514c19eda5655f240eb" alt="..."/>
+            <img src="https://s3.amazonaws.com/reelmovement/small+carbs.jpeg" alt="..."/>
 
 
         </div>
@@ -74,7 +74,7 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
 
         <div class="image">
 
-            <img src="assets/img/thumb.jpg&fit=max&fm=jpg&auto=format&s=5c4d815f60933514c19eda5655f240eb" alt="..."/>
+            <img src="https://s3.amazonaws.com/reelmovement/broken-cooking-crack-33819.jpg" alt="..."/>
 
 
         </div>
@@ -112,7 +112,7 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
 
         <div class="image">
 
-            <img src="assets/img/thumb.jpg&fit=max&fm=jpg&auto=format&s=5c4d815f60933514c19eda5655f240eb" alt="..."/>
+            <img src="https://s3.amazonaws.com/reelmovement/avocado.jpeg" alt="..."/>
 
 
         </div>
@@ -146,7 +146,7 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
 
         <div class="image">
 
-            <img src="assets/img/thumb.jpg&fit=max&fm=jpg&auto=format&s=5c4d815f60933514c19eda5655f240eb" alt="..."/>
+            <img src="https://s3.amazonaws.com/reelmovement/eggss.jpeg" alt="..."/>
 
 
         </div>
@@ -156,10 +156,10 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
   
             
 
-                <h4 class="title">Get Shit Done Kit PRO, the most wanted bootstrap kit is here </h4>
+                <h4 class="title">Clean eating is key </h4>
 
 
-                <p class="description">Edgerank completely fails to have the effect it was originally designed for nice product. This will be a really interesting post about Facebook's biggest mistake yet...</p>
+                <p class="description"> These are just a few healthy choices. The main thing is to be aware of what you put into your body</p>
 
 
             
@@ -187,6 +187,10 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
 
 
 <p>“Remember train hard and train smart!”</p>
+
+<p> Follow me on <a href="https://www.instagram.com/{{ site.instagram_username }}">
+      <i class="icon fa fa-instagram"></i> 
+    </a>for more tips on improving your fitness</p>
 
 <p>Founder and CEO of Reel Movement</p>
  
