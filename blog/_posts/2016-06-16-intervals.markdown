@@ -3,7 +3,7 @@ title:  "Why is Interval Training so Popular?"
 date:   2016-06-16 12:25:09
 excerpt: "Interval training is really just one way to perform cardiovascular endurance training. Cardiovascular training i ..."
 permalink: intervals
-image: https://s3.amazonaws.com/reelmovement/FemaleJogging.jpg
+image: https://s3.amazonaws.com/reelmovement/FemaleJogging+2.jpg
 ---
 
 <p> Interval training is really just one way to perform cardiovascular endurance training. Cardiovascular training is any type of exercise that improves the aerobic efficiency of the human body. Meaning, this type of training improves the ability of the lungs to take in oxygen, transfer it to the blood, and ultimately deliver that oxygen to the working muscles in order to aid in the production of energy. This type of exercise has many benefits, including the ability to perform cardiovascular training in a short amount of time and aiding in weight loss and management. A cardiovascular endurance program will aid weight loss as long as it is properly structured and accompanied by healthy eating habits.</p> 
