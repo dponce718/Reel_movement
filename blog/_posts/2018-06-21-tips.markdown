@@ -9,7 +9,7 @@ image: https://s3.amazonaws.com/reelmovement/cleaneating-1.jpg
 <p> 	First off “Good on you for taking an interest in being more health conscious”.I think it’s fairly reasonable to say mostly everyone’s fitness goals are to build as much lean muscle as possible and lose some body fat at the same time. Basically, we want to look good :) We want that summer body, all year round. Hey, don’t worry, I want to look good too. </p>
 
 
-<p>The problem is, there is a ton of bad information out there, especially, when it comes to nutrition. 
+<p>The problem is, there is a ton of misleading information out there, especially, when it comes to nutrition. 
 Your nutritional needs are based on your age, gender, lifestyle, level of activity, physical conditioning, and so much more.</p>
 
 <p>You want that summer body? Good, I want you to have it, but lets do it in a healthy way that promotes a positive change in your life. Not in a way that has you dropping a macronutrient or an enormous amount of calories. Lets be smart! </p>
@@ -19,17 +19,21 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
 
 
 
-<h2>CARBS, FAT, AND PROTEIN!</h2>
+<h2>1. CARBS, FAT, AND PROTEIN!</h2>
 
-<p>Do not get rid of any of these macronutrients! They are fundamental and your body needs them. Any diet that advocates dropping any of these is unhealthy and unrealistic. We need to make positive choices that become lifestyle changes. </p>
+<p>Do not get rid of any of these macronutrients! They are fundamental and your body requires them. Any diet that advocates eliminating any of these macronutrients is unhealthy and unrealistic. We need to make positive choices that become lifestyle changes. </p>
 
-<p>With that being said, what should you do? Simple, split each nutrient appropriately. </p>
+<p>With that being said, what should you do? </p>
 
-<p>A good split to start with is 40% carbs, 30% fat, 30% protein. Now, this can change depending  on your activity level and other variables but it is a good place to start. </p>
+<p>Simple, split each nutrient appropriately. </p>
 
-<h3> Here are Some Examples of Great Choices </h3>
+<p>A good split to start with is 40% carbs, 30% fat, 30% protein ratio. Now, this can change depending  on your activity level and other variables but it is a good place to start. </p>
 
+ 
 
+<h2> 2. MAKE HEALTHY CHOICES</h2>
+
+<h3> Here are Some Examples </h3>
 
 
 <div class="container">
@@ -174,7 +178,7 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
     </div>
  
 
-<h2>3. Create a Caloric Deficit</h2>
+<h2>3. CREATE A CALORIC DEFICIT</h2>
 
 <p>This is the key here. If you burn more calories than you take in, you will inch closer to reaching the amount of body fat you desire. Couple this with some physical activity and you are golden. Remember, it's not carbs that are making you gain all that weight it is an excess of calories.</p>
 
@@ -195,5 +199,3 @@ Your nutritional needs are based on your age, gender, lifestyle, level of activi
 <p>Founder and CEO of Reel Movement</p>
  
 <span class="script"> Daniel Ponce </span>
-
-
