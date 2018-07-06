@@ -1,6 +1,6 @@
 ---
 title:  "3 Nutritional Tips to Build Muscle"
-date:   2018-07-01 12:25:09
+date:   2018-07-06 11:40:09
 excerpt: "Designing a personalized nutrition program can be extremely complicated because everyone has various..."
 permalink: muscle-building
 image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
@@ -13,13 +13,24 @@ image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
 
 <h2> 1. Calculate Your Energy Requirements</h2>
 
-<p> Everyone knows that to build some lean muscle you are going to have to eat. I mean you are going to have to eat a lot but the goal isn't to eat an exuberant amount of food. This is going to cause you to add plenty of body fat (I know you don't want that). So, lets build some lean muscle.</p>
+<p> Everyone knows in order to build some lean muscle you are going to have to eat. I mean you are going to have to eat a lot, but the goal isn't to eat an exuberant amount of food. This is going to cause you to add plenty of body fat (I know you don't want that). So, lets build some lean muscle.</p>
 
 <h3>But How Much Calories Should I Take in</h3>
 
-<p> 3 things determine your daily energy requirement: Basal metabolic rate (BMR), physical activity, and thermic effect of food. Now lets not get to scientific here.</p>
 
-<p>Your BMR is basically the amount of calories you need to live. Physical activity is obvious and it's the only one you have control over. The thermic effect of food is basically the amount of calories it takes to digest and absorb food.</p>
+
+<p> There are three things determine your daily energy requirement: </p>
+
+<ul>
+
+  <li>Basal metabolic rate (BMR)</li>
+  <li>Levels of physical activity</li>  
+  <li>thermic effect of food </li> 
+</ul>
+
+<p> Now lets not get too scientific here </p>
+
+<p>Your BMR is basically the amount of calories you need to live. Physical activity is obvious and it's the only one you have control over. The thermic effect of food is essentially the amount of calories it takes to digest and absorb food.</p>
 
 <p> Follow along now because there is some math involved. I know, I'm sorry </p>
 <p> we are going to calculate how may calories you need daily </p>
