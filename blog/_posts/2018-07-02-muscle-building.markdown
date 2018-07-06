@@ -2,7 +2,7 @@
 title:  "3 Nutritional Tips to Build Muscle"
 date:   2018-07-01 12:25:09
 excerpt: "Designing a personalized nutrition program can be extremely complicated because everyone has various..."
-permalink: diet-tips
+permalink: muscle-building
 image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
 ---
 
