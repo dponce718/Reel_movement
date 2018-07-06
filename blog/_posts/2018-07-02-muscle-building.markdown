@@ -173,7 +173,7 @@ image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
 
 
 
-<p> If you are trying to build some muscle The International Society of Sports Nutrition (ISSN) recommends taking in 1.5-2 grams of protein per kilogram of body weight. If we use our female example above that is 178 grams of protein a day, but this recommendation is meant for true strength and power athletes, Which means they are training 6 days a week for a significant period of time. The recommended Dietary Allowance of protein is 0.8 to 1 gram per kilogram per day may not be enough to build some lean muscle. Ultimately it depends on your goals. If you are only training a moderate amount 1.2- 1.5 grams may be enough for you. Regardless, the quality of protein is important. </p>
+<p> If you are trying to build some muscle The International Society of Sports Nutrition (ISSN) recommends taking in 1.5-2 grams of protein per kilogram of body weight. If we use our female example above that is 178 grams of protein a day, but this recommendation is meant for true strength and power athletes, which means they are training 6 days a week for a significant period of time. The recommended Dietary Allowance of protein is 0.8 to 1 gram per kilogram per day may not be enough to build some lean muscle. Ultimately it depends on your goals. If you are only training a moderate amount 1.2- 1.5 grams may be enough for you. Regardless, the quality of protein is important. </p>
 
 <p> This is determined by its amino acid content. Proteins that contain all the essential amino acids (complete proteins)  and in amounts sufficient enough to maintain protein synthesis. Some great examples are dairy products, eggs, meat and fish.</p>
 
