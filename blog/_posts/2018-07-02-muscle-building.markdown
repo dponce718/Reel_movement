@@ -159,7 +159,7 @@ image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
    </div>
     </div>
 
-<p> These are just some examples. Make sure you plug in the right numbers but now you have a good baseline to start and that is extremely important. No you can make minor changes to create positive changes in your body.</p>
+<p> These are just some examples. Make sure you plug in the right numbers but now you have a good baseline to start and that is extremely important. Now you can make minor changes to create positive changes in your body.</p>
 
 
 
