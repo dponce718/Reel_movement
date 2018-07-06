@@ -155,7 +155,7 @@ image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
                     <p> weight= 120 lbs/2.2 = 54kg  </p>
                     <p> Height = 63 inches x 2.54 = 160cm</p>
                     <p> plug that into the previous female equation = 1,162 calories (BMR)</p> 
-                    <p> 1,162 x 1.53(activity level)= 2,614 calories per day </p>
+                    <p> 1,341 x 1.53(activity level)= 2,051 calories per day </p>
             
 
 
