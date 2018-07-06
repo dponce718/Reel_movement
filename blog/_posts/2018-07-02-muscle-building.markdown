@@ -6,22 +6,22 @@ permalink: muscle-building
 image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
 ---
 
-<p> Designing a personalized nutrition program can be extremely complicated because everyone has various backgrounds, genders, and cultures. Which means there is no cookie cutter diet that fits everyone. So, creating a diet for an athlete or client can be particularly challenging. </p>
+<p> Designing a personalized nutrition program can be extremely complicated because everyone has various backgrounds, genders, and cultures. Which means there is no cookie cutter diet that fits everyone. So, creating a diet for anyone can be particularly challenging. </p>
 
 
 <p>Nevertheless, there are some solid tips I can give you to build some solid muscle.</p>
 
 <h2> 1. Calculate Your Energy Requirements</h2>
 
-<p> Everyone knows to build some lean muscle you are going to have to eat. I mean you are going to have to eat a lot but the goal isn't to eat an exuberant amount of food. This is going to cause you to add plenty of body fat (I know you don't want that). So, lets build some lean muscle and keep out body fat down.</p>
+<p> Everyone knows that to build some lean muscle you are going to have to eat. I mean you are going to have to eat a lot but the goal isn't to eat an exuberant amount of food. This is going to cause you to add plenty of body fat (I know you don't want that). So, lets build some lean muscle.</p>
 
 <h3>But How Much Calories Should I Take in</h3>
 
-<p> 3 things determine your daily energy requirement, Basal metabolic rate (BMR), physical activity, and thermic effect of food. Now lets not get to sciencey(this is not a word but you get what I mean) right now.</p>
+<p> 3 things determine your daily energy requirement: Basal metabolic rate (BMR), physical activity, and thermic effect of food. Now lets not get to scientific here.</p>
 
-<p>Your BMR is basically the amount of calories you need to live. Physical activity is obvious and its the only one you have control over. The thermic effect of food is basically the amount of calories it takes to digest and absorb food.</p>
+<p>Your BMR is basically the amount of calories you need to live. Physical activity is obvious and it's the only one you have control over. The thermic effect of food is basically the amount of calories it takes to digest and absorb food.</p>
 
-<p> Follow along now because their is some math involved. I know, I'm sorry </p>
+<p> Follow along now because there is some math involved. I know, I'm sorry </p>
 <p> we are going to calculate how may calories you need daily </p>
 
 
@@ -165,7 +165,7 @@ image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
 
 <h2>2. Create a Caloric Surplus</h2>
 
-<p> Now lets start manipulating our caloric intake. The goal is to build muscle and in order to do that we need a caloric surplus. 1 pound of muscle is approximately 2,500 calories. So in order to put on some muscle you need should increase your caloric intake by 300-500 calories per day. That means if we use our male client from above as an example, he should be consuming at least 3,908 calories per day.</p>
+<p> Now lets start manipulating our caloric intake. The goal is to build muscle and in order to do that we need a caloric surplus. 1 pound of muscle is approximately 2,500 calories. So in order to put on some muscle you should increase your caloric intake by 300-500 calories per day. That means if we use our male client from above as an example, he should be consuming at least 3,908 calories per day.</p>
 
  
 
@@ -173,11 +173,11 @@ image: https://s3.amazonaws.com/reelmovement/barbell.jpeg
 
 
 
-<p> If you are trying to build some muscle The International Society of Sports Nutrition (ISSN) recommends taking in 1.5-2 grams of protein per kilogram of body weight. If we use our female example above that is 178 grams of protein a day, but this recommendation is meant for true strength and power athletes. which means they are training 6 days a week for a significant period of time. The recommended Dietary Allowance of protein is 0.8 to 1 gram per kilogram per day may not be enough to build some lean muscle. Ultimately it depends on your goals. If you are only training a moderate amount 1.2- 1.5 grams may be enough for you. Regardless. the quality of protein is important. </p>
+<p> If you are trying to build some muscle The International Society of Sports Nutrition (ISSN) recommends taking in 1.5-2 grams of protein per kilogram of body weight. If we use our female example above that is 178 grams of protein a day, but this recommendation is meant for true strength and power athletes, Which means they are training 6 days a week for a significant period of time. The recommended Dietary Allowance of protein is 0.8 to 1 gram per kilogram per day may not be enough to build some lean muscle. Ultimately it depends on your goals. If you are only training a moderate amount 1.2- 1.5 grams may be enough for you. Regardless, the quality of protein is important. </p>
 
 <p> This is determined by its amino acid content. Proteins that contain all the essential amino acids (complete proteins)  and in amounts sufficient enough to maintain protein synthesis. Some great examples are dairy products, eggs, meat and fish.</p>
 
-<p> This article could just go on and on about just protein. Just Remember to get a sufficient amount of protein and also to use supplementation when it becomes difficult to get it from only food alone.</p>
+<p> This article could just go on and on about just protein. Just remember to get a sufficient amount of protein and also to use supplementation when it becomes difficult to get it from only food alone.</p>
 
 
 
