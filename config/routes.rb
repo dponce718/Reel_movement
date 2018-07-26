@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get     'free_workout'                =>  'static_pages#free_workout'
   get     'schedule'                =>  'programs#schedule'
   get     'assessment'                =>  'subscriptions#assessment'
+  get     'private'                =>  'static_pages#private_training'
   
   
 
