@@ -10,7 +10,7 @@ image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
 
 
 
-<h2> THINK YOU ARE UP FOR THE CHALLENGE </h2>
+<h2> THINK YOU ARE UP FOR THE CHALLENGE? </h2>
 <h3>Then Give Theses Moves a Try</h3>
 
 
@@ -127,7 +127,7 @@ image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
                 <h4 class="title"> Quadruped Ball Plank</h4>
 
 
-                                 <p>Make sure you keep your spine in alignment</p>
+                                 <p>Make sure you keep your spine in alignment.</p>
 
                                  <h4><span>3 sets of 30 seconds on each side</span></h4>
 
@@ -160,7 +160,7 @@ image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
                 <h4 class="title">Split Lunges</h4>
 
                
-                 <p> Anything on one leg is great. Brace that core and if it is too easy just add some weight </p>
+                 <p> Anything on one leg is great. Brace that core and if it is too easy just add some weight. </p>
 
 
             
@@ -189,7 +189,7 @@ image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
                 <h4 class="title"> Split Lunges</h4>
 
 
-                                  <p> Unilateral work is fantastic and it is even better when you add a balance and core component to it </p>
+                                  <p> Unilateral work is fantastic and it is even better when you add a balance and core component to it. </p>
 
                                   <h4><span>3 sets of 12 repetitions</span></h4>
 
@@ -223,7 +223,7 @@ image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
 
                 <h4 class="title">Pike Push Ups</h4>
 
-                    <p> Another one of my favorite total body moves. Keep your core braced do a push up and on the way back up hike your hips </p>
+                    <p> Another one of my favorite total body moves. Keep your core braced do a push up and on the way back up hike your hips. </p>
             
 
         </div>
@@ -250,7 +250,7 @@ image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
 
 <h4 class="title">Pike Push Ups</h4>
 
-                    <p> Hike that hip as high as you can and brace your core</p>
+                    <p> Hike that hip as high as you can and brace your core.</p>
 
                      <h4><span>3 sets of 12 repetitions</span></h4>
             
