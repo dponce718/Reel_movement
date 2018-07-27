@@ -6,7 +6,7 @@ permalink: stability-ball
 image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
 ---
 
-<p> The stability ball is one of my favorite pieces of equipment. It activities the core, may strengthen the spine and reduces lower back pain. Just for those reasons alone, it is a great piece of equipment. You can use it anywhere, it's affordable, it improves neuromuscular coordination and strength. The benefits are endless. It can also be used for some pretty difficult exercises  </p>
+<p> The stability ball is one of my favorite pieces of equipment. It activities the core, may strengthen the spine and reduces lower back pain. Just for those reasons alone, it is a great piece of equipment. You can use it anywhere, it's affordable, it improves neuromuscular coordination and strength. The benefits are endless. It can also be used for some pretty difficult exercises. </p>
 
 
 
@@ -223,7 +223,7 @@ image: https://s3.amazonaws.com/reelmovement/Stabilityball.JPG
 
                 <h4 class="title">Pike Push Ups</h4>
 
-                    <p> Another one of my favorite total body moves. Keep your core braced do a push up and on the way back up hike your hips. </p>
+                    <p> Another one of my favorite total body moves. Keep your core braced, do a push up and on the way back up hike your hips. </p>
             
 
         </div>
