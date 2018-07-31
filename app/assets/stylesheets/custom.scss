@@ -383,6 +383,10 @@ ul{
     border-radius: 4px;
     margin: 0px;
 }
+
+.private-text{
+    margin-top: 150px;
+}
     
 .navbar-transparent .navbar-brand:hover, .navbar-transparent .navbar-brand:focus, [class*="navbar-ct"] .navbar-brand:hover, [class*="navbar-ct"] .navbar-brand:focus {
     background-color: rgba(0, 0, 0, 0);
@@ -554,6 +558,15 @@ section {
 #assessment-img{
 
     background-image: url('https://s3.amazonaws.com/reelmovement/mountain.jpg');
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: 60% 40%;
+    @include background-cover;   
+}
+
+#private-img{
+
+    background-image: url('https://s3.amazonaws.com/reelmovement/personal-training.jpg');
     background-repeat: none;
     background-attachment: scroll;
     background-position: 60% 40%;
@@ -3113,7 +3126,7 @@ ul li a:hover + .hidden, .hidden:hover {
             left: 0;
             margin-left: -11px;
             width: 102px;
-            height: 80px;
+            height: 72px;
             position: absolute;
             z-index: 100;
             background-color: $brand-primary;
@@ -3181,7 +3194,7 @@ ul li a:hover + .hidden, .hidden:hover {
             }
             .timeline-image {
                 width: 169px;
-                height: 129px;
+                height: 118px;
                 left: 48%;
                 margin-left: -71px;
                 h4 {
@@ -3207,7 +3220,7 @@ ul li a:hover + .hidden, .hidden:hover {
                 padding: 0 20px 20px;
             }
             .timeline-image {
-                width: 163px;
+                width: 183px;
                 height: 126px;
                 margin-left: -84px;
                 h4 {
@@ -3231,7 +3244,7 @@ ul li a:hover + .hidden, .hidden:hover {
                 padding: 0 20px 20px 100px;
             }
             .timeline-image {
-                width:224px;
+                width:249px;
                 height: 170px;
                 margin-left: -85px;
                 h4 {

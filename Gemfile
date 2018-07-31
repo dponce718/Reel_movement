@@ -41,7 +41,7 @@ gem 'jquery-turbolinks'
 
 gem 'puma'
 
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 5.2.0'
 
 gem 'magnific-popup-rails'
 
